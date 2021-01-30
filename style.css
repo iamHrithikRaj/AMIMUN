@@ -49,13 +49,23 @@ html,body
 }
 
 
+/* @media only screen and (max-width: 900px) {
+  #logo-n-timer-container {
+    width: 500px;
+  }
+  #timer {
+    font-size: 35px;
+  }
+} */
 
-@media only screen and (max-width: 800px) {
+
+
+@media only screen and (max-width: 1000px) {
   #logo-n-timer-container {
     width: 600px;
   }
   #timer {
-    font-size: 55px;
+    font-size: 35px;
   }
 }
 
@@ -65,7 +75,7 @@ html,body
     width: 500px;
   }
   #timer {
-    font-size: 45px;
+    font-size: 35px;
   }
 }
 
@@ -76,7 +86,7 @@ html,body
     width: 400px;
   }
   #timer {
-    font-size: 45px;
+    font-size: 27px;
   }
 }
 
@@ -85,6 +95,6 @@ html,body
     width: 300px;
   }
   #timer {
-    font-size: 30px;
+    font-size: 20px;
   }
 }
