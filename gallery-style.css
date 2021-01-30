@@ -1,9 +1,13 @@
-/* body {
-  
-  font-family: "Asap", sans-serif;
-  color: #989898;
-  font-size: 16px;
-} */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+html,body
+{
+    /* width: 100%;
+    height: 100%; */
+    font-family: 'Playfair Display', serif !important;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+}
 
 #demo {
   height: 100%;
