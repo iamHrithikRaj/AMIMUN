@@ -8,11 +8,12 @@ html,body
     margin: 0px;
     padding: 0px;
     overflow-x: hidden; 
+    background-color: #F7ECE2;
 }
 
 .img-height {
   height: 100vh;
-  background-color: black;
+  /* background-color: black; */
 }
 
 .navbar {
