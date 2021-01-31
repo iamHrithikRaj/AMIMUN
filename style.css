@@ -34,7 +34,7 @@ body {
   position: absolute;
   left: 0;
   right: 0;
-  top: 35%;
+  top: 22%;
   margin-left: auto;
   margin-right: auto;
   width: 810px; /* Need a specific value to work */
@@ -92,9 +92,22 @@ body {
 
 @media only screen and (max-width: 450px) {
   #logo-n-timer-container {
+    top: 30%;
     width: 300px;
+  }
+  #timer {
+    font-size: 23px;
+  }
+}
+
+
+@media only screen and (max-width: 370px) {
+  #logo-n-timer-container {
+    top: 25%;
+    width: 310px;
   }
   #timer {
     font-size: 20px;
   }
 }
+
