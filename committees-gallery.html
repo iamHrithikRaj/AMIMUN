@@ -17,9 +17,11 @@
   </head>
   <body>
     <!-- navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light">
-      <div class="container-fluid" style=" background-color: #F7ECE2">
-       <a class="navbar-brand mx-1" href="index.html"><img src="./static/amity-logo.png" alt=""></a>
+    <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+      <div class="container-fluid">
+        <a class="navbar-brand mx-1" href="index.html"
+          ><img src="./static/amity-01.png" alt=""
+        /></a>
         <button
           class="navbar-toggler"
           type="button"
@@ -31,13 +33,14 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
+
         <div
-          class="collapse justify-content-end navbar-collapse"
+          class="collapse navbar-collapse justify-content-end"
           id="navbarNavDropdown"
         >
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link" href="#">About Us</a>
+              <a class="nav-link" href="about.html">About</a>
             </li>
             <li class="nav-item dropdown">
               <a
@@ -63,13 +66,52 @@
                 </li>
                 <li>
                   <a class="dropdown-item" href="./register/ip_register.html"
-                    >IP Application</a
+                    >International Press Application</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdownMenuLink"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Messages
+              </a>
+              <ul
+                class="dropdown-menu"
+                aria-labelledby="navbarDropdownMenuLink"
+              >
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="./register/delegate_register.html"
+                    >Advisory Board</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="./register/delegate_register.html"
+                    >Secretariat</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="./register/ip_register.html"
+                    >Organising Committee</a
                   >
                 </li>
               </ul>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="committees-gallery.html">Committees</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="gallery.html">Gallery</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">AMIMUN Club</a>
@@ -82,19 +124,43 @@
       </div>
     </nav>
 
-    <div class="album py-5 mt-5" style=" background-color: #F7ECE2">
-      <div class="container" style=" background-color: #F7ECE2">
+    <div class="album py-5 mt-5" style="background-color: #f7ece2">
+      <div class="container" style="background-color: #f7ece2">
         <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
           <div class="col">
-            <div class="card shadow-lg">
+            <div class="card shadow-lg rounded">
               <img
                 class="d-block img-fluid"
-                style="background-color: #F5A98C"
+                style="background-color: #f5a98c"
                 src="./delegates-logo/un-white.png"
                 alt=""
               />
               <div class="card-body" style="background-color: #f4f4f4">
-                <h3>General Assembly</h3>
+                <h3>United Nations General Assembly-1</h3>
+                <p class="card-text">
+                  This is a wider card with supporting text below as a natural
+                  lead-in to additional content. 
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-outline-secondary">
+                      Read more
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-lg">
+              <img
+                class="d-block img-fluid py-4 px-3 pb-5"
+                style="background-color: #f5a98c"
+                src="./delegates-logo/wha.png"
+                alt=""
+              />
+              <div class="card-body" style="background-color: #fff">
+                <h3>World Health Assembly</h3>
                 <p class="card-text">
                   This is a wider card with supporting text below as a natural
                   lead-in to additional content. This content is a little bit
@@ -113,36 +179,13 @@
           <div class="col">
             <div class="card shadow-lg">
               <img
-                class="d-block img-fluid"
-                style="background-color: #F5A98C"
-                src="./delegates-logo/unw.png"
+                class="d-block img-fluid p-4"
+                style="background-color: #f5a98c"
+                src="./delegates-logo/ctc.png"
                 alt=""
               />
-              <div class="card-body" style="background-color: #fff;">
-                <p class="card-text">
-                  This is a wider card with supporting text below as a natural
-                  lead-in to additional content. This content is a little bit
-                  longer.
-                </p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    <button type="button" class="btn btn-outline-secondary">
-                      Read more
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card shadow-lg">
-              <img
-                class="d-block img-fluid"
-                style="background-color: #F5A98C"
-                src="./delegates-logo/aippm-ip.png"
-                alt=""
-              />
-              <div class="card-body" style="background-color: #f4f4f4;">
+              <div class="card-body" style="background-color: #f4f4f4">
+                <h3>Counter Terrorism Committee</h3>
                 <p class="card-text">
                   This is a wider card with supporting text below as a natural
                   lead-in to additional content. This content is a little bit
@@ -164,58 +207,60 @@
               <img
                 class="d-block img-fluid"
                 style="background-color: lightcoral"
+                src="./delegates-logo/unhrc-white.png"
+                alt=""
+              />
+              <div class="card-body" style="background-color: #f4f4f4">
+                <h3>United Nation Human Right Council</h3>
+                <p class="card-text">
+                  This is a wider card with supporting text below as a natural
+                  lead-in to additional content.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-outline-secondary">
+                      Read more
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-lg">
+              <img
+                class="d-block img-fluid"
+                style="background-color: lightcoral"
+                src="./delegates-logo/aippm-ip.png"
+                alt=""
+              />
+              <div class="card-body" style="background-color: #f4f4f4">
+                <h3>All India Political Parties Meet</h3>
+                <p class="card-text">
+                  This is a wider card with supporting text below as a natural
+                  lead-in to additional content. This content is a little bit
+                  longer.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-outline-secondary">
+                      Read more
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-lg">
+              <img
+                class="d-block img-fluid"
+                style="background-color: lightcoral"
                 src="./delegates-logo/ip-white.png"
                 alt=""
               />
-              <div class="card-body" style="background-color: #f4f4f4;">
-                <p class="card-text">
-                  This is a wider card with supporting text below as a natural
-                  lead-in to additional content. This content is a little bit
-                  longer.
-                </p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    <button type="button" class="btn btn-outline-secondary">
-                      Read more
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card shadow-lg">
-              <img
-                class="d-block img-fluid"
-                style="background-color: lightcoral"
-                src="./delegates-logo/wto-white.png"
-                alt=""
-              />
-              <div class="card-body" style="background-color: #f4f4f4;">
-                <p class="card-text">
-                  This is a wider card with supporting text below as a natural
-                  lead-in to additional content. This content is a little bit
-                  longer.
-                </p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    <button type="button" class="btn btn-outline-secondary">
-                      Read more
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card shadow-lg">
-              <img
-                class="d-block img-fluid"
-                style="background-color: lightcoral"
-                src="./delegates-logo/ccc-white.png"
-                alt=""
-              />
-              <div class="card-body" style="background-color: #f4f4f4;">
+              <div class="card-body" style="background-color: #f4f4f4">
+                <h3>International Press Corps</h3>
                 <p class="card-text">
                   This is a wider card with supporting text below as a natural
                   lead-in to additional content. This content is a little bit

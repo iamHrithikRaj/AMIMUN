@@ -12,15 +12,15 @@
       integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="../gallery-style.css" />
     <title>AMIMUN '21</title>
   </head>
   <body>
     <!-- navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
       <div class="container-fluid">
         <a class="navbar-brand mx-1" href="../index.html"
-          ><img src="../static/amity-logo.png" alt=""
+          ><img src="../static/amity-01.png" alt=""
         /></a>
         <button
           class="navbar-toggler"
@@ -33,13 +33,14 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
+
         <div
-          class="collapse justify-content-end navbar-collapse"
+          class="collapse navbar-collapse justify-content-end"
           id="navbarNavDropdown"
         >
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link" href="#">About Us</a>
+              <a class="nav-link" href="../about.html">About</a>
             </li>
             <li class="nav-item dropdown">
               <a
@@ -57,13 +58,49 @@
                 aria-labelledby="navbarDropdownMenuLink"
               >
                 <li>
-                  <a class="dropdown-item" href="./delegate_register.html"
+                  <a class="dropdown-item" href="delegate_register.html"
                     >Delegate Application</a
                   >
                 </li>
                 <li>
-                  <a class="dropdown-item" href="./ip_register.html"
-                    >IP Application</a
+                  <a class="dropdown-item" href="ip_register.html"
+                    >International Press Application</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdownMenuLink"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Messages
+              </a>
+              <ul
+                class="dropdown-menu"
+                aria-labelledby="navbarDropdownMenuLink"
+              >
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="./messages/delegate_register.html"
+                    >Advisory Board</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="./messages/delegate_register.html"
+                    >Secretariat</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="./messages/ip_register.html"
+                    >Organising Committee</a
                   >
                 </li>
               </ul>
@@ -88,7 +125,7 @@
     </nav>
 
     <!-- form -->
-    <h1 class="m-5 text-center">IP Registration</h1>
+    <h1 class="m-5 text-center">International Press Registration</h1>
     <main class="container mt-5 mb-5">
       <form class="needs-validation" novalidate="">
         <div class="row g-3">
@@ -354,7 +391,7 @@
 
         <hr class="my-4" />
 
-        <button class="w-100 btn btn-outline-secondary btn-lg" type="submit">
+        <button class="w-100 btn btn-primary btn-lg" type="submit">
           Submit
         </button>
       </form>
