@@ -1,19 +1,23 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
-html,body
-{
-    /* width: 100%;
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
+html,
+body {
+  /* width: 100%;
     height: 100%; */
-    font-family: 'Playfair Display', serif !important;
-    margin: 0px;
-    padding: 0px;
-    overflow-x: hidden; 
-    background-color: #F7ECE2 !important;
+  font-family: "Playfair Display", serif !important;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+  background-color: #f7ece2 !important;
 }
 
 #demo {
   height: 100%;
   position: relative;
   overflow: hidden;
+}
+
+.text-justify {
+  text-align: justify;
 }
 
 /* Set the size of the div element that contains the map */
@@ -63,30 +67,30 @@ img.zoom {
 }
 
 body {
-    min-height: 100vh;
-    background: #fafafa;
+  min-height: 100vh;
+  background: #fafafa;
 }
-
 
 .social-link {
-    width: 30px;
-    height: 30px;
-    border: 1px solid #ddd;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #666;
-    border-radius: 50%;
-    transition: all 0.3s;
-    font-size: 0.9rem;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #ddd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #666;
+  border-radius: 50%;
+  transition: all 0.3s;
+  font-size: 0.9rem;
 }
 
-.social-link:hover, .social-link:focus {
-    background: #ddd;
-    text-decoration: none;
-    color: #555;
+.social-link:hover,
+.social-link:focus {
+  background: #ddd;
+  text-decoration: none;
+  color: #555;
 }
 
 .progress {
-    height: 10px;
+  height: 10px;
 }
