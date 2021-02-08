@@ -12,7 +12,7 @@
       integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
       crossorigin="anonymous"
     />
-     <link
+    <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
     />
@@ -245,10 +245,11 @@
 
           <div class="col-md-4">
             <label for="country" class="form-label">Country</label>
-            <select class="form-select" id="country" required="">
+            <select class="form-select" required="">
               <option value="">Choose...</option>
               <option>United States</option>
             </select>
+
             <div class="invalid-feedback">Please select a valid country.</div>
           </div>
 
@@ -290,10 +291,20 @@
           </h4>
           <h6>1.</h6>
           <div class="col-sm-4">
-            <label for="state" class="form-label">Committee</label>
-            <select class="form-select" id="state" required="">
+            <label for="committee1" class="form-label">Committee</label>
+            <select
+              class="form-control form-control-lg"
+              name="committee1"
+              id="committee1"
+              onchange="ChangecatList1()"
+              required=""
+            >
               <option value="">Choose...</option>
-              <option>California</option>
+              <option value="UNGA-DISEC">UNGA-DISEC</option>
+              <option value="UNHRC">UNHRC</option>
+              <option value="WHA">WHA</option>
+              <option value="CTC">CTC</option>
+              <option value="AIPPM">AIPPM</option>
             </select>
             <div class="invalid-feedback">
               Please provide a valid committee.
@@ -301,10 +312,14 @@
           </div>
 
           <div class="col-sm-4">
-            <label for="state" class="form-label">Portfolio</label>
-            <select class="form-select" id="state" required="">
+            <label for="portfolio1" class="form-label">Portfolio</label>
+            <select
+              class="form-control form-control-lg"
+              id="portfolio1"
+              name="portfolio1"
+              required=""
+            >
               <option value="">Choose...</option>
-              <option>California</option>
             </select>
             <div class="invalid-feedback">
               Please provide a valid portfolio.
@@ -313,10 +328,20 @@
 
           <h6>2.</h6>
           <div class="col-sm-4">
-            <label for="state" class="form-label">Committee</label>
-            <select class="form-select" id="state" required="">
+            <label for="committee2" class="form-label">Committee</label>
+            <select
+              class="form-control form-control-lg"
+              name="committee2"
+              id="committee2"
+              onchange="ChangecatList2()"
+              required=""
+            >
               <option value="">Choose...</option>
-              <option>California</option>
+              <option value="UNGA-DISEC">UNGA-DISEC</option>
+              <option value="UNHRC">UNHRC</option>
+              <option value="WHA">WHA</option>
+              <option value="CTC">CTC</option>
+              <option value="AIPPM">AIPPM</option>
             </select>
             <div class="invalid-feedback">
               Please provide a valid committee.
@@ -324,42 +349,60 @@
           </div>
 
           <div class="col-sm-4">
-            <label for="state" class="form-label">Portfolio</label>
-            <select class="form-select" id="state" required="">
+            <label for="portfolio2" class="form-label">Portfolio</label>
+            <select
+              class="form-control form-control-lg"
+              id="portfolio2"
+              name="portfolio2"
+              required=""
+            >
               <option value="">Choose...</option>
-              <option>California</option>
             </select>
             <div class="invalid-feedback">
               Please provide a valid portfolio.
             </div>
           </div>
+
           <h6>3.</h6>
+
           <div class="col-sm-4">
-            <label for="state" class="form-label">Committee</label>
-            <select class="form-select" id="state" required="">
+            <label for="committee3" class="form-label">Committee</label>
+            <select
+              class="form-control form-control-lg"
+              name="committee3"
+              id="committee3"
+              onchange="ChangecatList3()"
+              required=""
+            >
               <option value="">Choose...</option>
-              <option>California</option>
+              <option value="UNGA-DISEC">UNGA-DISEC</option>
+              <option value="UNHRC">UNHRC</option>
+              <option value="WHA">WHA</option>
+              <option value="CTC">CTC</option>
+              <option value="AIPPM">AIPPM</option>
             </select>
             <div class="invalid-feedback">
               Please provide a valid committee.
             </div>
           </div>
 
-          <div class="col-md-4">
-            <label for="state" class="form-label">Portfolio</label>
-            <select class="form-select" id="state" required="">
+          <div class="col-sm-4">
+            <label for="portfolio3" class="form-label">Portfolio</label>
+            <select
+              class="form-control form-control-lg"
+              id="portfolio3"
+              name="portfolio3"
+              required=""
+            >
               <option value="">Choose...</option>
-              <option>California</option>
             </select>
             <div class="invalid-feedback">
               Please provide a valid portfolio.
             </div>
           </div>
-        </div>
+
 
         <hr class="my-4" />
-
-        
 
         <h4 class="mb-3">Please answer the following questions.</h4>
         <div class="my-3">
@@ -405,7 +448,8 @@
         <div class="row gy-3">
           <div class="col-12">
             <label for="exampleFormControlTextarea1"
-              >What are your views on India's stance on Economic Recovery after COVID-19 Outbreak?</label
+              >What are your views on India's stance on Economic Recovery after
+              COVID-19 Outbreak?</label
             >
             <textarea
               class="form-control"
@@ -454,32 +498,37 @@
 
     <!-- FOOTER -->
     <footer class="container mt-5">
-        <hr class="featurette-divider" />
-        <p class="float-end"><a href="#">Back to top</a></p>
-        <p>
-          &copy; Amity University <a href="#">Privacy</a>
-          <a href="#">Terms</a>
-          <span
-            ><ul class="social mb-0 list-inline mt-3">
-              <li class="list-inline-item m-0">
-                <a href="https://www.facebook.com/amitymun/" class="social-link"
-                  ><i class="fa fa-facebook-f"></i
-                ></a>
-              </li>
-              <li class="list-inline-item m-0">
-                <a href="https://instagram.com/amimun21?igshid=ndh9t257dsh" class="social-link"
-                  ><i class="fa fa-instagram"></i
-                ></a>
-              </li>
-              <li class="list-inline-item m-0">
-                <a href="https://www.linkedin.com/company/amimunconference/" class="social-link"
-                  ><i class="fa fa-linkedin"></i
-                ></a>
-              </li></ul
-          ></span>
-        </p>
-      </footer>
+      <hr class="featurette-divider" />
+      <p class="float-end"><a href="#">Back to top</a></p>
+      <p>
+        &copy; Amity University <a href="#">Privacy</a>
+        <a href="#">Terms</a>
+        <span
+          ><ul class="social mb-0 list-inline mt-3">
+            <li class="list-inline-item m-0">
+              <a href="https://www.facebook.com/amitymun/" class="social-link"
+                ><i class="fa fa-facebook-f"></i
+              ></a>
+            </li>
+            <li class="list-inline-item m-0">
+              <a
+                href="https://instagram.com/amimun21?igshid=ndh9t257dsh"
+                class="social-link"
+                ><i class="fa fa-instagram"></i
+              ></a>
+            </li>
+            <li class="list-inline-item m-0">
+              <a
+                href="https://www.linkedin.com/company/amimunconference/"
+                class="social-link"
+                ><i class="fa fa-linkedin"></i
+              ></a>
+            </li></ul
+        ></span>
+      </p>
+    </footer>
 
+    <script src="../app.js"></script>
     <!-- <div class="container"></div> -->
 
     <!-- Optional JavaScript; choose one of the two! -->
