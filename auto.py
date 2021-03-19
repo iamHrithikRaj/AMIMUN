@@ -1,21 +1,24 @@
 import numpy as np
 import pandas as pd
+import regex as re
 
-data = pd.read_excel("AMIMUN'21 OC .xlsx")
+
+data = pd.read_excel("FACULTY OC AMIMUN'21.xlsx")
 print(data)
+
 i = 1
 f_obj = open('data.txt','w')
-for name, position, course in zip(data["IP"], data["Position"], data["Course"]):
-    code = '''
-        <tr>
-        <th scope="row">'''+str(i)+'''</th>
-        <td>'''+name+'''</td>
-        <td>'''+position+'''</td>
-        <td>'''+course+'''</td>
-        </tr>
-    '''
-    f_obj.write(code)
-    i += 1
-
+for full_name in data["name"]:
+    if(full_name):
+        name, position = full_name.split(',', 1)
+        code = '''
+            <tr>
+            <th scope="row">'''+str(i)+'''</th>
+            <td>'''+name+'''</td>
+            <td>'''+position+'''</td>
+            </tr>
+        '''
+        f_obj.write(code)
+        i += 1
 f_obj.close()
 

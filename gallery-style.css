@@ -112,7 +112,11 @@ body {
   text-align: justify;
 }
 
-#more {display: none;}
+#more1 {display: none;}
+#more2 {display: none;}
+#more3 {display: none;}
+#more4 {display: none;}
+#more5 {display: none;}
 
 .eb-container{
   display: flex;
