@@ -1,851 +1,160 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-    <!-- Bootstrap CSS -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-    <link rel="stylesheet" href="./style.css" />
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
-    <link rel="manifest" href="/site.webmanifest" />
-    <title>AMIMUN '21 | Home</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css" />
+    <title>AMIMUN'22 | Home</title>
   </head>
-  <body class="example">
-    <!-- navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark">
-      <div class="container-fluid">
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNavDropdown"
-          aria-controls="navbarNavDropdown"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div
-          class="collapse navbar-collapse justify-content-end"
-          id="navbarNavDropdown"
-        >
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link text-white" href="./about.html">About</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle text-white"
-                href="#"
-                id="navbarDropdownMenuLink"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                Our Team
-              </a>
-
-              <ul
-                class="dropdown-menu"
-                aria-labelledby="navbarDropdownMenuLink"
-              >
-              <li>
-                  <a class="dropdown-item" href="./messages/ogl.html"
-                    >Our Guiding Light</a
-                  >
-                </li>
-                <li>
-                  <a class="dropdown-item" href="./messages/advisory-board.html"
-                    >Advisory Board</a
-                  >
-                </li>
-                <li>
-                  <a class="dropdown-item" href="./messages/sec.html"
-                    >Secretariat</a
-                  >
-                </li>
-                <li>
-                  <a class="dropdown-item" href="./messages/org-com.html"
-                    >Organising Committee</a
-                  >
-                </li>
-              </ul>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-white" href="./messages.html">Messages</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-white" href="committees-gallery.html"
-                >Committees</a
-              >
-            </li>
-
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle text-white"
-                href="#"
-                id="navbarDropdownMenuLink"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                Apply
-              </a>
-              <ul
-                class="dropdown-menu"
-                aria-labelledby="navbarDropdownMenuLink"
-              >
-                <li>
-                  <a
-                    class="dropdown-item"
-                    href="https://www.amity.edu/SPG/AMIMUN2021/register/delegateform.aspx"
-                    >Delegate Application</a
-                  >
-                </li>
-                <li>
-                  <a
-                    class="dropdown-item"
-                    href="https://www.amity.edu/SPG/AMIMUN2021/register/ipform.aspx"
-                    >International Press Application</a
-                  >
-                </li>
-              </ul>
-            </li>
-
-            <li class="nav-item">
-              <a class="nav-link text-white" href="gallery.html">Gallery</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-white" href="#">AMIMUN Club</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-white" href="./contact.html"
-                >Contact Us</a
-              >
-            </li>
-          </ul>
+  <body>
+    <div id="back">
+      <nav>
+        <div class="links"><a href="/index.html">Home</a><a href="/committes.html">Committes</a></div>
+        <div id="logo">
+          <img src="./assets/logo.svg" alt="AMIMUN logo" srcset="" />
+          <p>AMIMUN 2022</p>
         </div>
-      </div>
-    </nav>
-
-    <!-- timer -->
-    <div id="logo-n-timer-container">
-      <img id="logo" src="./static/logo-header-scaled.png" alt="" />
-      <h1 id="timer" class="text-center"></h1>
-    </div>
-
-    <main>
-      <div
-        id="myCarousel"
-        class="carousel slide carousel-test"
-        data-bs-ride="carousel"
-      >
-        <ol class="carousel-indicators">
-          <li
-            data-bs-target="#myCarousel"
-            data-bs-slide-to="0"
-            class="active"
-          ></li>
-          <li data-bs-target="#myCarousel" data-bs-slide-to="1"></li>
-          <li data-bs-target="#myCarousel" data-bs-slide-to="2"></li>
-        </ol>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img
-              width="100%"
-              src="./static/new-img-3.png"
-              alt=""
-              class="d-block w-100 img-fluid img-height"
-            />
-            <div class="container">
-              <div class="carousel-caption text-start">
-                <h1>
-                  Winds of Change: Navigating through a new normal in the
-                  multipolar world
-                </h1>
-                <p></p>
-                <p>
-                  <a
-                    class="btn btn-lg btn-primary"
-                    href="./register/delegate_register.html"
-                    role="button"
-                    >Apply</a
-                  >
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="carousel-item">
-            <img
-              width="100%"
-              src="./static/new-img-2.png"
-              alt=""
-              class="d-block w-100 img-fluid img-height"
-            />
-
-            <div class="container">
-              <div class="carousel-caption">
-                <h1>
-                  The AMIMUN legacy is a proud one and has become a benchmark in
-                  Model United Nations Conference.
-                </h1>
-                <p></p>
-                <p>
-                  <a
-                    class="btn btn-lg btn-primary"
-                    href="./about.html"
-                    role="button"
-                    >Learn more</a
-                  >
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img
-              width="100%"
-              src="./static/new-img-1.png"
-              alt=""
-              class="d-block w-100 img-fluid img-height"
-            />
-
-            <div class="container">
-              <div class="carousel-caption text-end">
-                <h1>Glimpses of AMIMUN 2020</h1>
-                <p></p>
-                <p>
-                  <a
-                    class="btn btn-lg btn-primary"
-                    href="./gallery.html"
-                    role="button"
-                    >Browse gallery</a
-                  >
-                </p>
-              </div>
-            </div>
-          </div>
+        <div class="links"><a href="#">Pricing</a><a href="#">About</a></div>
+      </nav>
+      <h2>
+        Winds of Change:<br />
+        Navigating through a new normal <br />
+        in the multipolar world
+      </h2>
+      <div id="main">
+        <div id="one" class="imgcontainer"></div>
+        <div id="holder1" class="holder">
+          <div id="two" class="imgcontainer"></div>
+          <div id="three" class="imgcontainer"></div>
         </div>
-        <a
-          class="carousel-control-prev"
-          href="#myCarousel"
-          role="button"
-          data-bs-slide="prev"
-        >
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </a>
-        <a
-          class="carousel-control-next"
-          href="#myCarousel"
-          role="button"
-          data-bs-slide="next"
-        >
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </a>
-      <!-- Marketing messaging and featurettes
-      ================================================== -->
-      <!-- Wrap the rest of the page in another container to center all the content. -->
-
-      <div class="container marketing mt-5">
-        <div
-          class="p-5 mt-5 m-5 mx-auto text-grey rounded"
-          style="background-color: #f5a98c"
-        >
-          <div class="px-0">
-            <h1 class="display-4 font-italic">
-              Message from Secretary General United Nations
+        <div id="videoplayer">
+          <div class="videoplayer-center">
+            <h1 class="center-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi,
+              vero?
             </h1>
+            <div class="btn">REGISTER</div>
           </div>
+          <video src="./assets/movie.mp4" autoplay></video>
         </div>
-         <div class="mt-5 bg-light">
-          <div
-            class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-lg h-md-250 position-relative"
-            style="background-color: #f4f4f4"
-          >
-            <div class="col p-4 d-flex flex-column position-static">
-             
-              <div class="embed-responsive embed-responsive-16by9">
-                <iframe width="100%" height="600px" src="https://www.youtube.com/embed/75S6Sq51Grg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-              </div>
-            </div>
-          </div>
-          </div>
-                  <hr class="featurette-divider mt-5" />
-
-        <div
-          class="p-5 mt-5 m-5 mx-auto text-grey rounded"
-          style="background-color: #f5a98c"
-        >
-          <div class="px-0">
-            <h1 class="display-4 font-italic">
-              Message from Secretary General
-            </h1>
-          </div>
+        <div id="holder2" class="holder">
+          <div id="four" class="imgcontainer"></div>
+          <div id="five" class="imgcontainer"></div>
         </div>
-        <div class="mt-5 bg-light">
-          <div
-            class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-lg h-md-250 position-relative"
-            style="background-color: #f4f4f4"
-          >
-            <div class="col p-4 d-flex flex-column position-static">
-              <p class="card-text mb-auto" style="text-align: justify">
-                Dear Delegate,<br />
-                The world went through an unprecedented time in the history of
-                the human race. Yet, in the midst of uncertainty, I hope that
-                winds of change sweep away with it the misery.  Thus, to remain
-                actuated and go into the correct direction, I invite you to the
-                first edition of online
-                <b>Amity International Model United Nations, (AMIMUN '21)</b> on
-                Saturday, March 20th to Sunday, March 21st ,2021.<br />
-                By following the legacy and success of previous editions, AMIMUN
-                has set a bar within the Indian Mun circuit with an
-                International base of participants. The secretariat of
-                AMIMUN’2021 hopes to follow the same path and bring you an
-                unparalleled debating experience while adapting to the current
-                world order.<br />
-                Amity International Model United Nations Conference 2021 is a
-                platform for a boundless learning experience and a place to
-                voice your suppositions, opinions while learning the skills of
-                diplomacy. Through this conference, we wish that you experience
-                the most captivating moments whilst sensitizing yourself with
-                the dynamic changes that the world is going through today and
-                encourage the highest calibre of discussion. We look forward to
-                the fervour and enthusiasm which the delegates will bring with
-                them thereby giving an encompassing comprehensive experience and
-                highlighting issues to deliberate upon for a better future of
-                humankind.<br />
-                I would also like to take this opportunity to thank our Founder
-                President Sir, our Faculty Coordinators, our Partners and
-                Sponsors for their unremitting support for e-AMIMUN '21, and
-                making this conference possible. On behalf of the secretariat, I
-                extend a warm invitation to all delegates and hope this
-                conference will be as productive for you, both as an individual
-                and as a delegate. For any queries or concerns kindly feel free
-                to reach out to us, we would be glad to assist you.
-              </p>
-
-              <p class="text-muted">
-                <br />
-                Sincerely,<br />
-                Meshuwa K. Mawthoh<br />
-                Secretary General<br />
-                Amity International Model United Nations 2021
-              </p>
-              <div class="mt-1">
-                <a
-                  href="./about.html"
-                  class="btn btn-sm btn-outline-secondary rounded"
-                >
-                  Read more
-                </a>
-              </div>
-            </div>
-            <div class="img-fluid col-auto d-none d-lg-block p-3 rounded">
-              <img class="rounded" src="./static/mesh.JPG" alt="" />
-            </div>
-          </div>
-        </div>
-        <hr class="featurette-divider mt-5" />
-
-        <!-- START THE FEATURETTES -->
-        <!-- <div class="container marketing mt-5"> -->
-        <!-- START THE FEATURETTES -->
-        <!-- <div
-            class="p-5 m-5 my-5 mx-auto text-grey rounded"
-            style="background-color: #f5a98c"
-          >
-            <div class="px-0">
-              <h1 class="display-4 font-italic">
-                Message from Patron-in-Chief
-              </h1>
-            </div>
-          </div>
-          <hr class="featurette-divider mt-5" /> -->
-        <!-- <div class="row featurette">
-            <div class="col-md-7">
-              <h2 class="featurette-heading">
-                Dr. Ashok K.
-                <span class="text-muted">Chauhan</span>
-              </h2>
-              <h5>
-                Founder President, Ritnand Balved Education Foundation (RBEF),
-                Chairman, AKC Group of Companies
-              </h5>
-              <p class="lead" style="text-align: justify">Coming Soon..</p>
-            </div>
-            <div class="col-md-5">
-              <img class="d-block img-fluid" src="./static/ashok.jpg" alt="" />
-            </div>
-          </div>
-          <hr class="featurette-divider" /> -->
-
-        <!-- <div class="row featurette">
-            <div class="col-md-7 order-md-2">
-              <h2 class="featurette-heading">
-                Dr. Atul
-                <span class="text-muted">Chauhan</span>
-              </h2>
-              <h5>
-                Dr. Atul Chauhan, Chancellor, Amity University, President, RBEF
-                and Patron-in-Chief
-              </h5>
-              <p class="lead" style="text-align: justify">Coming Soon..</p>
-            </div>
-            <div class="col-md-5 order-md-1">
-              <img
-                class="d-block img-fluid"
-                src="./static/DrAtulChauhan.jpg"
-                alt=""
-              />
-            </div>
-          </div>
-
-          <hr class="featurette-divider" /> -->
-        <!-- 
-          <div class="row featurette">
-            <div class="col-md-7">
-              <h2 class="featurette-heading">
-                Prof. (Dr.) Balvinder
-                <span class="text-muted">Shukla</span>
-              </h2>
-              <h5>Vice Chancellor, AUUP and Patron</h5>
-              <p class="lead" style="text-align: justify">
-                I am pleased to share that Amity University Uttar Pradesh is
-                organising first online edition of Amity International Model
-                United Nations Conference (AMIMUN) on the theme ‘Winds of
-                Change: Navigating through A New Normal in the Multipolar
-                World”, from March 20 - 21, 2021. The current worldwide scenario
-                due to COVID-19 pandemic has caused huge reforms in the policies
-                and procedures of organisations globally. Amity has also brough
-                tremendous shift in the functioning of the university and taken
-                several initiatives with the support of latest technology to
-                ensure uninterrupted services to all stakeholders, continued
-                learning, education, research, etc., AMIMUN’21 is one of such
-                initiatives which is being organised virtually to energize
-                connection among students from across the globe and give them
-                the chance to partake in conciliatory conversations on
-                convincing issues. <span id="dots">...</span
-                ><span id="more">
-                  A Model United Nations is a scholarly simulation of the
-                  different procedures of the United Nations, with understudies
-                  addressing different nations. Not only has the fame of MUNs
-                  taken off, it has also settled as a unique stage where the
-                  promising delegates come together and learn myriad skills.
-                  AMIMUN has helped members from across the world to observe the
-                  extraordinary relevance of learning foreign relations and
-                  understanding the working and meaning of the United Nations.
-                  Constructing harmonious relations, security, social
-                  advancement, better expectations of the world and common
-                  liberties, are various viewpoints that are underscored by the
-                  young minds at AMIMUN. The theme for AMIMUN'21 “Winds of
-                  Change: Navigating through A New Normal in the Multipolar
-                  World”, has been meticulously chosen to make sure that the
-                  young assume the responsibility to rise from the myriad of
-                  issues and find a solution. AMIMUN’21 aim to present a
-                  worldwide viewpoint through a space that will mix countries to
-                  meet and make a reality where we discover development and
-                  tranquility in concurrence. This virtual MUN will be a
-                  one-of-a-kind experience, with varied participants from
-                  universities from all around the world, especially when the
-                  physical borders are replaced by connections of internet and
-                  accessibility. I take this opportunity to convey my best
-                  wishes to the delegates and wish them a great learning
-                  experience. I am certain that the hard work and commitment of
-                  the organizing committee members and the Secretariat will make
-                  AMIMUN’21 a splendid success! Best Wishes,</span
-                >
-              </p>
-              <button
-                class="btn-outline-secondary btn"
-                onclick="myFunction()"
-                id="myBtn"
-              >
-                Read more
-              </button>
-            </div>
-            <div class="col-md-5">
-              <img class="d-block img-fluid" src="./static/bal.jpg" alt="" />
-            </div>
-          </div> -->
-        <!-- <hr class="featurette-divider" />
-          <div class="row featurette">
-            <div class="col-md-7 order-md-2">
-              <h2 class="featurette-heading">
-                Dr. Alpana
-                <span class="text-muted">Kakar</span>
-              </h2>
-              <h5>Dy.DSW AUUP-Mentor</h5>
-              <p class="lead" style="text-align: justify">Coming Soon..</p>
-            </div>
-            <div class="col-md-5 order-md-1">
-              <img class="d-block img-fluid" src="./static/0921_P.png" alt="" />
-            </div>
-          </div>
-          <hr class="featurette-divider" />
-          <div class="row featurette">
-            <div class="col-md-7">
-              <h2 class="featurette-heading">
-                Dr. Nitasha
-                <span class="text-muted">Hasteer</span>
-              </h2>
-              <h5>Organising Committee Lead</h5>
-              <p class="lead" style="text-align: justify">Coming Soon..</p>
-            </div>
-            <div class="col-md-5">
-              <img class="d-block img-fluid" src="./static/nat.jpg" alt="" />
-            </div>
-          </div>
-        </div> -->
-
-        <!-- <hr class="featurette-divider" /> -->
-        <!-- /END THE FEATURETTES -->
-
-        <!-- Three columns of text below the carousel -->
-        <div
-          class="p-5 m-5 my-5 m-auto text-grey rounded"
-          style="background-color: #f5a98c"
-        >
-          <div class="px-0">
-            <h1 class="display-4 font-italic">Our Collaborations</h1>
-          </div>
-        </div>
-        <div class="row text-center m-5">
-          <!-- <h3>Announcing soon..</h3> -->
-          <div class="col-lg-5 col-md-6 mb-4 mb-lg-5">
-            <img
-              class="d-block img-fluid m-auto"
-              style="width: 300px;"
-              src="./static/India_logo.png"
-              alt=""
-            />
-
-            <!-- <h2>Heading</h2>
-            <p>
-              Donec sed odio dui. Etiam porta sem malesuada magna mollis
-              euismod. Nullam id dolor id nibh ultricies vehicula ut id elit.
-              Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
-              Praesent commodo cursus magna.
-            </p>
-            <p>
-              <a class="btn btn-secondary" href="#" role="button"
-                >View details »</a
-              >
-            </p> -->
-          </div>
-          <!-- /.col-lg-4 -->
-          <div class="col-lg-5 col-md-6 mb-4 mb-lg-5 ">
-            <img
-              class="d-block img-fluid w-100"
-              src="./static/partnership_office_new_delhi_black_page-0001.jpg"
-              alt=""
-            />
-
-            <!-- <h2>Heading</h2>
-            <p>
-              Duis mollis, est non commodo luctus, nisi erat porttitor ligula,
-              eget lacinia odio sem nec elit. Cras mattis consectetur purus sit
-              amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor
-              mauris condimentum nibh.
-            </p>
-            <p>
-              <a class="btn btn-secondary" href="#" role="button"
-                >View details »</a
-              >
-            </p> -->
-          </div>
-          <!-- /.col-lg-4 -->
-          <div class="col-lg-5 col-md-6 mb-4 mb-lg-5 ">
-            <img
-              class="d-block m-auto img-fluid "
-              style="width: 5000px;height: 158px;"
-              src="./static/Doctors Without Borders.png"
-              alt=""
-            />
-
-            <!-- <h2>Heading</h2>
-            <p>
-              Donec sed odio dui. Cras justo odio, dapibus ac facilisis in,
-              egestas eget quam. Vestibulum id ligula porta felis euismod
-              semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris
-              condimentum nibh, ut fermentum massa justo sit amet risus.
-            </p>
-            <p>
-              <a class="btn btn-secondary" href="#" role="button"
-                >View details »</a
-              >
-            </p> -->
-          </div>
-          <!-- /.col-lg-4 -->
-          <div class="col-lg-5 col-md-6 mb-4 mb-lg-5 ">
-            <img
-              class="d-block img-fluid w-100"
-              src="./static/0001.jpg"
-              alt=""
-            />
-
-            <!-- <h2>Heading</h2>
-            <p>
-              Duis mollis, est non commodo luctus, nisi erat porttitor ligula,
-              eget lacinia odio sem nec elit. Cras mattis consectetur purus sit
-              amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor
-              mauris condimentum nibh.
-            </p>
-            <p>
-              <a class="btn btn-secondary" href="#" role="button"
-                >View details »</a
-              >
-            </p> -->
-          </div>
-        </div>
-        <!-- /.row -->
-
-        <hr class="featurette-divider mt-5" />
-        <div
-          class="p-5 m-5 mx-auto text-grey rounded"
-          style="background-color: #f5a98c"
-        >
-          <div class="px-0">
-            <h1 class="display-4 font-italic">Contact Us</h1>
-            <p class="lead my-3">
-              We encourage you to stay in touch with us on social media! It is
-              the best way to keep track of conference updates, position
-              applications, and more. When you register, the team will
-              automatically be in touch with you.
-            </p>
-          </div>
-        </div>
-
-        <!-- Second Row [Team]-->
-        <section class="container rounded" style="background: #fff">
-          <div class="row p-5 mb-4">
-            <div class="col-lg-5 col-md-6 mb-4 mb-lg-5">
-              <!-- Card-->
-              <div class="card shadow-lg border-0 rounded">
-                <div class="card-body p-0">
-                  <!-- <img
-                  src="./static/mesh-contact.jpeg"
-                  alt=""
-                  class="w-100 card-img-top"
-                /> -->
-                  <div class="p-4">
-                    <h5 class="mb-0">Meshuwa K. Mawthoh</h5>
-                    <p class="small text-muted">Phone: +91 7085490761</p>
-                    <p class="small text-muted">Email: sgamimun@gmail.com</p>
-                    <p class="small text-muted">Post: Secretary General</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-5 col-md-6 mb-4 mb-lg-5">
-              <!-- Card-->
-              <div class="card shadow-lg border-0 rounded">
-                <div class="card-body p-0">
-                  <!-- <img
-                  src="./static/Simran Malhotra.jpg"
-                  alt=""
-                  class="w-100 card-img-top"
-                /> -->
-                  <div class="p-4">
-                    <h5 class="mb-0">Simran Malhotra</h5>
-                    <p class="small text-muted">Phone: +91 9999090695</p>
-                    <p class="small text-muted">
-                      Email: chargedaffairsamimun@gmail.com
-                    </p>
-                    <p class="small text-muted">Post: Charge D'Affairs</p>
-                    <!-- <ul class="social mb-0 list-inline mt-3">
-                    <li class="list-inline-item m-0">
-                      <a href="#" class="social-link"
-                        ><i class="fa fa-facebook-f"></i
-                      ></a>
-                    </li>
-                    <li class="list-inline-item m-0">
-                      <a href="#" class="social-link"
-                        ><i class="fa fa-twitter"></i
-                      ></a>
-                    </li>
-                    <li class="list-inline-item m-0">
-                      <a href="#" class="social-link"
-                        ><i class="fa fa-instagram"></i
-                      ></a>
-                    </li>
-                    <li class="list-inline-item m-0">
-                      <a href="#" class="social-link"
-                        ><i class="fa fa-linkedin"></i
-                      ></a>
-                    </li>
-                  </ul> -->
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-5 col-md-6 mb-4 mb-lg-5">
-              <!-- Card-->
-              <div class="card shadow-lg border-0 rounded">
-                <div class="card-body p-0">
-                  <!-- <img
-                  src="https://res.cloudinary.com/mhmd/image/upload/v1570799922/profile-2_ujssbj.jpg"
-                  alt=""
-                  class="w-100 card-img-top"
-                /> -->
-                  <div class="p-4">
-                    <h5 class="mb-0">Rohan Nagpal</h5>
-                    <p class="small text-muted">Phone: +91 9599441919</p>
-                    <p class="small text-muted">Email: dgamimun@gmail.com</p>
-                    <p class="small text-muted">Post: Director General</p>
-                    <!-- <ul class="social mb-0 list-inline mt-3">
-                    <li class="list-inline-item m-0">
-                      <a href="#" class="social-link"
-                        ><i class="fa fa-facebook-f"></i
-                      ></a>
-                    </li>
-                    <li class="list-inline-item m-0">
-                      <a href="#" class="social-link"
-                        ><i class="fa fa-twitter"></i
-                      ></a>
-                    </li>
-                    <li class="list-inline-item m-0">
-                      <a href="#" class="social-link"
-                        ><i class="fa fa-instagram"></i
-                      ></a>
-                    </li>
-                    <li class="list-inline-item m-0">
-                      <a href="#" class="social-link"
-                        ><i class="fa fa-linkedin"></i
-                      ></a>
-                    </li>
-                  </ul> -->
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-5 col-md-6 mb-4 mb-lg-5">
-              <!-- Card-->
-              <div class="card shadow-lg border-0 rounded">
-                <div class="card-body p-0">
-                  <!-- <img
-                  src="https://res.cloudinary.com/mhmd/image/upload/v1570799922/profile-2_ujssbj.jpg"
-                  alt=""
-                  class="w-100 card-img-top"
-                /> -->
-                  <div class="p-4">
-                    <h5 class="mb-0">Shubhangi Thakur</h5>
-                    <p class="small text-muted">Phone: +91 8700659269</p>
-                    <p class="small text-muted">Email: amimuninfo@gmail.com</p>
-                    <p class="small text-muted">Post: USG Delegate Affairs</p>
-                    <!-- <ul class="social mb-0 list-inline mt-3">
-                    <li class="list-inline-item m-0">
-                      <a href="#" class="social-link"
-                        ><i class="fa fa-facebook-f"></i
-                      ></a>
-                    </li>
-                    <li class="list-inline-item m-0">
-                      <a href="#" class="social-link"
-                        ><i class="fa fa-twitter"></i
-                      ></a>
-                    </li>
-                    <li class="list-inline-item m-0">
-                      <a href="#" class="social-link"
-                        ><i class="fa fa-instagram"></i
-                      ></a>
-                    </li>
-                    <li class="list-inline-item m-0">
-                      <a href="#" class="social-link"
-                        ><i class="fa fa-linkedin"></i
-                      ></a>
-                    </li>
-                  </ul> -->
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
+        <div id="six" class="imgcontainer"></div>
       </div>
-
-      <!-- FOOTER -->
-      <footer class="container mt-5">
-        <hr class="featurette-divider" />
-        <p class="float-end"><a href="#">Back to top</a></p>
-        <p>
-          &copy; Amity University <a href="#">Privacy</a>
-          <a href="#">Terms</a>
-          <span
-            ><ul class="social mb-0 list-inline mt-3">
-              <li class="list-inline-item m-0">
-                <a href="https://www.facebook.com/amitymun/" class="social-link"
-                  ><i class="fa fa-facebook-f"></i
-                ></a>
-              </li>
-              <li class="list-inline-item m-0">
-                <a
-                  href="https://instagram.com/amimun21?igshid=ndh9t257dsh"
-                  class="social-link"
-                  ><i class="fa fa-instagram"></i
-                ></a>
-              </li>
-              <li class="list-inline-item m-0">
-                <a
-                  href="https://www.linkedin.com/company/amimunconference/"
-                  class="social-link"
-                  ><i class="fa fa-linkedin"></i
-                ></a>
-              </li></ul
-          ></span>
+      <h2>A Message from Secratary General</h2>
+      <div class="section">
+        <div id="sec-gen-img"></div>
+        <p id="sec-gen-msg">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore
+          hic maiores id sint voluptatem et temporibus at accusantium fugiat,
+          quod earum obcaecati, ea iure perferendis totam beatae nostrum
+          consequuntur corporis esse doloribus sed error repellat dolorem
+          incidunt! Eveniet, quisquam, vel itaque eum beatae dolorem quia fugit
+          error molestiae vitae minus.
         </p>
-      </footer>
-    </main>
+      </div>
+
+      <div class="section-sponsors">
+        <h2>Our Sponsors</h2>
+        <div class="cursor"></div>
+        <div class="wrapper">
+          <div class="project-list">
+            <div class="project p-1">
+              <div class="project-title"><h1>Motionland</h1></div>
+              <div class="project-categ">Branding</div>
+              <div class="project-overlay"></div>
+            </div>
+            <div class="project p-2">
+              <div class="project-title"><h1>Focus Reactive</h1></div>
+              <div class="project-categ">Photography</div>
+              <div class="project-overlay"></div>
+            </div>
+            <div class="project p-3">
+              <div class="project-title"><h1>Aspect</h1></div>
+              <div class="project-categ">Web Design</div>
+              <div class="project-overlay"></div>
+            </div>
+            <div class="project p-4">
+              <div class="project-title"><h1>Logomark</h1></div>
+              <div class="project-categ">Branding</div>
+              <div class="project-overlay"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="footer-content">
+          <h3>code opacity</h3>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo iste corrupti doloribus odio sed!</p>
+          <ul class="socials">
+              <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+              <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+              <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+              <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+              <li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
+          </ul>
+      </div>
+      <div class="footer-bottom">
+          <p>copyright &copy;2020 Amity University.</p>
+      </div>
+  </footer>
     <script>
-      function myFunction() {
-        var dots = document.getElementById("dots");
-        var moreText = document.getElementById("more");
-        var btnText = document.getElementById("myBtn");
+      var $cursor = $(".cursor"),
+        $overlay = $(".project-overlay");
 
-        if (dots.style.display === "none") {
-          dots.style.display = "inline";
-          btnText.innerHTML = "Read more";
-          moreText.style.display = "none";
-        } else {
-          dots.style.display = "none";
-          btnText.innerHTML = "Read less";
-          moreText.style.display = "inline";
-        }
+      function moveCircle(e) {
+        TweenLite.to($cursor, 0.5, {
+          css: {
+            left: e.pageX,
+            top: e.pageY,
+          },
+          delay: 0.03,
+        });
       }
+
+      $(".p-1").hover(function () {
+        $(".cursor").css({ "background-image": "url(image-1.jpg)" });
+      });
+      $(".p-2").hover(function () {
+        $(".cursor").css({ "background-image": "url(image-2.jpg)" });
+      });
+      $(".p-3").hover(function () {
+        $(".cursor").css({ "background-image": "url(image-3.jpg)" });
+      });
+      $(".p-4").hover(function () {
+        $(".cursor").css({ "background-image": "url(image-4.jpg)" });
+      });
+
+      var flag = false;
+      $($overlay).mousemove(function () {
+        flag = true;
+        TweenLite.to($cursor, 0.3, { scale: 1, autoAlpha: 1 });
+        $($overlay).on("mousemove", moveCircle);
+      });
+
+      $($overlay).mouseout(function () {
+        flag = false;
+        TweenLite.to($cursor, 0.3, { scale: 0.1, autoAlpha: 0 });
+      });
     </script>
-    <script src="app.js"></script>
-    <!-- <div class="container"></div> -->
-
-    <!-- Optional JavaScript; choose one of the two! -->
-
-    <!-- Option 1: Bootstrap Bundle with Popper -->
     <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"
+      integrity="sha512-eP6ippJojIKXKO8EPLtsUMS+/sAGHGo1UN/38swqZa1ypfcD4I0V/ac5G3VzaHfDaklFmQLEs51lhkkVaqg60Q=="
       crossorigin="anonymous"
+      referrerpolicy="no-referrer"
     ></script>
-
-    <!-- Option 2: Separate Popper and Bootstrap JS -->
-    <!--
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
-    -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/ScrollTrigger.min.js"
+      integrity="sha512-CPA5LMoJI/a5HkSIAKcBtFXe4gqGjPUL2ExF/3PmhrrHI17wod9xOqqF+0WZQRKIIq0KwF8oG5BaiWobtrke3A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="./main.js"></script>
   </body>
 </html>
