@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Block Reveal Effect On Scroll</title>
+        <link rel="stylesheet" href="styles1.css" />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    </head>
+    <body>
+        <div class="smooth-scroll-wrapper">
+            <div class="content">
+                <div class="container">
+                    <h1 class="text">Amity International Model United Nations</h1>
+                    <p class="text">
+                        The first e-Edition of Amity International Model United Nations is a simulation of the United Nations spanning over two days. At AMIMUN, delegates gain profound knowledge of diplomacy, global relations, and the inner workings of the United Nations. Through the past nine editions, AMIMUN has set a standard of MUNs throughout the Nation with its innovative themes. To continue the same legacy, the first e-Edition of AMIMUN aims to create a platform where deliberation on issues that address global problems and drafting resolutions will enhance critical thinking, public speaking, and leadership skills. Delegates will become conscious of the causes of conflict between nations. Thus, AMIMUN follows through with the Preamble to the Charter of the United Nations: "To practice tolerance and live together in peace with one another as good neighbours”.
+                    </p>
+                </div>
+
+                <div class="container">
+                    <h1 class="text">Absolute Commitment</h1>
+                
+                        <div class="img">
+                            <img src="https://www.amity.edu/AMIMUN/static/img-2.JPG" alt="" />
+                        </div>
+                        <p class="text">
+                            The Secretariat of Amity International Model United Nations Conference consists of people who have consistently proven themselves as hardworking, committed, and knowledgeable. Each person is selected ensuring, AMIMUN's ideals are upheld and executed with the utmost dedication. The secretariat ensures the smooth running of all the committees while maintaining the highest level of hospitality. Thus, we remain committed to the promise of quality and guarantee an enriching experience.
+                        </p>
+                    
+                </div>
+
+                <div class="container">
+                    <h1 class="text">International Platform</h1>
+                    <div class="img">
+                        <img src="https://www.amity.edu/AMIMUN/static/DSC_0567-min.JPG" alt="" />
+                    </div>
+                    <p class="text">
+                        Amity University takes the honor of being an institute where several people from various backgrounds interact and work with one another. AMIMUN staying on the same ideal has created an international platform, where ideas, opinions, and views are propagated. The same is promoted by participation of international delegates and past collaborations with organizations such as the United Nations Information Centre for India and Bhutan, Amnesty International, and Doctors Without Borders, to effectively impart the knowledge of global affairs, diplomacy, and international policy to the students and to add authenticity to the experience.
+                    </p>
+                </div>
+
+                <div class="container">
+                    <h1 class="text">Creativity & Innovation</h1>
+                    <div class="img">
+                        <img src="https://www.amity.edu/AMIMUN/static/DSC_0360-min.JPG" alt="" />
+                    </div>
+                    <p class="text">
+                        Amity University strives to promote creativity in terms of education. We believe in the overall development of students through participation in various disciplines and activities
+                    </p>
+                </div>
+
+                <div class="container">
+                    <h1 class="text">Brush Up Ingenuity</h1>
+                    <div class="img">
+                        <img src="https://www.amity.edu/AMIMUN/static/5.jpg" alt="" />
+                    </div>
+                    <p class="text">
+                        AMIMUN has successfully created a platform where delegates have had the option to master and refine their strategic abilities. The E-edition AMIMUN will encourage the manner of thinking to create solutions for some grave world issues.
+                    </p>
+                </div>
+
+                <div class="container">
+                    <h1 class="text">Engaging & Paramount Motions</h1>
+                    <div class="img">
+                        <img src="https://www.amity.edu/AMIMUN/static/WA_1-min.jpg" alt="" />
+                    </div>
+                    <p class="text">
+                       The AMIMUN fraternity brings forth the most engaging motions aimed to facilitate the highest quality of debate. Deliberation on challenging global issues will sharpen the members with the learnings of the United Nations and assist them with understanding the current world request.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+
+        <script>
+            const body = document.body,
+                scrollWrap = document.getElementsByClassName("smooth-scroll-wrapper")[0],
+                height = scrollWrap.getBoundingClientRect().height - 1,
+                speed = 0.04;
+
+            var offset = 0;
+
+            body.style.height = Math.floor(height) + "px";
+
+            function smoothScroll() {
+                offset += (window.pageYOffset - offset) * speed;
+
+                var scroll = "translateY(-" + offset + "px) translateZ(0)";
+                scrollWrap.style.transform = scroll;
+
+                callScroll = requestAnimationFrame(smoothScroll);
+            }
+
+            smoothScroll();
+
+            $(function () {
+                var elements = $(".text, .img").toArray();
+                $(window).scroll(function () {
+                    elements.forEach(function (item) {
+                        if ($(this).scrollTop() >= $(item).offset().top - 600) {
+                            $(item).addClass("reveal");
+                        }
+                    });
+                });
+                elements.forEach(function (item) {
+                    if ($(this).scrollTop() >= $(item).offset().top - 600) {
+                        $(item).addClass("reveal");
+                    }
+                });
+            });
+        </script>
+    </body>
+</html>
