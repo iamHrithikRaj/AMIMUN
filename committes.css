@@ -39,9 +39,13 @@
   top: -6px;
 }
 
+.margin-top {
+margin-top: 40px;
+}
+
 .card h1 {
   position: relative;
-  padding: 190px 0px 100px 10px;
+  padding: 250px 20px 100px 10px;
   width: 90%;
 }
 
@@ -51,21 +55,39 @@
   top: -6%;
   left: -6%;
 }
+.gray-text {
+  color: #808080;
+}
 
 .card-color-0 {
-  background-color: #eb5160;
+  background-color: #FFFFFF;
 }
 
 .card-color-1 {
-  background-color: #8f3985;
+  background-color: #FFFFFF;
 }
 
 .card-color-2 {
-  background-color: #8daa91;
+  background-color: #FFFFFF;
 }
 
 .card-color-3 {
-  background-color: #888da7;
+  background-color: #FFFFFF;
+}
+.card-color-4 {
+  background-color: #FFFFFF;
+}
+.card-color-5 {
+  background-color: #FFFFFF;
+}
+.card-color-6 {
+  background-color: #FFFFFF;
+}
+
+/* Add border */
+.solid {
+  border-style: solid;
+  border-color: #808080;
 }
 
 /* The cover (expanding background) */
@@ -135,7 +157,7 @@
   transform: rotate(-45deg);
 }
 
-/* 
+/*
   ** Transitions
   */
 
@@ -193,7 +215,7 @@
   transition-delay: 1000ms;
 }
 
-/* 
+/*
   ** Media Queries
   */
 
