@@ -101,3 +101,6 @@ anime.timeline().add({
   duration: 2000,
   delay: (el, i) => 300 + 40 * i,
 });
+
+
+var cool = 0;
