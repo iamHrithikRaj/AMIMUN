@@ -6,15 +6,13 @@
 
 /* Cards */
 .card-column {
-  width: 50%;
+  width: 33.33%;
   float: left;
   padding: 4%;
   box-sizing: border-box;
 }
 
-.column-1 {
-  padding-top: 100px;
-}
+
 
 .card {
   width: 92%;
@@ -40,13 +38,14 @@
 }
 
 .margin-top {
-margin-top: 40px;
+margin-top: 0px;
 }
 
 .card h1 {
   position: relative;
-  padding: 250px 20px 100px 10px;
-  width: 90%;
+  font-size: 20px;
+  padding: 160px 50px 50px 0px;
+  width: 100%;
 }
 
 .card > img {
@@ -88,6 +87,7 @@ margin-top: 40px;
 .solid {
   border-style: solid;
   border-color: #808080;
+  border-bottom:
 }
 
 /* The cover (expanding background) */
@@ -218,14 +218,33 @@ margin-top: 40px;
 /*
   ** Media Queries
   */
+  @media screen and (max-width: 1200px) {
+    .card-column {
+      width: 50%;
+    }
+
+    .card h1 {
+      position: relative;
+      font-size: 20px;
+      padding: 260px 50px 50px 0px;
+      width: 100%;
+    }
+
+    .open-content img {
+      margin-top: 40px;
+    }
+  }
 
 @media screen and (max-width: 600px) {
   .card-column {
     width: 90%;
   }
 
-  .column-1 {
-    padding-top: 0px;
+  .card h1 {
+    position: relative;
+    font-size: 20px;
+    padding: 300px 70px 50px 0px;
+    width: 100%;
   }
 
   .open-content img {
