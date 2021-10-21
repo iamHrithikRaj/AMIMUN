@@ -93,7 +93,7 @@ gsap.to("#holder2", {
 });
 
 anime.timeline().add({
-  targets: ".header",
+  targets: [".header, .theme-eng"],
   opacity: [0, 1],
   translateY: [80, 0],
   translateZ: 0,
