@@ -64,13 +64,27 @@ li {
   align-items: center;
 }
 
-.sub-menu-1 {
+.dropdown-menu {
   display: none;
   position: absolute;
-  bottom: 0;
-  background-color: gray;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  margin: 80px;
+}
+.dropdown-item {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
 }
 
+
+.team-menu:hover + .dropdown-menu {
+  display: block;
+
+}
 
 
 
