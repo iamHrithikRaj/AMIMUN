@@ -10,6 +10,7 @@
     rgba(252, 176, 69, 1) 100%
   );
 
+  border-radius: 5px;
   height: 340px;
   transition: all 0.2s ease-out;
   overflow: hidden;

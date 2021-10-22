@@ -1,79 +1,74 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  html,
-  body {
-    background: #0f0f0f;
-    color: #fff;
-    width: 90%;
-    margin: 40px auto;
-    font-family: "GrandSlang-Roman";
-    font-size: 50px;
-  }
-  
+.acc-block {
+  width: 100%;
+  height: 160px;
+  display: flex;
+  justify-content: space-between;
+  padding: 40px;
+  align-items: center;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.233);
+  cursor: pointer;
+}
+
+.acc-title{
+  font-size: 50px;
+  text-align: center;
+}
+
+.acc-holder{
+  margin: 0px 50px;
+}
+
+.acc-no {
+  color: #eb4f1a;
+  font-size: 50px;
+}
+
+.acc-toggle-icon {
+  color: #383838;
+  font-size: 50px;
+}
+
+.list-holder {
+  padding: 0;
+}
+
+.list {
+  padding: 4px 0;
+  list-style: none;
+  text-align: center;
+  font-size: 26px;
+}
+
+.list:first-child {
+  padding-top: 40px;
+}
+
+.list:last-child {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding-bottom: 40px;
+}
+
+@media (max-width: 900px) {
   .acc-block {
-    width: 100%;
-    height: 160px;
-    display: flex;
-    justify-content: space-between;
-    padding: 40px;
-    align-items: center;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-    cursor: pointer;
+    font-size: 20px;
+    padding: 10px;
   }
-  
-  .acc-no {
-    color: #eb4f1a;
+  .list-holder .list {
+    font-size: 20px;
   }
-  
-  .acc-toggle-icon {
-    color: #383838;
+  .list:first-child {
+    padding-top: 10px;
   }
-  
-  ul {
-    padding: 0;
+
+  .list:last-child {
+    padding-bottom: 10px;
   }
-  
-  ul li {
-    padding: 4px 0;
-    list-style: none;
-    font-size: 26px;
-  }
-  
-  li:first-child {
-    padding-top: 40px;
-  }
-  
-  li:last-child {
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-    padding-bottom: 40px;
-  }
-  
-  @media (max-width: 900px) {
-    .acc-block {
-      font-size: 20px;
-      padding: 10px;
-    }
-    ul li {
-      font-size: 20px;
-    }
-    li:first-child {
-      padding-top: 10px;
-    }
-  
-    li:last-child {
-      padding-bottom: 10px;
-    }
-  }
-  
-  [data-collapsible] {
-    cursor: pointer;
-  }
-  
-  .heightZero {
-    height: 0px;
-  }
-  
+}
+
+[data-collapsible] {
+  cursor: pointer;
+}
+
+.heightZero {
+  height: 0px;
+}

@@ -38,6 +38,11 @@ nav {
   z-index: 20;
 }
 
+.quote{
+  text-align:right; width:100%; color: #fff;
+  padding: 20px 0;
+}
+
 .menu-bar{
   text-align: center;
   width: 100%;
@@ -84,7 +89,6 @@ nav {
 }
 
 #logo {
-  border: 1px solid ;
   height: 100%;
   display: flex;
   justify-content: center;
@@ -466,14 +470,14 @@ footer {
 }
 .socials a {
   text-decoration: none;
-  color: #000;
+  color: grey;
 }
 .socials a i {
   font-size: 1.1rem;
   transition: color 0.4s ease;
 }
 .socials a:hover i {
-  color: aqua;
+  color: #000;
 }
 
 .footer-bottom {

@@ -108,7 +108,7 @@ anime.timeline().add({
 document.getElementById("vid").play();
 
 
-var countDownDate = new Date("Jan 5, 2022 15:37:25").getTime();
+var countDownDate = new Date("Jan 22, 2022 15:37:25").getTime();
 
 // Update the count down every 1 second
 var x = setInterval(function() {
