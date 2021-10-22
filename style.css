@@ -55,7 +55,6 @@ li {
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 1px solid #000;
 }
 
 .links li {
@@ -66,7 +65,7 @@ li {
 }
 
 .sub-menu-1 {
-  /* display: none; */
+  display: none;
   position: absolute;
   bottom: 0;
   background-color: gray;

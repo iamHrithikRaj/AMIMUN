@@ -93,7 +93,7 @@ gsap.to("#holder2", {
 });
 
 anime.timeline().add({
-  targets: [".header, .theme-eng"],
+  targets: [".header, .theme-eng", ".header-text"],
   opacity: [0, 1],
   translateY: [80, 0],
   translateZ: 0,
@@ -101,6 +101,7 @@ anime.timeline().add({
   duration: 2000,
   delay: (el, i) => 300 + 40 * i,
 });
+
 
 
 var cool = 0;
