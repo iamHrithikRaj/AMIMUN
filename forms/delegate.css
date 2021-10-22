@@ -12,6 +12,7 @@ input, select {
   margin: 10px 0;
   border: 0.1px solid #000;
   border-radius: 2px;
+  font-size: 17px;
 }
 
 .name {
@@ -45,7 +46,7 @@ input, select {
   height: 200px;
   margin: 20px 0;
   padding: 10px;
-  font-size: 20px;
+  font-size: 17px;
 }
 
 .ques label{
@@ -82,11 +83,45 @@ input, select {
 
 
 
-#one-1,
-#one-2,
-#two-1,
-#two-2,
-#three-1,
-#three-2 {
+.select-one-1,
+.select-one-2,
+.select-two-1,
+.select-two-2,
+.select-three-1,
+.select-three-2 {
   width: 100%;
 }
+
+.select-wrapper {
+  height: 100%;
+  padding: 2em;
+  display: grid;
+  place-content: center;
+}
+
+label {
+  margin-top: 1.5em;
+  margin-bottom: .5em;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+select {
+  padding: 1em;
+  width: 130%;
+  border-radius: .2em;
+  border: 1px solid #acacac;
+  color: #181820;
+  
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  
+  background: url('https://cdn1.iconfinder.com/data/icons/arrows-vol-1-4/24/dropdown_arrow-512.png');
+  background-repeat: no-repeat;
+  background-size: 15px 15px;
+  background-position: right;
+  background-origin: content-box;
+}
+

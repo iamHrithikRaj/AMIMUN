@@ -15,8 +15,8 @@
     />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/TweenMax.min.js"></script>
     <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="./resources.css" />
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="./country-matrix.css" />
     <title>AMIMUN'22 | Home</title>
   </head>
   <body>
@@ -24,37 +24,37 @@
       <nav>
         <div class="menu-bar">
           <ul>
-            <li><a href="./about.html">About</a></li>
+            <li><a href="../about.html">About</a></li>
             <li>
               Our Team <i class="fas fa-chevron-down"></i>
               <div class="sub-menu-1">
                 <ul>
                   <li>
-                    <a href="./our-team/guiding-light.html"
+                    <a href="../our-team/guiding-light.html"
                       >Our Guiding Light</a
                     >
                   </li>
                   <li>
-                    <a href="./our-team/advisory-board.html">Advisory Board</a>
+                    <a href="../our-team/advisory-board.html">Advisory Board</a>
                   </li>
                   <li>
-                    <a href="./our-team/secretariate.html">Secretariat</a>
+                    <a href="../our-team/secretariate.html">Secretariat</a>
                   </li>
                   <li>
-                    <a href="./our-team/org-committee.html"
+                    <a href="../our-team/org-committee.html"
                       >Organising Committee</a
                     >
                   </li>
                 </ul>
               </div>
             </li>
-            <li><a href="./messages.html">Messages</a></li>
-            <li><a href="./committes.html">Committees</a></li>
+            <li><a href="../messages.html">Messages</a></li>
+            <li><a href="../committes.html">Committees</a></li>
           </ul>
         </div>
         <div id="logo">
-          <a href="./index.html"
-            ><img src="./assets/logo.svg" alt="AMIMUN logo" srcset=""
+          <a href="../index.html"
+            ><img src="../assets/logo.svg" alt="AMIMUN logo" srcset=""
           /></a>
         </div>
         <div class="menu-bar">
@@ -64,10 +64,10 @@
               <div class="sub-menu-1">
                 <ul>
                   <li>
-                    <a href="./forms/delegate.html">Delegate Application</a>
+                    <a href="../forms/delegate.html">Delegate Application</a>
                   </li>
                   <li>
-                    <a href="./forms/international.html"
+                    <a href="../forms/international.html"
                       >International Press Application</a
                     >
                   </li>
@@ -76,7 +76,36 @@
             </li>
             <li>Gallery</li>
             <li>AMIMUN Club</li>
-            <li><a href="./resources.html">Resources</a></li>
+            <li>
+              <a href="./resources.html">Resources</a>
+              <i class="fas fa-chevron-down"></i>
+              <div class="sub-menu-1">
+                <ul>
+                  <li>
+                    <a href="./resources/country-matrix.html">Country Matrix</a>
+                  </li>
+                  <li>
+                    <a href="./resources/background-guides.html"
+                      >Background Guides</a
+                    >
+                  </li>
+                  <li>
+                    <a href="./resources/awards-criteria.html"
+                      >Awards Criteria</a
+                    >
+                  </li>
+                  <li>
+                    <a href="./resources/conference-schedule.html">
+                      Conference Schedule</a
+                    >
+                  </li>
+
+                  <li>
+                    <a href="#bottom"> Contact Us</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
           </ul>
         </div>
       </nav>
@@ -90,7 +119,7 @@
           <div class="acc-block">
             <div class="acc-no">(01)</div>
             <div class="acc-title">
-              United Nations Human <br />Right Council
+              United Nations Human <br />Rights Council
             </div>
             <div class="acc-toggle-icon">
               <ion-icon name="add-outline"></ion-icon>
@@ -756,7 +785,7 @@
             ></a>
           </li>
         </ul>
-        <p>copyright &copy;2022 Amity University</p>
+        <p>Copyright &copy;2022 Amity University</p>
       </div>
     </footer>
     <script>
@@ -795,7 +824,7 @@
 
       $($overlay).mouseout(function () {
         flag = false;
-        TweenLite.to($cursor, 0.3, { scale: 0.1, autoAlpha: 0 });
+        TweenLite.to($cursor, 0.1, { scale: 0.1, autoAlpha: 0 });
       });
 
       let parent = document.querySelectorAll("[data-collapse");
@@ -848,6 +877,6 @@
     ></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
-    <script src="./main.js"></script>
+    <script src="../main.js"></script>
   </body>
 </html>
