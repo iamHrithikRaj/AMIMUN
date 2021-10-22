@@ -84,6 +84,7 @@ nav {
 }
 
 #logo {
+  border: 1px solid ;
   height: 100%;
   display: flex;
   justify-content: center;
@@ -408,7 +409,13 @@ nav .links li a {
 hr {
   text-align: center;
   width: 400px;
-  margin: auto;
+  margin: 30px auto;
+}
+
+#demo{
+  color: #fff;
+  font-size: 40px;
+  padding: 20px;
 }
 
 footer {

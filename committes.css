@@ -1,10 +1,12 @@
 .card-container {
   position: relative;
-  background: rgb(58, 58, 180);
+  background: rgb(255, 255, 255);
   background: linear-gradient(
     90deg,
-    rgba(58, 58, 180, 1) 24%,
-    rgba(253, 29, 29, 1) 100%,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(27, 27, 138, 1) 0%,
+    rgba(91, 91, 170, 1) 50%,
+    rgba(147, 22, 22, 1) 100%,
     rgba(252, 176, 69, 1) 100%
   );
 
@@ -22,10 +24,9 @@
   color: gray;
 }
 
-
-.card-icon img{
-  max-width:100%;
-max-height:100%;
+.card-icon img {
+  max-width: 100%;
+  max-height: 100%;
 }
 .card-icon {
   position: absolute;
@@ -38,8 +39,10 @@ max-height:100%;
 .preview-text {
   position: absolute;
   bottom: 0;
+  width: 100%;
   left: 0;
   padding: 30px;
+  text-align: center;
   font-size: 20px;
   color: #fff;
 }
@@ -57,13 +60,16 @@ max-height:100%;
 }
 
 .card-container:hover {
-  background: rgb(58, 58, 180);
+  background: rgb(255, 255, 255);
   background: linear-gradient(
     90deg,
-    rgba(58, 58, 180, 1) 24%,
-    rgba(253, 29, 29, 1) 100%,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(27, 27, 138, 1) 0%,
+    rgba(91, 91, 170, 1) 50%,
+    rgba(147, 22, 22, 1) 100%,
     rgba(252, 176, 69, 1) 100%
   );
+
   color: #fff;
   transition: all 0.2s ease-out;
 }
@@ -103,16 +109,30 @@ max-height:100%;
 .grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
   grid-gap: 50px;
   margin: 0px 50px;
   margin-bottom: 100px;
 }
 
+@media (max-width: 900px) {
+  .grid {
+    grid-template-columns: 1fr 1fr;
+  }
 
-@media (max-width: 400px) {
+  .card-circle {
+    width: 180px;
+    height: 180px;
+  }
+}
+
+@media (max-width: 700px) {
   .grid {
     grid-template-columns: 1fr;
+  }
+
+  .card-circle {
+    width: 100px;
+    height: 100px;
   }
 }
 
