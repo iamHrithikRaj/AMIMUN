@@ -138,6 +138,28 @@ nav .links li a {
 #main #six {
   width: 250px;
   height: 400px;
+  
+}
+
+@media only screen and (max-width: 1250px) {
+  
+  #main #two,
+  #main #three,
+  #main #four,
+  #main #five {
+    visibility: hidden;
+  }
+}
+
+@media only screen and (max-width: 1010px) {
+  #main #one,
+  #main #two,
+  #main #three,
+  #main #four,
+  #main #five,
+  #main #six {
+    visibility: hidden;
+  }
 }
 
 #main #one {
@@ -180,6 +202,11 @@ nav .links li a {
   left: 50%;
   transform: translate(-50%, -50%) scale(1.2);
   overflow: hidden;
+}
+@media only screen and (max-width: 600px ) {
+  #videoplayer {
+    width: 100%;
+  }
 }
 
 #videoplayer video {
@@ -259,6 +286,12 @@ nav .links li a {
   width: 30%;
 }
 
+@media only screen and (max-width: 900px ) {
+  .img-text-container {
+    display: none;
+  }
+}
+
 .img-text-container p {
   margin-top: 20px;
   text-align: center;
@@ -279,6 +312,13 @@ nav .links li a {
   line-height: 40px;
   display: flex;
   margin-left: 40px;
+}
+
+@media only screen and (max-width: 900px ) {
+  #sec-gen-msg {
+    width: 100%;
+    text-align: center;
+  }
 }
 
 .section-sponsors {
@@ -361,6 +401,13 @@ footer {
   flex-direction: row;
   text-align: center;
 }
+
+@media only screen and (max-width: 900px ) {
+  .footer-content {
+    flex-direction: column;
+  }
+}
+
 .footer-content h3 {
   font-size: 1.8rem;
   font-weight: 400;
