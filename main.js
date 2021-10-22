@@ -22,7 +22,6 @@ t.to("#videoplayer", { width: "100%", ease: "Expo.easeInOut" });
 //   ease: "Expo.easeInOut",
 // });
 
-
 let t1 = gsap.timeline({
   scrollTrigger: {
     trigger: "#main",
@@ -32,7 +31,11 @@ let t1 = gsap.timeline({
   },
 });
 
-t1.to(".videoplayer-center-text", { opacity: "1", ease: "Expo.easeInOut", visibility: "visible" }, 0.3);
+t1.to(
+  ".videoplayer-center-text",
+  { opacity: "1", ease: "Expo.easeInOut", visibility: "visible" },
+  0.3
+);
 
 // gsap.to(
 //   ".videoplayer-center-text",
@@ -102,6 +105,4 @@ anime.timeline().add({
   delay: (el, i) => 300 + 40 * i,
 });
 
-
-
-var cool = 0;
+document.getElementById("vid").play();

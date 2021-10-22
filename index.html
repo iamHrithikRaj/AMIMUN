@@ -5,11 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/9cfd8f728d.js"
+      crossorigin="anonymous"
+    ></script>
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-
     <link rel="stylesheet" href="style.css" />
     <title>AMIMUN'22 | Home</title>
   </head>
@@ -19,43 +22,45 @@
         Registration for AMIMUN 2022 has opened. <a href="#">Register now</a> !
       </p>
       <nav>
-        <ul class="links">
-          <li><a href="./about.html">About</a></li>
-          <li class="test">
-            <a href="#" class="team-menu">Our Team</a>
-            <div class="dropdown-menu">
-              <ul>
-                <div class="dropdown-item">
-                <li><a href="">Our Guiding Light</a></li>
-                <li><a href="">Advisory Board</a></li>
-                <li><a href="">Secretariat</a></li>
-                <li><a href="">Organising Committee</a></li>
-                </div>
-              </ul>
-            </div>
-          </li>
-          <li><a href="./messages.html">Messages</a></li>
-          <li><a href="./committes.html">Committees</a></li>
-        </ul>
+        <div class="menu-bar">
+          <ul>
+            <li><a href="./about.html">About</a></li>
+            <li>
+              Our Team <i class="fas fa-chevron-down"></i>
+              <div class="sub-menu-1">
+                <ul>
+                  <li><a href="./our-team/guiding-light.html">Our Guiding Light</a></li>
+                  <li><a href="./our-team/advisory-board.html">Advisory Board</a></li>
+                  <li><a href="./our-team/secretariate.html">Secretariat</a></li>
+                  <li><a href="./our-team/org-committee.html">Organising Committee</a></li>
+                </ul>
+              </div>
+            </li>
+            <li><a href="./messages.html">Messages</a></li>
+            <li><a href="./committes.html">Committees</a></li>
+          </ul>
+        </div>
         <div id="logo">
           <a href="./index.html"
             ><img src="./assets/logo.png" alt="AMIMUN logo" srcset=""
           /></a>
         </div>
-        <ul class="links">
-          <li class="test">
-            <a href="#" class="team-menu">Apply</a>
-            <div class="dropdown-menu">
-              <ul>
-                <li><a href="" class="dropdown-item">Delegate Application</a></li>
-                <li><a href="" class="dropdown-item">International Press Application</a></li>
-              </ul>
-            </div>
-          </li>
-            <li><a href="#">Gallery</a></li>
-          <li><a href="#">AMIMUN Club</a></li>
-          <li><a href="#">Resources</a></li>
-        </ul>
+        <div class="menu-bar">
+          <ul>
+            <li>
+              Apply <i class="fas fa-chevron-down"></i>
+              <div class="sub-menu-1">
+                <ul>
+                  <li><a href="./forms/delegate.html">Delegate Application</a></li>
+                  <li><a href="./forms/international.html">International Press Application</a></li>
+                </ul>
+              </div>
+            </li>
+            <li>Gallery</li>
+            <li>Join Club</li>
+            <li>Resources</li>
+          </ul>
+        </div>
       </nav>
 
       <div class="header-section">
@@ -69,7 +74,7 @@
           <div id="two" class="imgcontainer"></div>
           <div id="three" class="imgcontainer"></div>
         </div>
-         <div id="videoplayer">
+        <div id="videoplayer">
           <div class="videoplayer-center-text">
             <h1 class="center-text">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi,
@@ -77,13 +82,20 @@
             </h1>
             <div class="btn">REGISTER</div>
           </div>
-          <video src="./assets/movie.mp4" autoplay></video>
+          <video
+            id="vid"
+            src="./assets/movie.mp4"
+            type="video/mp4"
+            autoplay
+            muted
+            loop
+          ></video>
         </div>
         <div id="holder2" class="holder">
           <div id="four" class="imgcontainer"></div>
           <div id="five" class="imgcontainer"></div>
         </div>
-        <div id="six" class="imgcontainer"></div> 
+        <div id="six" class="imgcontainer"></div>
       </div>
       <h2 class="heading">A Message from Secratary General</h2>
       <div class="section">
@@ -137,7 +149,7 @@
 
       <div class="section-sponsors">
         <h2 class="heading">Our Sponsors</h2>
-        <h3 class="comming-soon">Comming Soon</h3>
+        <h3 class="comming-soon">Coming Soon</h3>
         <!-- <div class="cursor"></div> -->
         <!-- <div class="wrapper">
           <div class="project-list">
@@ -167,7 +179,7 @@
 
       <div class="section-sponsors">
         <h2 class="heading">Our Collaborators</h2>
-        <h3 class="comming-soon">Comming Soon</h3>
+        <h3 class="comming-soon">Coming Soon</h3>
         <!-- <div class="cursor"></div>
         <div class="wrapper">
           <div class="project-list">

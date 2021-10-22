@@ -15,8 +15,9 @@ body {
 }
 
 a {
-  text-decoration: none;
-  font-weight: 500;
+  text-decoration: none !important;
+  font-weight: 500 !important;
+  color: #000;
 }
 
 #back {
@@ -33,6 +34,53 @@ nav {
   margin-top: 80px;
   width: 100%;
   height: 100px;
+  text-align: center;
+  z-index: 20;
+}
+
+.menu-bar{
+  text-align: center;
+  width: 100%;
+  z-index: 20;
+}
+
+.menu-bar ul{
+  display: inline-flex;
+  list-style: none;
+}
+
+.menu-bar ul li{
+  width: 120px;
+  padding: 15px;
+}
+
+.sub-menu-1{
+  display: none;
+}
+
+.menu-bar ul li:hover .sub-menu-1{
+  display: block;
+  position: absolute;
+  margin-top: 15px;
+  margin-left: -30px;
+  backdrop-filter: blur(10px);
+  background-color: #eee;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.menu-bar ul li:hover .sub-menu-1 ul{
+  display: block;
+}
+
+.menu-bar ul li:hover .sub-menu-1 ul li{
+  width: 150px;
+  padding: 10px;
+  border-bottom: 1px dotted;
+}
+
+.menu-bar ul li:hover .sub-menu-1 ul li:last-child{
+  border-bottom: none;
 }
 
 #logo {
@@ -50,7 +98,7 @@ li {
   width: 400px;
 }
 
-.links {
+/* .links {
   width: 100%;
   display: flex;
   justify-content: center;
@@ -62,32 +110,11 @@ li {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.dropdown-menu {
-  display: none;
-  position: absolute;
-  background-color: #f1f1f1;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-  margin: 80px;
-}
-.dropdown-item {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-}
-
-
-.team-menu:hover + .dropdown-menu {
-  display: block;
-
-}
+} */
 
 
 
+/* 
 nav .links li a {
   color: rgb(94, 94, 224);
   font-size: 15px;
@@ -95,7 +122,7 @@ nav .links li a {
 
 nav .links li a {
   margin: 20px;
-}
+} */
 
 
 
@@ -223,23 +250,23 @@ nav .links li a {
 }
 
 #main #one {
-  background-image: url(./assets/img-1.jpg);
+  background-image: url(./assets/image-1.jpg);
 }
 
 #main #two {
-  background-image: url(./assets/img-2.jpg);
+  background-image: url(./assets/image-2.jpg);
 }
 #main #three {
-  background-image: url(./assets/img-3.jpg);
+  background-image: url(./assets/image-3.jpg);
 }
 #main #four {
-  background-image: url(./assets/img-4.jpg);
+  background-image: url(./assets/image-4.jpg);
 }
 #main #five {
-  background-image: url(./assets/img-5.jpg);
+  background-image: url(./assets/image-5.jpg);
 }
 #main #six {
-  background-image: url(./assets/img-6.jpg);
+  background-image: url(./assets/image-6.jpg);
 }
 
 .videoplayer-center-text {
@@ -304,7 +331,7 @@ nav .links li a {
   width: 100%;
   height: 600px;
   margin-right: 40px;
-  background-image: url(./assets/img-5.jpg);
+  background-image: url(./assets/sec-gen.JPG);
 }
 
 #sec-gen-msg {
