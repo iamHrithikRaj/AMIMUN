@@ -563,7 +563,6 @@ iframe {
 }
 
 @media only screen and (max-width: 414px) {
-
   .footer-bottom {
     width: 100vw;
     padding: 20px 0;
@@ -650,7 +649,7 @@ iframe {
     display: block;
   }
 
-  #timer {
+  #responsive-timer {
     color: #000;
     font-size: 20px;
     text-align: center;
@@ -733,9 +732,7 @@ iframe {
   }
 }
 
-
 @media only screen and (max-width: 639px) and (min-width: 415px) {
-
   .footer-bottom {
     width: 100vw;
     padding: 20px 0;
@@ -823,11 +820,12 @@ iframe {
     display: block;
   }
 
-  #timer {
+  #responsive-timer {
     color: #000;
     font-size: 20px;
     text-align: center;
   }
+
   .footer-content {
     flex-direction: column;
   }
