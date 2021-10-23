@@ -1,41 +1,33 @@
 gsap.registerPlugin(ScrollTrigger);
 
-let t = gsap.timeline({
-  scrollTrigger: {
-    trigger: "#main",
-    start: "top top",
-    scrub: 2,
-    pin: "#main",
-  },
-});
+if (screen.width > 414) {
+  let t = gsap.timeline({
+    scrollTrigger: {
+      trigger: "#main",
+      start: "top top",
+      scrub: 2,
+      pin: "#main",
+    },
+  });
 
-t.to("#videoplayer", { width: "100%", ease: "Expo.easeInOut" });
+  let t1 = gsap.timeline({
+    scrollTrigger: {
+      trigger: "#main",
+      start: "top top",
+      scrub: 2,
+      pin: "#main",
+    },
+  });
 
-// gsap.to("#videoplayer", {
-//   scrollTrigger: {
-//     trigger: "#main",
-//     start: "top top",
-//     scrub: 2,
-//     pin: "#main",
-//   },
-//   width: "100%",
-//   ease: "Expo.easeInOut",
-// });
+  console.log("OK" + " " + screen.width);
+  t.to("#videoplayer", { width: "100%", ease: "Expo.easeInOut" });
 
-let t1 = gsap.timeline({
-  scrollTrigger: {
-    trigger: "#main",
-    start: "top top",
-    scrub: 2,
-    pin: "#main",
-  },
-});
-
-t1.to(
-  ".videoplayer-center-text",
-  { opacity: "1", ease: "Expo.easeInOut", visibility: "visible" },
-  0.3
-);
+  t1.to(
+    ".videoplayer-center-text",
+    { opacity: "1", ease: "Expo.easeInOut", visibility: "visible" },
+    0.3
+  );
+}
 
 // gsap.to(
 //   ".videoplayer-center-text",
@@ -96,7 +88,7 @@ gsap.to("#holder2", {
 });
 
 anime.timeline().add({
-  targets: [".header, .theme-eng", ".header-text"],
+  targets: [".header, .header-sec", ".header-text"],
   opacity: [0, 1],
   translateY: [80, 0],
   translateZ: 0,
@@ -107,12 +99,10 @@ anime.timeline().add({
 
 document.getElementById("vid").play();
 
-
 var countDownDate = new Date("Jan 22, 2022 15:37:25").getTime();
 
 // Update the count down every 1 second
-var x = setInterval(function() {
-
+var x = setInterval(function () {
   // Get today's date and time
   var now = new Date().getTime();
 
@@ -125,13 +115,13 @@ var x = setInterval(function() {
   var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
   var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-  // Display the result in the element with id="demo"
-  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
-  + minutes + "m " + seconds + "s ";
+  // Display the result in the element with id="timer"
+  document.getElementById("timer").innerHTML =
+    days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
 
-  // If the count down is finished, write some text 
+  // If the count down is finished, write some text
   if (distance < 0) {
     clearInterval(x);
-    document.getElementById("demo").innerHTML = "EXPIRED";
+    document.getElementById("timer").innerHTML = "EXPIRED";
   }
 }, 1000);
