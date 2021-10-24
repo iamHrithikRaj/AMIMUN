@@ -125,6 +125,20 @@ select {
   background-origin: content-box;
 }
 
+.submit-btn{
+  color: #000;
+  text-align: center;
+  border: 2px solid #000;
+  border-radius: 2px;
+  padding: 10px 20px;
+  transition: all 0.5s ease-in-out;
+}
+
+.submit-btn:hover{
+  color: #fff;
+  background-color: #000;
+}
+
 
 @media only screen and (max-width: 414px) {
   .form {
