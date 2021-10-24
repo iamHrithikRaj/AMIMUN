@@ -12,7 +12,7 @@
   0 12.5px 10px rgba(0, 0, 0, 0.06),
   0 22.3px 17.9px rgba(0, 0, 0, 0.072),
   0 41.8px 33.4px rgba(0, 0, 0, 0.086),
-  0 100px 80px rgba(0, 0, 0, 0.12)
+  0 100px 80px rgba(0, 0, 0, 0.12);
 }
 
 input, select {
@@ -20,6 +20,10 @@ input, select {
   margin: 10px 0;
   border: 0.1px solid #000;
   border-radius: 2px;
+  font-size: 17px;
+}
+
+input::-webkit-input-placeholder{
   font-size: 17px;
 }
 
@@ -150,21 +154,25 @@ select {
 
 @media only screen and (max-width: 414px) {
   .form {
-    border: 1px solid #000;
+    box-shadow: none;
     display: flex;
     flex-direction: column;
-    /* padding: 50px;
-    margin-top: 70px; */
+    border: 1px solid #000;
     margin: 10px;
     padding: 10px;
   }
 
-  input, select {
+  input, select{
     padding: 1px;
     margin: 1px 0;
     border: 0.1px solid #000;
     border-radius: 2px;
     font-size: 17px;
+  }
+
+  input::-webkit-input-placeholder {
+    font-size: 10px;
+    padding: 2px;
   }
 
   label{
