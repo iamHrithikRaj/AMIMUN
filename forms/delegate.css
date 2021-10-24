@@ -125,3 +125,156 @@ select {
   background-origin: content-box;
 }
 
+
+@media only screen and (max-width: 414px) {
+  .form {
+    border: 1px solid #000;
+    display: flex;
+    flex-direction: column;
+    /* padding: 50px;
+    margin-top: 70px; */
+    margin: 10px;
+    padding: 10px;
+  }
+
+  input, select {
+    padding: 1px;
+    margin: 1px 0;
+    border: 0.1px solid #000;
+    border-radius: 2px;
+    font-size: 17px;
+  }
+
+  label{
+    font-size: 10px;
+  }
+
+  .ques textarea {
+    font-size: 10px;
+  }
+
+  select {
+    padding: 1em;
+    width: 130%;
+    border-radius: .2em;
+    border: 1px solid #acacac;
+    color: #181820;
+
+    font-size: 8px;
+    
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    
+    background: url('https://cdn1.iconfinder.com/data/icons/arrows-vol-1-4/24/dropdown_arrow-512.png');
+    background-repeat: no-repeat;
+    background-size: 15px 15px;
+    background-position: right;
+    background-origin: content-box;
+  }
+
+}
+
+@media only screen and (max-width: 834px) and (min-width: 639px) {
+
+  .form {
+    border: 1px solid #000;
+    display: flex;
+    flex-direction: column;
+    /* padding: 50px;
+    margin-top: 70px; */
+    margin: 30px;
+    padding: 30px;
+  }
+
+  input, select {
+    padding: 5px;
+    margin: 5px 0;
+    border: 0.1px solid #000;
+    border-radius: 2px;
+    font-size: 30px;
+  }
+
+  label{
+    font-size: 15px;
+  }
+
+  .ques textarea {
+    font-size: 15px;
+  }
+
+  select {
+    padding: 1em;
+    width: 130%;
+    border-radius: .2em;
+    border: 1px solid #acacac;
+    color: #181820;
+
+    font-size: 13px;
+    
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    
+    background: url('https://cdn1.iconfinder.com/data/icons/arrows-vol-1-4/24/dropdown_arrow-512.png');
+    background-repeat: no-repeat;
+    background-size: 15px 15px;
+    background-position: right;
+    background-origin: content-box;
+  }
+}
+
+@media only screen and (max-width: 1220px) and (min-width: 835px) {
+
+  .form {
+    border: 1px solid #000;
+    display: flex;
+    flex-direction: column;
+    margin: 50px;
+    padding: 70px;
+  }
+
+  input, select {
+    padding: 8px;
+    margin: 8px 0;
+    border: 0.1px solid #000;
+    border-radius: 2px;
+    font-size: 17px;
+  }
+
+  label{
+    font-size: 20px;
+  }
+
+  .ques textarea {
+    font-size: 20px;
+  }
+
+  select {
+    padding: 1em;
+    width: 130%;
+    border-radius: .2em;
+    border: 1px solid #acacac;
+    color: #181820;
+
+    font-size: 18px;
+    
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    
+    background: url('https://cdn1.iconfinder.com/data/icons/arrows-vol-1-4/24/dropdown_arrow-512.png');
+    background-repeat: no-repeat;
+    background-size: 15px 15px;
+    background-position: right;
+    background-origin: content-box;
+  }
+}
+
+@media only screen and (max-width: 1820px) and (min-width: 1366px) {
+  
+}
+

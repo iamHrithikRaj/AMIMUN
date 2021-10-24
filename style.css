@@ -89,6 +89,7 @@ nav {
   border-bottom: none;
 }
 
+
 #logo {
   height: 100%;
   display: flex;
@@ -147,7 +148,7 @@ nav .links li a {
   font-size: 55px;
   font-family: "Cormorant", serif;
   font-weight: 100;
-  line-height: 65px;
+  /* line-height: 65px; */
   opacity: 1;
 }
 
@@ -590,6 +591,7 @@ iframe {
   .content-two {
     padding: 10px 0;
     margin: 10px 0;
+    height: fit-content;
   }
 
   .conference-info {
@@ -760,7 +762,7 @@ iframe {
   .content-two {
     padding: 10px 0;
     margin: 10px 0;
-    height: 30vh;
+    height: fit-content;
   }
 
   .conference-info {
@@ -903,3 +905,382 @@ iframe {
     font-size: 12px;
   }
 }
+
+@media only screen and (max-width: 834px) and (min-width: 639px) {
+  .footer-bottom {
+    width: 100vw;
+    padding: 20px 0;
+    margin-top: 10px;
+    text-align: center;
+  }
+
+  .footer-content p {
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 18px;
+    font-size: 15px;
+  }
+
+  .footer-content h3 {
+    font-size: 20px;
+  }
+
+  iframe {
+    width: 100%;
+    height: 200px;
+  }
+
+  .content-one,
+  .content-two {
+    padding: 10px 0;
+    margin: 10px 0;
+    height: fit-content;
+  }
+  
+
+  .conference-info {
+    font-size: 15px;
+  }
+
+  hr {
+    text-align: center;
+    width: 200px;
+    margin: 30px auto;
+  }
+
+  #sec-gen-regards {
+    color: grey;
+    padding: 0px;
+    margin: 20px 0 0 0;
+    width: 100%;
+    line-height: 20px;
+  }
+
+  .message {
+    margin: 30px 0px;
+    flex-direction: column;
+    width: 100%;
+    padding: 0px;
+  }
+
+  #sec-gen-msg {
+    width: 100%;
+    line-height: 25px;
+    padding: 0px;
+    margin: 0px;
+    text-align: justify;
+  }
+
+  .img-text-container {
+    width: 100%;
+  }
+
+  .section {
+    padding: 1px 20px;
+    flex-direction: column;
+  }
+
+  #sec-gen-img {
+    width: 100%;
+    height: 450px;
+  }
+
+  .heading {
+    font-size: 25px;
+    line-height: normal;
+  }
+
+  .responsive-quote {
+    width: 100%;
+    display: block;
+  }
+
+  #responsive-timer {
+    color: #000;
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    overflow: hidden;
+  }
+
+  #videoplayer {
+    width: 100%;
+  }
+
+  #main #holder1,
+  #main #holder2,
+  #main #one,
+  #main #six {
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  #vid {
+    opacity: 0;
+    visibility: hidden;
+    display: none;
+  }
+
+  #main {
+    position: relative;
+    width: 100%;
+    min-height: 1vh;
+    margin-top: 10px;
+  }
+
+  #videoplayer {
+    width: 300px;
+    min-height: 1vh;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1.2);
+    overflow: hidden;
+  }
+
+  .menu-bar {
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  #logo img {
+    width: 250px;
+  }
+
+  nav {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 20px;
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    z-index: 100;
+  }
+
+  .header {
+    text-align: center;
+    font-size: 25px;
+    font-family: "Cormorant", serif;
+    font-weight: 100;
+    line-height: 65px;
+    opacity: 1;
+  }
+
+  .header-section {
+    margin: 10px 0px;
+  }
+
+  .header-sec {
+    font-size: 12px;
+  }
+}
+
+
+
+
+@media only screen and (max-width: 1220px) and (min-width: 835px) {
+  .footer-bottom {
+    width: 100vw;
+    padding: 20px 0;
+    margin-top: 10px;
+    text-align: center;
+  }
+
+  .footer-content p {
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 18px;
+    font-size: 15px;
+  }
+
+  .footer-content h3 {
+    font-size: 20px;
+  }
+
+  iframe {
+    width: 100%;
+    height: 280px;
+  }
+
+  .content-one,
+  .content-two {
+    padding: 10px 0;
+    margin: 10px 0;
+    height: fit-content;
+  }
+
+
+  .conference-info {
+    font-size: 15px;
+  }
+
+  hr {
+    text-align: center;
+    width: 200px;
+    margin: 30px auto;
+  }
+
+  #sec-gen-regards {
+    color: grey;
+    padding: 0px;
+    margin: 20px 0 0 0;
+    width: 100%;
+    line-height: 20px;
+  }
+
+  .message {
+    margin: 30px 0px;
+    flex-direction: column;
+    width: 100%;
+    padding: 0px;
+  }
+
+  #sec-gen-msg {
+    width: 100%;
+    line-height: 25px;
+    padding: 0px;
+    margin: 0px;
+    text-align: justify;
+  }
+
+  .img-text-container {
+    width: 100%;
+  }
+
+  .section {
+    padding: 1px 20px;
+    flex-direction: column;
+  }
+
+  #sec-gen-img {
+    width: 100%;
+    height: 650px;
+  }
+
+  .heading {
+    font-size: 25px;
+    line-height: normal;
+  }
+
+  .responsive-quote {
+    width: 100%;
+    display: block;
+  }
+
+  #responsive-timer {
+    color: #000;
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .footer-content {
+    flex-direction: column;
+  }
+
+  #videoplayer {
+    width: 100%;
+  }
+
+  #main #holder1,
+  #main #holder2,
+  #main #one,
+  #main #six {
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  #vid {
+    opacity: 0;
+    visibility: hidden;
+    display: none;
+  }
+
+  #main {
+    position: relative;
+    width: 100%;
+    min-height: 1vh;
+    margin-top: 10px;
+  }
+
+  #videoplayer {
+    width: 300px;
+    min-height: 1vh;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1.2);
+    overflow: hidden;
+  }
+
+  .menu-bar {
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  #logo img {
+    width: 250px;
+  }
+
+  nav {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 20px;
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    z-index: 100;
+  }
+
+  .header {
+    text-align: center;
+    font-size: 25px;
+    font-family: "Cormorant", serif;
+    font-weight: 100;
+    line-height: 65px;
+    opacity: 1;
+  }
+
+  .header-section {
+    margin: 10px 0px;
+  }
+
+  .header-sec {
+    font-size: 12px;
+  }
+}
+
+@media only screen and (max-width: 1820px) and (min-width: 1366px){
+  /* #main #holder1 {
+    position: absolute;
+    top: 50%;
+    left: 500px;
+    transform: translate(0, -50%);
+  }
+  
+  #main #holder2 {
+    position: absolute;
+    top: 50%;
+    right: 500px;
+    transform: translate(0, -50%);
+  }
+
+  #main .imgcontainer {
+    width: 250px;
+    height: 250px;
+  } */
+
+  /* #main #one,
+#main #six {
+  width: 350px;
+  height: 400px;
+} */
+}
+
+
