@@ -159,7 +159,7 @@
               </div>
             </li>
             <li>Gallery</li>
-            <li>AMIMUN Club</li>
+            <li><a href="./club.html">AMIMUN Club</a></li>
             <li>
               <a href="./resources.html">Resources</a>
               <i class="fas fa-chevron-down"></i>
@@ -564,7 +564,7 @@
 
       $(function () {
         var elements = $(".text, .img, .justified-content").toArray();
-        console.log(elements)
+        console.log(elements);
         $(window).scroll(function () {
           elements.forEach(function (item) {
             if ($(this).scrollTop() >= $(item).offset().top - 600) {
