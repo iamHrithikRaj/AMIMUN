@@ -1,3 +1,6 @@
+html {
+  scroll-behavior: smooth;
+}
 .content {
   width: 70%;
   margin: 50px auto;
@@ -286,7 +289,7 @@ h1 {
 }
 
 @media only screen and (max-width: 834px) and (min-width: 639px) {
- 
+
 }
 
 @media only screen and (max-width: 1220px) and (min-width: 835px) {
