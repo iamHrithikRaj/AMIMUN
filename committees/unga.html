@@ -18,8 +18,32 @@
     <title>AMIMUN'22 | Home</title>
   </head>
   <body>
+    <input
+      type="checkbox"
+      id="main-navigation-toggle"
+      class="btn btn--close"
+      title="Toggle main navigation"
+    />
+    <label for="main-navigation-toggle">
+      <span></span>
+    </label>
     <nav id="main-navigation" class="nav-main">
       <ul class="menu">
+        <li class="menu__item">
+          <a class="menu__link" href="">Apply</a>
+          <ul class="submenu">
+            <li class="menu__item">
+              <a class="menu__link" href="../forms/delegate.html"
+                >Delegate Application</a
+              >
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="../forms/international.html"
+                >International Press Application</a
+              >
+            </li>
+          </ul>
+        </li>
         <li class="menu__item">
           <a class="menu__link" href="../about.html">About</a>
         </li>
@@ -54,21 +78,7 @@
         <li class="menu__item">
           <a class="menu__link" href="../committes.html">Committees</a>
         </li>
-        <li class="menu__item">
-          <a class="menu__link" href="">Apply</a>
-          <ul class="submenu">
-            <li class="menu__item">
-              <a class="menu__link" href="../forms/delegate.html"
-                >Delegate Application</a
-              >
-            </li>
-            <li class="menu__item">
-              <a class="menu__link" href="../forms/international.html"
-                >International Press Application</a
-              >
-            </li>
-          </ul>
-        </li>
+
         <li class="menu__item">
           <a class="menu__link" href="#">Gallery</a>
         </li>
@@ -90,7 +100,7 @@
             </li>
             <li class="menu__item">
               <a class="menu__link" href="../resources/awards-criteria.html"
-                >Award Criteria</a
+                >Newsletters</a
               >
             </li>
             <li class="menu__item">
@@ -157,14 +167,16 @@
               </div>
             </li>
             <li>Gallery</li>
-            <li>AMIMUN Club</li>
+            <li><a href="../club.html">AMIMUN Club</a></li>
             <li>
               <a href="./resources.html">Resources</a>
               <i class="fas fa-chevron-down"></i>
               <div class="sub-menu-1">
                 <ul>
                   <li>
-                    <a href="../resources/country-matrix.html">Country Matrix</a>
+                    <a href="../resources/country-matrix.html"
+                      >Country Matrix</a
+                    >
                   </li>
                   <li>
                     <a href="../resources/background-guides.html"
@@ -172,9 +184,7 @@
                     >
                   </li>
                   <li>
-                    <a href="../resources/awards-criteria.html"
-                      >Awards Criteria</a
-                    >
+                    <a href="../resources/awards-criteria.html">Newsletters</a>
                   </li>
                   <li>
                     <a href="../resources/conference-schedule.html">
@@ -193,18 +203,38 @@
       </nav>
 
       <div class="header-section">
-        <h2 class="header theme">United Nations General Assembly            <br /></h2>
+        <h2 class="header theme">United Nations General Assembly <br /></h2>
         <div class="content">
           <h3 class="header-text header-sec">
-            The United Nations General Assembly (UNGA) is the UN's principal policy-making organ. It is comprised of all Member States and provides a unique platform for multilateral discussion of the whole range of international issues covered by the United Nations Charter. Each of the United Nations' 193 member states gets one vote.  Following the COVID-19 pandemic, the UN General Assembly has been carrying out its job since 2020 using creative methods to ensure business continuity and reduce illness spread. Specific examples include the usage of virtual platforms for meetings and the implementation of e-voting via a procedure for decision-making. <br>
+            The United Nations General Assembly (UNGA) is the UN's principal
+            policy-making organ. It is comprised of all Member States and
+            provides a unique platform for multilateral discussion of the whole
+            range of international issues covered by the United Nations Charter.
+            Each of the United Nations' 193 member states gets one vote.
+            Following the COVID-19 pandemic, the UN General Assembly has been
+            carrying out its job since 2020 using creative methods to ensure
+            business continuity and reduce illness spread. Specific examples
+            include the usage of virtual platforms for meetings and the
+            implementation of e-voting via a procedure for decision-making.
+            <br />
 
-            Delegates will be asked to identify the flaws and changes that are needed to adapt these rules to the fast-paced environment. Members of the United Nations General Assembly work toward a common aim of concentrating global action as never before to ensure peace and development. The goal of this simulation is to replicate the operations of the UN General Assembly's second committee, ECOFIN. It primarily addresses macroeconomic policy issues, as well as financing for development, sustainable development, globalisation and interdependence, poverty eradication, operational activities for development, agriculture development, food security and nutrition, and information and communications technologies for development, as well as global partnerships. 
-            
+            Delegates will be asked to identify the flaws and changes that are
+            needed to adapt these rules to the fast-paced environment. Members
+            of the United Nations General Assembly work toward a common aim of
+            concentrating global action as never before to ensure peace and
+            development. The goal of this simulation is to replicate the
+            operations of the UN General Assembly's second committee, ECOFIN. It
+            primarily addresses macroeconomic policy issues, as well as
+            financing for development, sustainable development, globalisation
+            and interdependence, poverty eradication, operational activities for
+            development, agriculture development, food security and nutrition,
+            and information and communications technologies for development, as
+            well as global partnerships.
           </h3>
         </div>
       </div>
+    </div>
 
-     
     <hr />
     <footer id="bottom">
       <div class="footer-content">
@@ -213,7 +243,7 @@
 
           <p>
             January 22-23, 2022<br />
-            Amity Rd, Sector 125, Noida, Uttar Pradesh 201301
+            Amity Rd., Sector 125, Noida, Uttar Pradesh 201301
           </p>
 
           <iframe

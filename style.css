@@ -94,8 +94,9 @@ body {
   padding: 0.5rem;
   position: relative;
   transition: transform calc(var(--td) * 3) var(--te);
-  width: 2rem;
+  width: 2.3rem;
 }
+
 [id="main-navigation-toggle"] ~ label span::before,
 [id="main-navigation-toggle"] ~ label span::after {
   background-color: var(--color-dark);
@@ -505,23 +506,23 @@ nav .links li a {
 }
 
 #main #one {
-  background-image: url(./assets/image-1.jpg);
+  background-image: url(./assets/PSY00111.JPG);
 }
 
 #main #two {
-  background-image: url(./assets/image-2.jpg);
+  background-image: url(./assets/img-2.jpg);
 }
 #main #three {
-  background-image: url(./assets/image-3.jpg);
+  background-image: url(./assets/DSC_0106-min.JPG);
 }
 #main #four {
-  background-image: url(./assets/image-4.jpg);
+  background-image: url(./assets/WA_2-min.JPG);
 }
 #main #five {
-  background-image: url(./assets/image-5.jpg);
+  background-image: url(./assets/WA_1-min.jpg);
 }
 #main #six {
-  background-image: url(./assets/image-6.jpg);
+  background-image: url(./assets/DSC_4021-min.JPG);
 }
 
 .videoplayer-center-text {
@@ -544,6 +545,7 @@ nav .links li a {
   color: #fff;
   margin: 10px 20px;
   text-align: center;
+  width: 200px;
   border-radius: 3px;
   padding: 10px 20px;
   transition: all 0.2s ease-in-out;
@@ -988,7 +990,7 @@ iframe {
     justify-content: space-evenly;
     align-items: center;
     margin: 0 auto;
-    margin-top: 20px;
+    margin-top: 10px;
     width: 100%;
     height: 100px;
     text-align: center;
@@ -1558,6 +1560,7 @@ iframe {
 }
 
 @media only screen and (max-width: 1221px) {
+  
   nav {
     display: flex;
     justify-content: space-evenly;

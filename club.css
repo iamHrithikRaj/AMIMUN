@@ -7,14 +7,18 @@
   margin: 80px 0;
 }
 
+#sec-img-5, #sec-img-4{
+  margin: 10px;
+}
+
 .section-3-cols {
-  /* padding: 1px 20px; */
   display: flex;
   justify-content: space-around;
   align-items: center;
   flex-direction: row;
   width: 100%;
   margin-top: 50px;
+  overflow: hidden;
 }
 
 #sec-img-1,
@@ -229,7 +233,9 @@ h1 {
   }
 }
 
-@media only screen and (max-width: 375px) {
+
+
+@media only screen and (max-width: 834px) {
   .form-btn h2 {
     text-align: center;
     margin: 20px 0;
@@ -280,6 +286,7 @@ h1 {
 }
 
 @media only screen and (max-width: 834px) and (min-width: 639px) {
+ 
 }
 
 @media only screen and (max-width: 1220px) and (min-width: 835px) {

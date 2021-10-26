@@ -18,8 +18,32 @@
     <title>AMIMUN'22 | Register</title>
   </head>
   <body>
+    <input
+      type="checkbox"
+      id="main-navigation-toggle"
+      class="btn btn--close"
+      title="Toggle main navigation"
+    />
+    <label for="main-navigation-toggle">
+      <span></span>
+    </label>
     <nav id="main-navigation" class="nav-main">
       <ul class="menu">
+        <li class="menu__item">
+          <a class="menu__link" href="">Apply</a>
+          <ul class="submenu">
+            <li class="menu__item">
+              <a class="menu__link" href="../forms/delegate.html"
+                >Delegate Application</a
+              >
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="../forms/international.html"
+                >International Press Application</a
+              >
+            </li>
+          </ul>
+        </li>
         <li class="menu__item">
           <a class="menu__link" href="../about.html">About</a>
         </li>
@@ -54,21 +78,7 @@
         <li class="menu__item">
           <a class="menu__link" href="../committes.html">Committees</a>
         </li>
-        <li class="menu__item">
-          <a class="menu__link" href="">Apply</a>
-          <ul class="submenu">
-            <li class="menu__item">
-              <a class="menu__link" href="../forms/delegate.html"
-                >Delegate Application</a
-              >
-            </li>
-            <li class="menu__item">
-              <a class="menu__link" href="../forms/international.html"
-                >International Press Application</a
-              >
-            </li>
-          </ul>
-        </li>
+
         <li class="menu__item">
           <a class="menu__link" href="#">Gallery</a>
         </li>
@@ -90,7 +100,7 @@
             </li>
             <li class="menu__item">
               <a class="menu__link" href="../resources/awards-criteria.html"
-                >Award Criteria</a
+                >Newsletters</a
               >
             </li>
             <li class="menu__item">
@@ -102,6 +112,7 @@
         </li>
       </ul>
     </nav>
+    `
     <div id="back">
       <nav>
         <div class="menu-bar">
@@ -157,7 +168,7 @@
               </div>
             </li>
             <li>Gallery</li>
-            <li>AMIMUN Club</li>
+            <li><a href="../club.html">AMIMUN Club</a></li>
             <li>
               <a href="./resources.html">Resources</a>
               <i class="fas fa-chevron-down"></i>
@@ -172,9 +183,7 @@
                     >
                   </li>
                   <li>
-                    <a href="./resources/awards-criteria.html"
-                      >Awards Criteria</a
-                    >
+                    <a href="./resources/awards-criteria.html">Newsletters</a>
                   </li>
                   <li>
                     <a href="./resources/conference-schedule.html">
@@ -212,7 +221,11 @@
         <input placeholder="888-888-8888" name="phone" type="number" />
 
         <label for="">Email</label>
-        <input placeholder="severus.snape@hogwards.com" name="email" type="email" />
+        <input
+          placeholder="severus.snape@hogwards.com"
+          name="email"
+          type="email"
+        />
 
         <label for="">College/Institute Name</label>
         <input placeholder="Slytherin" name="college" type="text" />
@@ -239,10 +252,16 @@
 
         <div class="ques">
           <label for="">Have you attended MUN before</label><br />
-          <input type="radio" id="html" name="fav_language" value="HTML" />
-          <label for="html">Yes</label><br />
-          <input type="radio" id="css" name="fav_language" value="CSS" />
-          <label for="css">No</label><br />
+          <div class="attended-status">
+            <div class="status-1">
+              <label for="html">Yes</label>
+              <input type="radio" id="html" name="fav_language" value="HTML" />
+            </div>
+            <div class="status-2">
+              <label for="css">No</label>
+              <input type="radio" id="css" name="fav_language" value="CSS" />
+            </div>
+          </div>
 
           <label for="">How many MUNs have you attended before?</label>
           <input name="mun-exp" type="number" />
@@ -282,7 +301,7 @@
 
           <p>
             January 22-23, 2022<br />
-            Amity Rd, Sector 125, Noida, Uttar Pradesh 201301
+            Amity Rd., Sector 125, Noida, Uttar Pradesh 201301
           </p>
 
           <iframe
