@@ -6,16 +6,14 @@
   margin-top: 70px;
   height: fit-content;
   border-radius: 5px;
-  box-shadow:
-  0 2.8px 2.2px rgba(0, 0, 0, 0.034),
-  0 6.7px 5.3px rgba(0, 0, 0, 0.048),
-  0 12.5px 10px rgba(0, 0, 0, 0.06),
-  0 22.3px 17.9px rgba(0, 0, 0, 0.072),
-  0 41.8px 33.4px rgba(0, 0, 0, 0.086),
-  0 100px 80px rgba(0, 0, 0, 0.12);
+  box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+    0 100px 80px rgba(0, 0, 0, 0.12);
 }
 
-input, select {
+input,
+select {
   padding: 10px;
   margin: 10px 0;
   border: 0.1px solid #000;
@@ -23,7 +21,7 @@ input, select {
   font-size: 17px;
 }
 
-input::-webkit-input-placeholder{
+input::-webkit-input-placeholder {
   font-size: 17px;
 }
 
@@ -61,21 +59,33 @@ input::-webkit-input-placeholder{
   font-size: 17px;
 }
 
-.ques label{
-    display: block;
+.ques label {
+  display: block;
 }
 
-.ques input{
-    width: 100%;
+.ques input {
+  width: 100%;
 }
 
+.attended-status {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around
+}
 
+.status-1,
+.status-2 {
+  width: 50%;
+  height: 100%;
+}
 
 .ques {
   margin: 20px 0;
 }
 
-.preference-one, .preference-two,
+.preference-one,
+.preference-two,
 .preference-three {
   display: flex;
   width: 100%;
@@ -88,12 +98,9 @@ input::-webkit-input-placeholder{
 .two-2,
 .three-1,
 .three-2 {
-    width: 50%;
-    margin: 10px;
+  width: 50%;
+  margin: 10px;
 }
-
-
-
 
 .select-one-1,
 .select-one-2,
@@ -113,7 +120,7 @@ input::-webkit-input-placeholder{
 
 label {
   margin-top: 1.5em;
-  margin-bottom: .5em;
+  margin-bottom: 0.5em;
   font-weight: bold;
   font-size: 1.2em;
 }
@@ -121,23 +128,23 @@ label {
 select {
   padding: 1em;
   width: 130%;
-  border-radius: .2em;
+  border-radius: 0.2em;
   border: 1px solid #acacac;
   color: #181820;
-  
+
   appearance: none;
   -webkit-appearance: none;
   -moz-appearance: none;
   -ms-appearance: none;
-  
-  background: url('https://cdn1.iconfinder.com/data/icons/arrows-vol-1-4/24/dropdown_arrow-512.png');
+
+  background: url("https://cdn1.iconfinder.com/data/icons/arrows-vol-1-4/24/dropdown_arrow-512.png");
   background-repeat: no-repeat;
   background-size: 15px 15px;
   background-position: right;
   background-origin: content-box;
 }
 
-.submit-btn{
+.submit-btn {
   color: #000;
   text-align: center;
   border: 2px solid #000;
@@ -146,11 +153,10 @@ select {
   transition: all 0.5s ease-in-out;
 }
 
-.submit-btn:hover{
+.submit-btn:hover {
   color: #fff;
   background-color: #000;
 }
-
 
 @media only screen and (max-width: 414px) {
   .form {
@@ -162,7 +168,8 @@ select {
     padding: 10px;
   }
 
-  input, select{
+  input,
+  select {
     padding: 1px;
     margin: 1px 0;
     border: 0.1px solid #000;
@@ -175,7 +182,7 @@ select {
     padding: 2px;
   }
 
-  label{
+  label {
     font-size: 10px;
   }
 
@@ -186,28 +193,26 @@ select {
   select {
     padding: 1em;
     width: 130%;
-    border-radius: .2em;
+    border-radius: 0.2em;
     border: 1px solid #acacac;
     color: #181820;
 
     font-size: 8px;
-    
+
     appearance: none;
     -webkit-appearance: none;
     -moz-appearance: none;
     -ms-appearance: none;
-    
-    background: url('https://cdn1.iconfinder.com/data/icons/arrows-vol-1-4/24/dropdown_arrow-512.png');
+
+    background: url("https://cdn1.iconfinder.com/data/icons/arrows-vol-1-4/24/dropdown_arrow-512.png");
     background-repeat: no-repeat;
     background-size: 15px 15px;
     background-position: right;
     background-origin: content-box;
   }
-
 }
 
 @media only screen and (max-width: 834px) and (min-width: 639px) {
-
   .form {
     border: 1px solid #000;
     display: flex;
@@ -218,7 +223,8 @@ select {
     padding: 30px;
   }
 
-  input, select {
+  input,
+  select {
     padding: 5px;
     margin: 5px 0;
     border: 0.1px solid #000;
@@ -226,7 +232,7 @@ select {
     font-size: 30px;
   }
 
-  label{
+  label {
     font-size: 15px;
   }
 
@@ -237,18 +243,18 @@ select {
   select {
     padding: 1em;
     width: 130%;
-    border-radius: .2em;
+    border-radius: 0.2em;
     border: 1px solid #acacac;
     color: #181820;
 
     font-size: 13px;
-    
+
     appearance: none;
     -webkit-appearance: none;
     -moz-appearance: none;
     -ms-appearance: none;
-    
-    background: url('https://cdn1.iconfinder.com/data/icons/arrows-vol-1-4/24/dropdown_arrow-512.png');
+
+    background: url("https://cdn1.iconfinder.com/data/icons/arrows-vol-1-4/24/dropdown_arrow-512.png");
     background-repeat: no-repeat;
     background-size: 15px 15px;
     background-position: right;
@@ -257,7 +263,6 @@ select {
 }
 
 @media only screen and (max-width: 1220px) and (min-width: 835px) {
-
   .form {
     border: 1px solid #000;
     display: flex;
@@ -266,7 +271,8 @@ select {
     padding: 70px;
   }
 
-  input, select {
+  input,
+  select {
     padding: 8px;
     margin: 8px 0;
     border: 0.1px solid #000;
@@ -274,7 +280,7 @@ select {
     font-size: 17px;
   }
 
-  label{
+  label {
     font-size: 20px;
   }
 
@@ -285,18 +291,18 @@ select {
   select {
     padding: 1em;
     width: 130%;
-    border-radius: .2em;
+    border-radius: 0.2em;
     border: 1px solid #acacac;
     color: #181820;
 
     font-size: 18px;
-    
+
     appearance: none;
     -webkit-appearance: none;
     -moz-appearance: none;
     -ms-appearance: none;
-    
-    background: url('https://cdn1.iconfinder.com/data/icons/arrows-vol-1-4/24/dropdown_arrow-512.png');
+
+    background: url("https://cdn1.iconfinder.com/data/icons/arrows-vol-1-4/24/dropdown_arrow-512.png");
     background-repeat: no-repeat;
     background-size: 15px 15px;
     background-position: right;
@@ -305,6 +311,4 @@ select {
 }
 
 @media only screen and (max-width: 1820px) and (min-width: 1366px) {
-  
 }
-
