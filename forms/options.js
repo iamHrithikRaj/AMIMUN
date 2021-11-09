@@ -529,7 +529,6 @@ window.onload = function () {
     }
   };
 
-
   for (var x in subjectObject) {
     three_1.options[three_1.options.length] = new Option(x, x);
   }
@@ -544,3 +543,13 @@ window.onload = function () {
     }
   };
 };
+
+document.getElementById("yes").addEventListener("click", () => {
+  document.getElementById("enrollment").style.display = "block";
+  document.getElementById("enrollment-label").style.display = "block";
+});
+
+document.getElementById("no").addEventListener("click", () => {
+  document.getElementById("enrollment").style.display = "none";
+  document.getElementById("enrollment-label").style.display = "none";
+});
