@@ -4,7 +4,7 @@ f_obj = open("./gallery-data.txt", "w")
 
 for i in os.listdir(os.getcwd() + "/gallery-imgs"):
     data =  '''<a
-            href=" + ./gallery-imgs/'''+ i  + '''"
+            href="./gallery-imgs/'''+ i  + '''"
             data-lightbox="models"
             data-title="Caption1"
           >

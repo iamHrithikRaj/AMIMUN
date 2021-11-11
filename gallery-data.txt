@@ -1,5 +1,5 @@
 <a
-            href=" + ./gallery-imgs/DSC_4294.JPG"
+            href="./gallery-imgs/DSC_4294.JPG"
             data-lightbox="models"
             data-title="Caption1"
           >
@@ -8,7 +8,7 @@
             />
           </a>
 <a
-            href=" + ./gallery-imgs/IMG_7008.jpg"
+            href="./gallery-imgs/IMG_7008.jpg"
             data-lightbox="models"
             data-title="Caption1"
           >
@@ -17,7 +17,7 @@
             />
           </a>
 <a
-            href=" + ./gallery-imgs/DSC_0557.JPG"
+            href="./gallery-imgs/DSC_0557.JPG"
             data-lightbox="models"
             data-title="Caption1"
           >
@@ -26,7 +26,7 @@
             />
           </a>
 <a
-            href=" + ./gallery-imgs/DSC_0552.JPG"
+            href="./gallery-imgs/DSC_0552.JPG"
             data-lightbox="models"
             data-title="Caption1"
           >
@@ -35,7 +35,7 @@
             />
           </a>
 <a
-            href=" + ./gallery-imgs/DSC_4119.JPG"
+            href="./gallery-imgs/DSC_4119.JPG"
             data-lightbox="models"
             data-title="Caption1"
           >
@@ -44,7 +44,7 @@
             />
           </a>
 <a
-            href=" + ./gallery-imgs/DSC_4125.JPG"
+            href="./gallery-imgs/DSC_4125.JPG"
             data-lightbox="models"
             data-title="Caption1"
           >
@@ -53,7 +53,7 @@
             />
           </a>
 <a
-            href=" + ./gallery-imgs/DSC_0545.JPG"
+            href="./gallery-imgs/DSC_0545.JPG"
             data-lightbox="models"
             data-title="Caption1"
           >
@@ -62,7 +62,7 @@
             />
           </a>
 <a
-            href=" + ./gallery-imgs/DSC_3924.JPG"
+            href="./gallery-imgs/DSC_3924.JPG"
             data-lightbox="models"
             data-title="Caption1"
           >
@@ -71,7 +71,7 @@
             />
           </a>
 <a
-            href=" + ./gallery-imgs/IMG_7320.JPG"
+            href="./gallery-imgs/IMG_7320.JPG"
             data-lightbox="models"
             data-title="Caption1"
           >
@@ -80,7 +80,7 @@
             />
           </a>
 <a
-            href=" + ./gallery-imgs/DSC_4197.JPG"
+            href="./gallery-imgs/DSC_4197.JPG"
             data-lightbox="models"
             data-title="Caption1"
           >
@@ -89,7 +89,7 @@
             />
           </a>
 <a
-            href=" + ./gallery-imgs/DSC_4020.JPG"
+            href="./gallery-imgs/DSC_4020.JPG"
             data-lightbox="models"
             data-title="Caption1"
           >
@@ -98,7 +98,7 @@
             />
           </a>
 <a
-            href=" + ./gallery-imgs/DSC_0508.JPG"
+            href="./gallery-imgs/DSC_0508.JPG"
             data-lightbox="models"
             data-title="Caption1"
           >
@@ -107,7 +107,7 @@
             />
           </a>
 <a
-            href=" + ./gallery-imgs/DSC_4021.JPG"
+            href="./gallery-imgs/DSC_4021.JPG"
             data-lightbox="models"
             data-title="Caption1"
           >
@@ -116,7 +116,7 @@
             />
           </a>
 <a
-            href=" + ./gallery-imgs/DSC_0446.JPG"
+            href="./gallery-imgs/DSC_0446.JPG"
             data-lightbox="models"
             data-title="Caption1"
           >
@@ -125,7 +125,7 @@
             />
           </a>
 <a
-            href=" + ./gallery-imgs/DSC_0452.JPG"
+            href="./gallery-imgs/DSC_0452.JPG"
             data-lightbox="models"
             data-title="Caption1"
           >
@@ -134,7 +134,7 @@
             />
           </a>
 <a
-            href=" + ./gallery-imgs/DSC_0532.JPG"
+            href="./gallery-imgs/DSC_0532.JPG"
             data-lightbox="models"
             data-title="Caption1"
           >
@@ -143,7 +143,7 @@
             />
           </a>
 <a
-            href=" + ./gallery-imgs/DSC_0106.JPG"
+            href="./gallery-imgs/DSC_0106.JPG"
             data-lightbox="models"
             data-title="Caption1"
           >
@@ -152,7 +152,7 @@
             />
           </a>
 <a
-            href=" + ./gallery-imgs/Wide 1.JPG"
+            href="./gallery-imgs/Wide 1.JPG"
             data-lightbox="models"
             data-title="Caption1"
           >
@@ -161,7 +161,7 @@
             />
           </a>
 <a
-            href=" + ./gallery-imgs/DSC_4217.JPG"
+            href="./gallery-imgs/DSC_4217.JPG"
             data-lightbox="models"
             data-title="Caption1"
           >
@@ -170,7 +170,7 @@
             />
           </a>
 <a
-            href=" + ./gallery-imgs/DSC_0464.JPG"
+            href="./gallery-imgs/DSC_0464.JPG"
             data-lightbox="models"
             data-title="Caption1"
           >
@@ -179,7 +179,7 @@
             />
           </a>
 <a
-            href=" + ./gallery-imgs/DSC07012.JPG"
+            href="./gallery-imgs/DSC07012.JPG"
             data-lightbox="models"
             data-title="Caption1"
           >
@@ -188,7 +188,7 @@
             />
           </a>
 <a
-            href=" + ./gallery-imgs/DSC_0507.JPG"
+            href="./gallery-imgs/DSC_0507.JPG"
             data-lightbox="models"
             data-title="Caption1"
           >
@@ -197,7 +197,7 @@
             />
           </a>
 <a
-            href=" + ./gallery-imgs/DSC_3999.JPG"
+            href="./gallery-imgs/DSC_3999.JPG"
             data-lightbox="models"
             data-title="Caption1"
           >
@@ -206,7 +206,7 @@
             />
           </a>
 <a
-            href=" + ./gallery-imgs/DSC_4129.JPG"
+            href="./gallery-imgs/DSC_4129.JPG"
             data-lightbox="models"
             data-title="Caption1"
           >
@@ -215,7 +215,7 @@
             />
           </a>
 <a
-            href=" + ./gallery-imgs/WA_2.JPG"
+            href="./gallery-imgs/WA_2.JPG"
             data-lightbox="models"
             data-title="Caption1"
           >
@@ -224,7 +224,7 @@
             />
           </a>
 <a
-            href=" + ./gallery-imgs/DSC_4128.JPG"
+            href="./gallery-imgs/DSC_4128.JPG"
             data-lightbox="models"
             data-title="Caption1"
           >
@@ -233,7 +233,7 @@
             />
           </a>
 <a
-            href=" + ./gallery-imgs/PIC 3.jpg"
+            href="./gallery-imgs/PIC 3.jpg"
             data-lightbox="models"
             data-title="Caption1"
           >
@@ -242,7 +242,7 @@
             />
           </a>
 <a
-            href=" + ./gallery-imgs/DSC_0562.JPG"
+            href="./gallery-imgs/DSC_0562.JPG"
             data-lightbox="models"
             data-title="Caption1"
           >
@@ -251,7 +251,7 @@
             />
           </a>
 <a
-            href=" + ./gallery-imgs/WA_1.jpg"
+            href="./gallery-imgs/WA_1.jpg"
             data-lightbox="models"
             data-title="Caption1"
           >
@@ -260,7 +260,7 @@
             />
           </a>
 <a
-            href=" + ./gallery-imgs/DSC_4103.JPG"
+            href="./gallery-imgs/DSC_4103.JPG"
             data-lightbox="models"
             data-title="Caption1"
           >
@@ -269,7 +269,7 @@
             />
           </a>
 <a
-            href=" + ./gallery-imgs/DSC_0567.JPG"
+            href="./gallery-imgs/DSC_0567.JPG"
             data-lightbox="models"
             data-title="Caption1"
           >
@@ -278,7 +278,7 @@
             />
           </a>
 <a
-            href=" + ./gallery-imgs/DSC_0360.JPG"
+            href="./gallery-imgs/DSC_0360.JPG"
             data-lightbox="models"
             data-title="Caption1"
           >
@@ -287,7 +287,7 @@
             />
           </a>
 <a
-            href=" + ./gallery-imgs/DSC_4104.JPG"
+            href="./gallery-imgs/DSC_4104.JPG"
             data-lightbox="models"
             data-title="Caption1"
           >
@@ -296,7 +296,7 @@
             />
           </a>
 <a
-            href=" + ./gallery-imgs/DSC_0570.JPG"
+            href="./gallery-imgs/DSC_0570.JPG"
             data-lightbox="models"
             data-title="Caption1"
           >
@@ -305,7 +305,7 @@
             />
           </a>
 <a
-            href=" + ./gallery-imgs/DSC_0565.JPG"
+            href="./gallery-imgs/DSC_0565.JPG"
             data-lightbox="models"
             data-title="Caption1"
           >
