@@ -1,0 +1,36 @@
+#ab-img-2,
+#ab-img-3,
+#ab-img-1,
+#ab-img-4,
+#ab-img-5,
+#ab-img-6,
+#ab-img-7 {
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 600px;
+  margin-right: 40px;
+}
+
+#ab-img-1 {
+  background-image: url(../assets/WhatsApp\ Image\ 2021-12-01\ at\ 10.00.11\ AM.jpeg);
+}
+#ab-img-2 {
+  background-image: url(../assets/Simran\ Malhotra\ .jpg);
+}
+#ab-img-3 {
+  background-image: url(../assets/Siddhant\ Treasure.png);
+}
+#ab-img-4 {
+  background-image: url(../assets/Aakarsh\ Shrivastava.jpg);
+}
+#ab-img-5 {
+  background-image: url(../assets/KARAN\ KANODIA.JPG);
+}
+#ab-img-6 {
+  background-image: url(../assets/Deviena\ Shrivastava.jpg);
+}
+#ab-img-7 {
+  background-image: url(../assets/yash.jpeg);
+}
+

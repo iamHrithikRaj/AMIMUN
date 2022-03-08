@@ -17,7 +17,7 @@
     <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
     <link rel="stylesheet" href="../style.css" />
     <link rel="stylesheet" href="./country-matrix.css" />
-    <title>AMIMUN'22 | Home</title>
+    <title>AMIMUN'22 | Matrix</title>
   </head>
   <body>
     <input
@@ -32,7 +32,7 @@
     <nav id="main-navigation" class="nav-main">
       <ul class="menu">
         <li class="menu__item">
-          <a class="menu__link" href="">Apply</a>
+          <a class="menu__link" onclick="return func(0)" href="#">Apply</a>
           <ul class="submenu">
             <li class="menu__item">
               <a
@@ -54,7 +54,7 @@
           <a class="menu__link" href="../about.html">About</a>
         </li>
         <li class="menu__item">
-          <a class="menu__link" href="">Our Team</a>
+          <a class="menu__link" onclick="return func(0)" href="#">Our Team</a>
           <ul class="submenu">
             <li class="menu__item">
               <a class="menu__link" href="../our-team/guiding-light.html"
@@ -86,13 +86,13 @@
         </li>
 
         <li class="menu__item">
-          <a class="menu__link" href="#">Gallery</a>
+          <a class="menu__link" href="../gallery.html">Gallery</a>
         </li>
         <li class="menu__item">
           <a class="menu__link" href="../club.html">AMIMUN Club</a>
         </li>
         <li class="menu__item">
-          <a class="menu__link" href="">Resources</a>
+          <a class="menu__link" onclick="return func(0)" href="#">Resources</a>
           <ul class="submenu">
             <li class="menu__item">
               <a class="menu__link" href="../resources/country-matrix.html"
@@ -102,6 +102,11 @@
             <li class="menu__item">
               <a class="menu__link" href="../resources/background-guides.html"
                 >Background Guides</a
+              >
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="../resources/rop.html"
+                >Rules of Procedures</a
               >
             </li>
             <li class="menu__item">
@@ -176,8 +181,8 @@
                 </ul>
               </div>
             </li>
-            <li>Gallery</li>
-            <li><a href="../club.html">AMIMUN Club</a></li>
+            <li><a href="../gallery.html">Gallery</a></li>
+
             <li>
               <a href="./resources.html">Resources</a>
               <i class="fas fa-chevron-down"></i>
@@ -192,6 +197,10 @@
                     <a href="../resources/background-guides.html"
                       >Background Guides</a
                     >
+                  </li>
+
+                  <li>
+                    <a href="../resources/rop.html">Rules of Procedures</a>
                   </li>
                   <li>
                     <a href="../resources/awards-criteria.html">Newsletters</a>
@@ -208,6 +217,7 @@
                 </ul>
               </div>
             </li>
+            <li><a href="../club.html">AMIMUN Club</a></li>
           </ul>
         </div>
       </nav>
@@ -229,95 +239,24 @@
           </div>
         </div>
         <ul class="list-holder">
-          <li class="list">Afghanistan (O)</li>
-          <li class="list">Argentina</li>
+          <li class="list">Afghanistan</li>
           <li class="list">Armenia</li>
-          <li class="list">Australia (O)</li>
           <li class="list">Austria</li>
-          <li class="list">Bahamas</li>
-          <li class="list">Bahrain</li>
-          <li class="list">Bangladesh</li>
-          <li class="list">Barbados (O)</li>
-          <li class="list">Belgium (O)</li>
-          <li class="list">Bolivia</li>
-          <li class="list">Brazil</li>
-          <li class="list">Bulgaria</li>
-          <li class="list">Burkina Faso</li>
-          <li class="list">Canada (O)</li>
-          <li class="list">Cameroon</li>
-          <li class="list">China</li>
-          <li class="list">Côte d’Ivoire</li>
-          <li class="list">Chad(O)</li>
-          <li class="list">Chile (O)</li>
-          <li class="list">Colombia (O)</li>
-          <li class="list">Costa Rica (O)</li>
-          <li class="list">Croatia (O)</li>
-          <li class="list">Cuba</li>
-          <li class="list">Czech Republic</li>
-          <li class="list">Democratic People's Republic of Korea (O)</li>
-          <li class="list">Democratic Republic of the Congo (O)</li>
-          <li class="list">Denmark</li>
-          <li class="list">Eritrea</li>
-          <li class="list">Egypt (O)</li>
-          <li class="list">Fiji</li>
-          <li class="list">Finland (O)</li>
+          <li class="list">Democratic People's Republic of Korea</li>
           <li class="list">France</li>
-          <li class="list">Germany</li>
-          <li class="list">Gabon</li>
-          <li class="list">Hungary (O)</li>
-          <li class="list">Iceland (O)</li>
-          <li class="list">India</li>
-          <li class="list">Indonesia</li>
-          <li class="list">Islamic Republic of Iran (O)</li>
-          <li class="list">Italy</li>
-          <li class="list">Jamaica (O)</li>
-          <li class="list">Japan</li>
-          <li class="list">Kenya (O)</li>
-          <li class="list">Libya</li>
-          <li class="list">Lithuania (O)</li>
-          <li class="list">Luxembourg (O)</li>
-          <li class="list">Macedonia (O)</li>
-          <li class="list">Malawi</li>
-          <li class="list">Marshall Islands</li>
-          <li class="list">Malaysia (O)</li>
-          <li class="list">Mexico (O)</li>
-          <li class="list">Myanmar (O)</li>
-          <li class="list">Namibia</li>
-          <li class="list">Nepal</li>
-          <li class="list">Netherlands</li>
-          <li class="list">New Zealand (O)</li>
-          <li class="list">Norway (O)</li>
+          <li class="list">Islamic Republic of Iran</li>
+          <li class="list">Macedonia</li>
           <li class="list">Pakistan</li>
-          <li class="list">Paraguay (O)</li>
-          <li class="list">Peru (O)</li>
-          <li class="list">Philippines</li>
-          <li class="list">Poland</li>
-          <li class="list">Portugal (O)</li>
-          <li class="list">Qatar (O)</li>
-          <li class="list">Republic of Korea</li>
-          <li class="list">Romania (O)</li>
+          <li class="list">People's Republic of China</li>
           <li class="list">Russian Federation</li>
-          <li class="list">Senegal</li>
-          <li class="list">Saudi Arabia (O)</li>
-          <li class="list">Slovakia (O)</li>
-          <li class="list">Solomon Islands (O)</li>
+          <li class="list">Saudi Arabia</li>
+          <li class="list">Slovakia</li>
+          <li class="list">Solomon Islands</li>
           <li class="list">Somalia</li>
-          <li class="list">South Africa (O)</li>
-          <li class="list">Spain (O)</li>
-          <li class="list">Sri Lanka (O)</li>
-          <li class="list">Sudan</li>
-          <li class="list">Sweden (O)</li>
-          <li class="list">Switzerland (O)</li>
-          <li class="list">Syrian Arab Republic (O)</li>
-          <li class="list">Togo</li>
-          <li class="list">Thailand (O)</li>
-          <li class="list">Turkey (O)</li>
-          <li class="list">Ukraine</li>
+          <li class="list">Syrian Arab Republic</li>
+          <li class="list">Turkey</li>
           <li class="list">United Kingdom</li>
-          <li class="list">United States of America (O)</li>
-          <li class="list">Uruguay</li>
-          <li class="list">Uzbekistan</li>
-          <li class="list">Venezuela (Bolivarian Republic of)</li>
+          <li class="list">United States of America</li>
         </ul>
 
         <div class="acc-toggle" data-collapse="">
@@ -332,92 +271,33 @@
         <ul class="list-holder">
           <li class="list">Afghanistan</li>
           <li class="list">Albania</li>
-          <li class="list">Algeria</li>
-          <li class="list">Andorra</li>
-          <li class="list">Angola</li>
-          <li class="list">Argentina</li>
-          <li class="list">Armenia</li>
-          <li class="list">Australia</li>
-          <li class="list">Austria</li>
-          <li class="list">Bahrain</li>
-          <li class="list">Bangladesh</li>
-          <li class="list">Belarus</li>
-          <li class="list">Belgium</li>
-          <li class="list">Belize</li>
-          <li class="list">Botswana</li>
-          <li class="list">Brazil</li>
-          <li class="list">Bulgaria</li>
-          <li class="list">Burkina faso</li>
-          <li class="list">Canada</li>
-          <li class="list">Central African Republic</li>
-          <li class="list">Chile</li>
           <li class="list">China</li>
-          <li class="list">Colombia</li>
           <li class="list">Cuba</li>
-          <li class="list">Czech Republic</li>
-          <li class="list">Denmark</li>
-          <li class="list">Egypt</li>
-          <li class="list">Estonia</li>
           <li class="list">Ethiopia</li>
-          <li class="list">Finland</li>
-          <li class="list">France</li>
-          <li class="list">Germany</li>
-          <li class="list">Greece</li>
-          <li class="list">Hungary</li>
           <li class="list">Iceland</li>
-          <li class="list">Indonesia</li>
-          <li class="list">Iraq</li>
-          <li class="list">Ireland</li>
           <li class="list">Islamic Republic of Iran</li>
           <li class="list">Israel</li>
-          <li class="list">Italy</li>
-          <li class="list">Japan</li>
-          <li class="list">Jordan</li>
-          <li class="list">Kenya</li>
-          <li class="list">Kuwait</li>
-          <li class="list">Latvia</li>
           <li class="list">Lebanon</li>
           <li class="list">Libya</li>
-          <li class="list">Lithuania</li>
           <li class="list">Malawi</li>
-          <li class="list">Malaysia</li>
-          <li class="list">Maldives</li>
           <li class="list">Moldova</li>
-          <li class="list">Mongolia</li>
-          <li class="list">Morocco</li>
-          <li class="list">Myanmar</li>
-          <li class="list">Netherlands</li>
-          <li class="list">New Zealand</li>
           <li class="list">Nigeria</li>
-          <li class="list">Norway</li>
-          <li class="list">Oman</li>
-          <li class="list">Pakistan</li>
           <li class="list">Palestine(O)</li>
           <li class="list">Philippines</li>
-          <li class="list">Poland</li>
-          <li class="list">Portugal</li>
-          <li class="list">Romania</li>
           <li class="list">Russian Federation</li>
           <li class="list">San Marino</li>
           <li class="list">Saudi Arabia</li>
           <li class="list">Sierra leone</li>
-          <li class="list">Singapore</li>
-          <li class="list">Slovakia</li>
           <li class="list">Slovenia</li>
           <li class="list">Spain</li>
-          <li class="list">Sri Lanka</li>
-          <li class="list">Sudan</li>
-          <li class="list">Sweden</li>
           <li class="list">Syrian arab republic</li>
-          <li class="list">Tajikistan</li>
-          <li class="list">Turkey</li>
           <li class="list">Ukraine</li>
           <li class="list">United Kingdom</li>
           <li class="list">United States Of America</li>
           <li class="list">Uzbekistan</li>
-          <li class="list">Venezuela</li>
-          <li class="list">Vietnam</li>
-          <li class="list">Yemen</li>
+          <li class="list">Montenegro</li>
+          <li class="list">Bosnia and Herzegovina</li>
+          <li class="list">Croatia</li>
         </ul>
 
         <div class="acc-toggle" data-collapse="">
@@ -435,34 +315,86 @@
         <ul class="list-holder">
           <li class="list">United States of America</li>
           <li class="list">China</li>
-          <li class="list">France</li>
           <li class="list">United Kingdom</li>
           <li class="list">Russia</li>
-          <li class="list">Estonia</li>
-          <li class="list">India</li>
-          <li class="list">Ireland</li>
-          <li class="list">Kenya</li>
-          <li class="list">Mexico</li>
           <li class="list">Niger</li>
-          <li class="list">Norway</li>
-          <li class="list">Saint Vincent and the Grenadines</li>
-          <li class="list">Tunisia</li>
-          <li class="list">Vietnam</li>
-          <li class="list">Germany (O)</li>
-          <li class="list">Iraq (O)</li>
-          <li class="list">Japan (O)</li>
-          <li class="list">Malaysia (O)</li>
-          <li class="list">Myanmar (O)</li>
-          <li class="list">Netherlands (O)</li>
-          <li class="list">New Zealand (O)</li>
-          <li class="list">Pakistan (O)</li>
-          <li class="list">Poland (O)</li>
-          <li class="list">Spain (O)</li>
+          <li class="list">Iraq</li>
+          <li class="list">Japan</li>
+          <li class="list">Myanmar</li>
+          <li class="list">New Zealand</li>
+          <li class="list">Pakistan</li>
+          <li class="list">Spain</li>
+          <li class="list">Interim government of Afghanistan</li>
         </ul>
 
         <div class="acc-toggle" data-collapse="">
           <div class="acc-block">
             <div class="acc-no">(04)</div>
+            <div class="acc-title">
+              United Nations Development <br />
+              Programme
+            </div>
+            <div class="acc-toggle-icon">
+              <ion-icon name="add-outline"></ion-icon>
+            </div>
+          </div>
+        </div>
+        <ul class="list-holder">
+          <li class="list">Algeria</li>
+          <li class="list">Bangladesh</li>
+          <li class="list">Bulgaria</li>
+          <li class="list">Cameroon</li>
+          <li class="list">Chad</li>
+          <li class="list">China</li>
+          <li class="list">Colombia</li>
+          <li class="list">Costa Rica</li>
+          <li class="list">Côte d’Ivoire</li>
+          <li class="list">Cuba</li>
+          <li class="list">Czech Republic</li>
+          <li class="list">Finland</li>
+          <li class="list">Germany</li>
+          <li class="list">Greece</li>
+          <li class="list">Guatemala</li>
+          <li class="list">Iran</li>
+          <li class="list">Japan</li>
+          <li class="list">Kazakhstan</li>
+          <li class="list">Kenya</li>
+          <li class="list">Kuwait</li>
+          <li class="list">Lesotho</li>
+          <li class="list">Myanmar</li>
+          <li class="list">New Zealand</li>
+          <li class="list">Nigeria</li>
+          <li class="list">Norway</li>
+          <li class="list">Peru</li>
+          <li class="list">Qatar</li>
+          <li class="list">Russian Federation</li>
+          <li class="list">Somalia</li>
+          <li class="list">Spain</li>
+          <li class="list">Sweden</li>
+          <li class="list">Switzerland</li>
+          <li class="list">Netherlands</li>
+          <li class="list">Ukraine</li>
+          <li class="list">United Kingdom</li>
+          <li class="list">United States</li>
+          <li class="list">Albania(O)</li>
+          <li class="list">Austria(O)</li>
+          <li class="list">Belarus(O)</li>
+          <li class="list">Belgium(O)</li>
+          <li class="list">Croatia(O)</li>
+          <li class="list">Denmark(O)</li>
+          <li class="list">France(O)</li>
+          <li class="list">Iceland(O)</li>
+          <li class="list">India(O)</li>
+          <li class="list">Lithuania(O)</li>
+          <li class="list">Luxembourg(O)</li>
+          <li class="list">Portugal(O)</li>
+          <li class="list">Romania(O)</li>
+          <li class="list">Serbia(O)</li>
+        </ul>
+
+        <div class="acc-toggle" data-collapse="">
+          <div class="acc-block">
+            <div class="acc-no">(05)</div>
             <div class="acc-title">
               United Nations Framework Convention <br />on Climate Change
             </div>
@@ -476,83 +408,46 @@
           <li class="list">Albania</li>
           <li class="list">Algeria</li>
           <li class="list">Andorra</li>
-          <li class="list">Angola</li>
-          <li class="list">Argentina</li>
           <li class="list">Armenia</li>
-          <li class="list">Australia</li>
-          <li class="list">Austria</li>
-          <li class="list">Bahrain</li>
           <li class="list">Bangladesh</li>
           <li class="list">Belarus</li>
-          <li class="list">Belgium</li>
-          <li class="list">Belize</li>
           <li class="list">Botswana</li>
-          <li class="list">Brazil</li>
           <li class="list">Bulgaria</li>
-          <li class="list">Burkina Faso</li>
           <li class="list">Canada</li>
-          <li class="list">Central African Republic</li>
           <li class="list">Chile</li>
           <li class="list">China</li>
-          <li class="list">Colombia</li>
           <li class="list">Cuba</li>
-          <li class="list">Czech Republic</li>
-          <li class="list">Denmark</li>
-          <li class="list">Egypt</li>
           <li class="list">Estonia</li>
-          <li class="list">Ethiopia</li>
-          <li class="list">Finland</li>
           <li class="list">France</li>
           <li class="list">Germany</li>
-          <li class="list">Greece</li>
-          <li class="list">Hungary</li>
-          <li class="list">Iceland</li>
-          <li class="list">Indonesia</li>
           <li class="list">Iraq</li>
-          <li class="list">Ireland</li>
           <li class="list">Islamic Republic of Iran</li>
           <li class="list">Israel</li>
-          <li class="list">Italy</li>
-          <li class="list">Japan</li>
-          <li class="list">Jordan</li>
-          <li class="list">Kenya</li>
           <li class="list">Kuwait</li>
           <li class="list">Latvia</li>
-          <li class="list">Lebanon</li>
           <li class="list">Libya</li>
-          <li class="list">Lithuania</li>
           <li class="list">Malawi</li>
           <li class="list">Malaysia</li>
-          <li class="list">Maldives</li>
-          <li class="list">Moldova</li>
           <li class="list">Mongolia</li>
-          <li class="list">Morocco</li>
           <li class="list">Myanmar</li>
           <li class="list">Netherlands</li>
           <li class="list">New Zealand</li>
           <li class="list">Nigeria</li>
-          <li class="list">Norway</li>
           <li class="list">Oman</li>
           <li class="list">Pakistan</li>
           <li class="list">Palestine(O)</li>
           <li class="list">Philippines</li>
-          <li class="list">Poland</li>
           <li class="list">Portugal</li>
-          <li class="list">Romania</li>
           <li class="list">Russian Federation</li>
           <li class="list">San Marino</li>
           <li class="list">Saudi Arabia</li>
           <li class="list">Sierra leone</li>
-          <li class="list">Singapore</li>
           <li class="list">Slovakia</li>
           <li class="list">Slovenia</li>
-          <li class="list">Spain</li>
           <li class="list">Sri Lanka</li>
           <li class="list">Sudan</li>
-          <li class="list">Sweden</li>
           <li class="list">Syrian arab republic</li>
           <li class="list">Tajikistan</li>
-          <li class="list">Turkey</li>
           <li class="list">Ukraine</li>
           <li class="list">United Kingdom</li>
           <li class="list">United States Of America</li>
@@ -564,7 +459,7 @@
 
         <div class="acc-toggle" data-collapse="">
           <div class="acc-block">
-            <div class="acc-no">(05)</div>
+            <div class="acc-no">(06)</div>
             <div class="acc-title">
               United Nations Commission <br />on Status of Women
             </div>
@@ -575,56 +470,43 @@
         </div>
         <ul class="list-holder">
           <li class="list">Afghanistan</li>
-          <li class="list">Algeria</li>
-          <li class="list">Argentina</li>
-          <li class="list">Armenia</li>
-          <li class="list">Australia</li>
-          <li class="list">Austria</li>
-          <li class="list">Bangladesh</li>
           <li class="list">Belarus</li>
-          <li class="list">Brazil</li>
-          <li class="list">Colombia</li>
-          <li class="list">Comoros</li>
-          <li class="list">Congo</li>
-          <li class="list">Cuba</li>
-          <li class="list">Denmark</li>
-          <li class="list">Dominican</li>
-          <li class="list">Republic</li>
-          <li class="list">Ecuador</li>
-          <li class="list">Equatorial Guinea</li>
-          <li class="list">Germany</li>
-          <li class="list">Ghana</li>
-          <li class="list">Haiti</li>
-          <li class="list">India</li>
           <li class="list">Iraq</li>
           <li class="list">Israel</li>
-          <li class="list">Japan</li>
           <li class="list">Kenya</li>
-          <li class="list">Latvia</li>
-          <li class="list">Malaysia</li>
-          <li class="list">Mexico</li>
-          <li class="list">Mongolia</li>
-          <li class="list">Morocco</li>
-          <li class="list">Nicaragua</li>
-          <li class="list">Nigeria</li>
-          <li class="list">Philippines</li>
-          <li class="list">Republic of Korea</li>
           <li class="list">Russian Federation</li>
           <li class="list">Saudi Arabia</li>
-          <li class="list">Senegal</li>
-          <li class="list">Somalia</li>
-          <li class="list">South Africa</li>
-          <li class="list">Switzerland</li>
           <li class="list">Togo</li>
-          <li class="list">Turkey</li>
-          <li class="list">Turkmenistan</li>
           <li class="list">United States</li>
-          <li class="list">Zambia</li>
+          <li class="list">Andorra (O)</li>
+          <li class="list">Angola (O)</li>
+          <li class="list">Albania (O)</li>
+          <li class="list">Azerbaijain (O)</li>
+          <li class="list">Bahamas (O)</li>
+          <li class="list">Bosnia and Herzegovina (O)</li>
+          <li class="list">Bulgaria (O)</li>
+          <li class="list">China (O)</li>
+          <li class="list">Czech Republic (O)</li>
+          <li class="list">France (O)</li>
+          <li class="list">Guatemala (O)</li>
+          <li class="list">Liechtenstein (O)</li>
+          <li class="list">Madagascar (O)</li>
+          <li class="list">Moldova (O)</li>
+          <li class="list">Montenegro (O)</li>
+          <li class="list">Mozambique (O)</li>
+          <li class="list">Nepal (O)</li>
+          <li class="list">Pakistan (O)</li>
+          <li class="list">Papua New Guinea (O)</li>
+          <li class="list">Poland (O)</li>
+          <li class="list">Slovakia (O)</li>
+          <li class="list">Tanzania (O)</li>
+          <li class="list">Tunisia (O)</li>
+          <li class="list">United Kingdom (O)</li>
         </ul>
 
         <div class="acc-toggle" data-collapse="">
           <div class="acc-block">
-            <div class="acc-no">(06)</div>
+            <div class="acc-no">(07)</div>
             <div class="acc-title">World Health Organization</div>
             <div class="acc-toggle-icon">
               <ion-icon name="add-outline"></ion-icon>
@@ -632,84 +514,42 @@
           </div>
         </div>
         <ul class="list-holder">
-          <li class="list">Afghanistan</li>
-          <li class="list">Argentina</li>
-          <li class="list">Australia</li>
-          <li class="list">Austria</li>
-          <li class="list">Azerbaijan</li>
-          <li class="list">Belarus</li>
-          <li class="list">Belgium</li>
-          <li class="list">Bhutan</li>
-          <li class="list">Brazil</li>
-          <li class="list">Bulgaria</li>
-          <li class="list">Burkina Faso</li>
-          <li class="list">Cameroon</li>
-          <li class="list">Chile</li>
+          <li class="list">Albania</li>
+          <li class="list">Andorra</li>
+          <li class="list">Angola</li>
+          <li class="list">Bosnia and Herzegovina</li>
           <li class="list">China</li>
-          <li class="list">Cuba</li>
-          <li class="list">Czech Republic</li>
-          <li class="list">Dem. Republic of the Congo</li>
-          <li class="list">Denmark</li>
-          <li class="list">Djibouti</li>
-          <li class="list">Dominican Republic</li>
-          <li class="list">Ecuador</li>
-          <li class="list">El Salvador</li>
-          <li class="list">Ethiopia</li>
-          <li class="list">Fiji</li>
-          <li class="list">Finland</li>
+          <li class="list">Croatia</li>
+          <li class="list">Cyprus</li>
           <li class="list">France</li>
           <li class="list">Germany</li>
-          <li class="list">Greece</li>
           <li class="list">Guatemala</li>
-          <li class="list">Hungary</li>
           <li class="list">India</li>
-          <li class="list">Indonesia</li>
-          <li class="list">Ireland</li>
           <li class="list">Israel</li>
-          <li class="list">Italy</li>
-          <li class="list">Japan</li>
-          <li class="list">Kenya</li>
-          <li class="list">Kyrgyzstan</li>
-          <li class="list">Libya</li>
-          <li class="list">Lithuania</li>
+          <li class="list">Latvia</li>
+          <li class="list">Liechtenstein</li>
+          <li class="list">Malta</li>
           <li class="list">Mexico</li>
-          <li class="list">Mongolia</li>
-          <li class="list">Morocco</li>
-          <li class="list">Netherlands</li>
-          <li class="list">New Zealand</li>
-          <li class="list">Nigeria</li>
-          <li class="list">Norway</li>
-          <li class="list">Oman</li>
+          <li class="list">Montenegro</li>
+          <li class="list">North Macedonia</li>
           <li class="list">Pakistan</li>
-          <li class="list">Poland</li>
-          <li class="list">Portugal</li>
           <li class="list">Qatar</li>
-          <li class="list">Republic of Korea</li>
-          <li class="list">Romania</li>
           <li class="list">Russian Federation</li>
-          <li class="list">Rwanda</li>
-          <li class="list">South Africa</li>
-          <li class="list">Spain</li>
-          <li class="list">Sri Lanka</li>
-          <li class="list">Sudan</li>
-          <li class="list">Sweden</li>
-          <li class="list">Switzerland</li>
+          <li class="list">San Marino</li>
+          <li class="list">Seychelles</li>
+          <li class="list">Slovakia</li>
+          <li class="list">Slovenia</li>
           <li class="list">Syrian Arab Republic</li>
-          <li class="list">Tajikistan</li>
-          <li class="list">Thailand</li>
           <li class="list">Tunisia</li>
-          <li class="list">Uganda</li>
-          <li class="list">Ukraine</li>
-          <li class="list">United Arab Emirates</li>
+          <li class="list">Turkmenistan</li>
           <li class="list">United Kingdom</li>
           <li class="list">United States of America</li>
-          <li class="list">Vietnam</li>
-          <li class="list">Yemen</li>
+          <li class="list">Kazakhstan</li>
         </ul>
 
         <div class="acc-toggle" data-collapse="">
           <div class="acc-block">
-            <div class="acc-no">(07)</div>
+            <div class="acc-no">(08)</div>
             <div class="acc-title">International Court of Justice</div>
             <div class="acc-toggle-icon">
               <ion-icon name="add-outline"></ion-icon>
@@ -717,25 +557,25 @@
           </div>
         </div>
         <ul class="list-holder">
-          <li class="list">President Joan E. Donoghue</li>
-          <li class="list">Vice-President Kirill Gevorgian</li>
-          <li class="list">Judge Abdulqawi Ahmed Yusuf</li>
-          <li class="list">Judge Antônio Augusto Cancado Trindade</li>
-          <li class="list">Judge Dalveer Bhandari</li>
-          <li class="list">Judge Georg Nolte</li>
-          <li class="list">Judge Iwasawa Yuji</li>
-          <li class="list">Judge Julia Sebutinde</li>
-          <li class="list">Judge Mohamed Bennouna</li>
-          <li class="list">Judge Nawaf Salam</li>
-          <li class="list">Judge Patrick Lipton Robinson</li>
           <li class="list">Judge Peter Tomka</li>
           <li class="list">Judge Ronny Abraham</li>
-          <li class="list">Judge Xue Hanqin</li>
+          <li class="list">Judge Hilary Charlesworth</li>
+          <li class="list">Judge Cue Hanqin</li>
+          <li class="list">Advocate Tayab Ali (Applicant Palestine)</li>
+          <li class="list">Advocate Haydee Dijkstal (Applicant Palestine)</li>
+          <li class="list">Advocate Mohammad Ayesh (Applicant Palestine)</li>
+          <li class="list">
+            Advocate Yuval Joyce Shalev (Applicant Palestine)
+          </li>
+          <li class="list">Advocate Marik A. String (Respondent USA)</li>
+          <li class="list">Advocate Richard C. Visek (Respondent USA)</li>
+          <li class="list">Advocate Steven F. Fabry (Respondent USA)</li>
+          <li class="list">Advocate Paul B. Dean (Respondent USA)</li>
         </ul>
 
         <div class="acc-toggle" data-collapse="">
           <div class="acc-block">
-            <div class="acc-no">(08)</div>
+            <div class="acc-no">(09)</div>
             <div class="acc-title">NITI Aayog</div>
             <div class="acc-toggle-icon">
               <ion-icon name="add-outline"></ion-icon>
@@ -743,61 +583,31 @@
           </div>
         </div>
         <ul class="list-holder">
-          <li class="list">Admiral D K Joshi</li>
           <li class="list">Amitabh Kant</li>
-          <li class="list">Dr Virendra Kumar</li>
-          <li class="list">Dr. Tamilisai Soundararajan</li>
-          <li class="list">Dr. V. K. Paul</li>
           <li class="list">Km. Mamata Banerjee</li>
           <li class="list">Nitin Gadkari</li>
-          <li class="list">Prof. Ramesh Chand</li>
           <li class="list">Shri Amit Shah</li>
-          <li class="list">Shri Anil Baijal</li>
           <li class="list">Shri Arvind Kejriwal</li>
-          <li class="list">Shri Ashok Gehlot</li>
-          <li class="list">Shri Ashwini Vaishnaw</li>
-          <li class="list">Shri Banwarilal Purohit</li>
-          <li class="list">Shri Bhupendra Patel</li>
-          <li class="list">Shri Bhupesh Baghel</li>
-          <li class="list">Shri Biplab Kumar Deb</li>
-          <li class="list">Shri Charanjit Singh Channi</li>
-          <li class="list">Shri Conrad Kongkal Sangma</li>
-          <li class="list">Shri Hemant Soren</li>
-          <li class="list">Shri Himanta Biswa Sarma</li>
-          <li class="list">Shri Jairam Thakur</li>
-          <li class="list">Shri K Chandrasekhar Rao</li>
-          <li class="list">Shri M. K. Stalin</li>
-          <li class="list">Shri Manohar Lal</li>
-          <li class="list">Shri Manoj Sinha</li>
-          <li class="list">Shri N. Biren Singh</li>
-          <li class="list">Shri N. Rangaswamy</li>
-          <li class="list">Shri Narendra Singh Tomar</li>
-          <li class="list">Shri Naveen Patnaik</li>
-          <li class="list">Shri Neiphiu Rio</li>
           <li class="list">Shri Nitish Kumar</li>
-          <li class="list">Shri Pema Khandu</li>
-          <li class="list">Shri Pinarayi Vijayan</li>
-          <li class="list">Shri Piyush Goyal</li>
-          <li class="list">Shri Praful Patel</li>
-          <li class="list">Shri Pramod Sawant</li>
-          <li class="list">Shri PS Golay</li>
           <li class="list">Shri Pu Zoramthanga</li>
-          <li class="list">Shri Pushkar Singh Dhami</li>
-          <li class="list">Shri Radha Krishna Mathur</li>
           <li class="list">Shri Rajnath Singh</li>
-          <li class="list">Shri Rao Inderjit Singh</li>
-          <li class="list">Shri Shivraj Singh Chouhan</li>
-          <li class="list">Shri Uddhav Thackeray</li>
-          <li class="list">Shri V. K. Saraswat</li>
           <li class="list">Shri Yogi Aditya Nath</li>
-          <li class="list">Shri YS Jagan Mohan Reddy</li>
+          <li class="list">Shri Uddhav Thackeray</li>
+          <li class="list">Thaawar Chand Gehlot</li>
+          <li class="list">Dr. Subrahmanyam Jaishankar</li>
+          <li class="list">Arjun Ram Meghwal</li>
+          <li class="list">Shri Mukhtar Abbas Naqvi</li>
+          <li class="list">Shri Giriraj Singh</li>
           <li class="list">Smt Nirmala Sitharaman</li>
-          <li class="list">Sri Basavaraj Bommai</li>
+          <li class="list">Shri Anurag Singh Thakur</li>
+          <li class="list">Smt. Smriti Zubin Irani</li>
+          <li class="list">Shri Dharmendra Pradhan</li>
+          <li class="list">Shri Raj Kumar Singh</li>
         </ul>
 
         <div class="acc-toggle" data-collapse="">
           <div class="acc-block">
-            <div class="acc-no">(09)</div>
+            <div class="acc-no">(10)</div>
             <div class="acc-title">International Press</div>
             <div class="acc-toggle-icon">
               <ion-icon name="add-outline"></ion-icon>
@@ -854,9 +664,7 @@
           <div class="contact">
             <p><b>Chirag Sharma</b>, USG Delegate Affairs</p>
             <a href="tel:+91 98688 77976">+91 98688 77976</a><br />
-            <a href="mailto: chirag02.sharma@gmail.com"
-              >infoamimun22@gmail.com</a
-            >
+            <a href="mailto: infoamimun22@gmail.com">infoamimun22@gmail.com</a>
           </div>
         </div>
       </div>

@@ -15,7 +15,8 @@
     />
     <link rel="stylesheet" href="../style.css" />
     <link rel="stylesheet" href="../about.css" />
-    <title>AMIMUN'22 | Home</title>
+    <link rel="stylesheet" href="./committees.css" />
+    <title>AMIMUN'22 | NITI</title>
   </head>
   <body>
     <input
@@ -30,7 +31,7 @@
     <nav id="main-navigation" class="nav-main">
       <ul class="menu">
         <li class="menu__item">
-          <a class="menu__link" href="">Apply</a>
+          <a class="menu__link" onclick="return func(0)" href="#">Apply</a>
           <ul class="submenu">
             <li class="menu__item">
               <a
@@ -52,7 +53,7 @@
           <a class="menu__link" href="../about.html">About</a>
         </li>
         <li class="menu__item">
-          <a class="menu__link" href="">Our Team</a>
+          <a class="menu__link" onclick="return func(0)" href="#">Our Team</a>
           <ul class="submenu">
             <li class="menu__item">
               <a class="menu__link" href="../our-team/guiding-light.html"
@@ -84,13 +85,13 @@
         </li>
 
         <li class="menu__item">
-          <a class="menu__link" href="#">Gallery</a>
+          <a class="menu__link" href="../gallery.html">Gallery</a>
         </li>
         <li class="menu__item">
           <a class="menu__link" href="../club.html">AMIMUN Club</a>
         </li>
         <li class="menu__item">
-          <a class="menu__link" href="">Resources</a>
+          <a class="menu__link" onclick="return func(0)" href="#">Resources</a>
           <ul class="submenu">
             <li class="menu__item">
               <a class="menu__link" href="../resources/country-matrix.html"
@@ -100,6 +101,11 @@
             <li class="menu__item">
               <a class="menu__link" href="../resources/background-guides.html"
                 >Background Guides</a
+              >
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="../resources/rop.html"
+                >Rules of Procedures</a
               >
             </li>
             <li class="menu__item">
@@ -174,8 +180,7 @@
                 </ul>
               </div>
             </li>
-            <li>Gallery</li>
-            <li><a href="../club.html">AMIMUN Club</a></li>
+            <li><a href="../gallery.html">Gallery</a></li>
             <li>
               <a href="./resources.html">Resources</a>
               <i class="fas fa-chevron-down"></i>
@@ -192,6 +197,9 @@
                     >
                   </li>
                   <li>
+                    <a href="../resources/rop.html">Rules of Procedures</a>
+                  </li>
+                  <li>
                     <a href="../resources/awards-criteria.html">Newsletters</a>
                   </li>
                   <li>
@@ -206,6 +214,7 @@
                 </ul>
               </div>
             </li>
+            <li><a href="../club.html">AMIMUN Club</a></li>
           </ul>
         </div>
       </nav>
@@ -239,6 +248,78 @@
             discussion as needed to further the execution of the national
             development plan, as well as the committee's prior agenda.
           </h3>
+        </div>
+      </div>
+    </div>
+
+    <h2 class="header theme">Agenda<br /></h2>
+    <div class="content">
+      <h3 class="header-text-center header-sec">
+        Discussing the policy roadmap to sustainable energy with emphasis on
+        Green India Initiative and Energy Swaraj
+      </h3>
+      <a class="btn-secondary" target="_blank" href="../ebs/niti.pdf"
+        >Background Guide</a
+      >
+    </div>
+    <div class="flip-container">
+      <div class="scene">
+        <div class="items items-2">
+          <div class="item front img-4">
+            <div class="info">
+              <h1 class="info-name">Mayank Singhal</h1>
+              <p class="info-pos">Co-Moderator</p>
+            </div>
+          </div>
+          <div class="item back">
+            Mr. Mayank Singhal is an Advocate who specialises in Corporate Law.
+            He graduated from GGSIPU with a Master of Laws degree. He is
+            particularly interested in constitutional law, and he favours
+            agendas that address human rights issues. Mr. Mayank has a legal
+            background and is heavily involved in policy formulation, which is
+            an important aspect of the judicial and administrative systems.
+          </div>
+        </div>
+      </div>
+
+      <div class="scene">
+        <div class="items items-2">
+          <div class="item front img-5">
+            <div class="info">
+              <h1 class="info-name">Aakarsh Shrivastava</h1>
+              <p class="info-pos">Co-Moderator</p>
+            </div>
+          </div>
+          <div class="item back">
+            Mr. Aakarsh Shrivastava is currently employed by ZS Associates and
+            has been involved in the debating circuit for the past 7 years. He
+            was the Vice President of Amity University's Model United Nations
+            Club, and as Deputy Secretary-General, he oversaw the AMIMUN
+            conference's 9th edition in 2020. He has always been interested in
+            public speaking, debate, and Model United Nations. Despite his
+            technical background, Mr. Aakarsh has a keen interest in Indian
+            politics and policy-making, and is well-versed in Indian committees.
+          </div>
+        </div>
+      </div>
+
+      <div class="scene">
+        <div class="items items-2">
+          <div class="item front img-75">
+            <div class="info">
+              <h1 class="info-name">Viraj Sharma</h1>
+              <p class="info-pos">Scribe</p>
+            </div>
+          </div>
+          <div class="item back">
+            Mr. Viraj Sharma is a 3rd year Engineering student at Amity
+            University. He first forayed into MUNs in school while writing
+            newsletters and reporting for various committees, and has since
+            participated in about 15 MUNs, all of which were Indian committees,
+            giving him a leg up. Mr. Viraj finds thrill in a good debate between
+            political rivals, a battle that plays out mainly in Indian
+            committees.
+          </div>
         </div>
       </div>
     </div>
@@ -287,9 +368,7 @@
           <div class="contact">
             <p><b>Chirag Sharma</b>, USG Delegate Affairs</p>
             <a href="tel:+91 98688 77976">+91 98688 77976</a><br />
-            <a href="mailto: chirag02.sharma@gmail.com"
-              >infoamimun22@gmail.com</a
-            >
+            <a href="mailto: infoamimun22@gmail.com">infoamimun22@gmail.com</a>
           </div>
         </div>
       </div>

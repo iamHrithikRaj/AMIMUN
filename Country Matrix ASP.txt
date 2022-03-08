@@ -1,0 +1,244 @@
+UNGA
+<asp:ListItem Text="S.No." Value="S.No." />
+<asp:ListItem Text="Portfolio" Value="Portfolio" />
+<asp:ListItem Text="Afghanistan" Value="Afghanistan" />
+<asp:ListItem Text="Albania" Value="Albania" />
+<asp:ListItem Text="China" Value="China" />
+<asp:ListItem Text="Cuba" Value="Cuba" />
+<asp:ListItem Text="Ethiopia" Value="Ethiopia" />
+<asp:ListItem Text="Iceland" Value="Iceland" />
+<asp:ListItem Text="Islamic Republic of Iran" Value="Islamic Republic of Iran" />
+<asp:ListItem Text="Israel" Value="Israel" />
+<asp:ListItem Text="Lebanon" Value="Lebanon" />
+<asp:ListItem Text="Libya" Value="Libya" />
+<asp:ListItem Text="Malawi" Value="Malawi" />
+<asp:ListItem Text="Moldova" Value="Moldova" />
+<asp:ListItem Text="Nigeria" Value="Nigeria" />
+<asp:ListItem Text="Palestine(O)" Value="Palestine(O)" />
+<asp:ListItem Text="Philippines" Value="Philippines" />
+<asp:ListItem Text="Russian Federation" Value="Russian Federation" />
+<asp:ListItem Text="San Marino" Value="San Marino" />
+<asp:ListItem Text="Saudi Arabia" Value="Saudi Arabia" />
+<asp:ListItem Text="Sierra leone" Value="Sierra leone" />
+<asp:ListItem Text="Slovenia" Value="Slovenia" />
+<asp:ListItem Text="Spain" Value="Spain" />
+<asp:ListItem Text="Syrian arab republic" Value="Syrian arab republic" />
+<asp:ListItem Text="Ukraine" Value="Ukraine" />
+<asp:ListItem Text="United Kingdom" Value="United Kingdom" />
+<asp:ListItem Text="United States Of America" Value="United States Of America" />
+<asp:ListItem Text="Uzbekistan" Value="Uzbekistan" />
+<asp:ListItem Text="Montenegro" Value="Montenegro" />
+<asp:ListItem Text="Bosnia and Herzegovina" Value="Bosnia and Herzegovina" />
+<asp:ListItem Text="Croatia" Value="Croatia" />
+
+
+WHO
+<asp:ListItem Text="S.No." Value="S.No." />
+<asp:ListItem Text="Portfolio" Value="Portfolio" />
+<asp:ListItem Text="Albania" Value="Albania" />
+<asp:ListItem Text="Andorra" Value="Andorra" />
+<asp:ListItem Text="Angola" Value="Angola" />
+<asp:ListItem Text="Bosnia and Herzegovina" Value="Bosnia and Herzegovina" />
+<asp:ListItem Text="China" Value="China" />
+<asp:ListItem Text="Croatia" Value="Croatia" />
+<asp:ListItem Text="Cyprus" Value="Cyprus" />
+<asp:ListItem Text="France" Value="France" />
+<asp:ListItem Text="Germany" Value="Germany" />
+<asp:ListItem Text="Guatemala " Value="Guatemala " />
+<asp:ListItem Text="India" Value="India" />
+<asp:ListItem Text="Israel" Value="Israel" />
+<asp:ListItem Text="Latvia" Value="Latvia" />
+<asp:ListItem Text="Liechtenstein" Value="Liechtenstein" />
+<asp:ListItem Text="Malta" Value="Malta" />
+<asp:ListItem Text="Mexico " Value="Mexico " />
+<asp:ListItem Text="Montenegro" Value="Montenegro" />
+<asp:ListItem Text="North Macedonia" Value="North Macedonia" />
+<asp:ListItem Text="Pakistan" Value="Pakistan" />
+<asp:ListItem Text="Qatar" Value="Qatar" />
+<asp:ListItem Text="Russian Federation" Value="Russian Federation" />
+<asp:ListItem Text="San Marino" Value="San Marino" />
+<asp:ListItem Text="Seychelles" Value="Seychelles" />
+<asp:ListItem Text="Slovakia" Value="Slovakia" />
+<asp:ListItem Text="Slovenia" Value="Slovenia" />
+<asp:ListItem Text="Syrian Arab Republic" Value="Syrian Arab Republic" />
+<asp:ListItem Text="Tunisia" Value="Tunisia" />
+<asp:ListItem Text="Turkmenistan" Value="Turkmenistan" />
+<asp:ListItem Text="United Kingdom " Value="United Kingdom " />
+<asp:ListItem Text="United States of America" Value="United States of America" />
+<asp:ListItem Text="Kazakhstan" Value="Kazakhstan" />
+
+
+UNCSW
+<asp:ListItem Text="S.No." Value="S.No." />
+<asp:ListItem Text="Portfolio" Value="Portfolio" />
+<asp:ListItem Text="Afghanistan" Value="Afghanistan" />
+<asp:ListItem Text="Belarus" Value="Belarus" />
+<asp:ListItem Text="Iraq" Value="Iraq" />
+<asp:ListItem Text="Israel" Value="Israel" />
+<asp:ListItem Text="Kenya" Value="Kenya" />
+<asp:ListItem Text="Russian Federation" Value="Russian Federation" />
+<asp:ListItem Text="Saudi Arabia" Value="Saudi Arabia" />
+<asp:ListItem Text="Togo" Value="Togo" />
+<asp:ListItem Text="United States" Value="United States" />
+<asp:ListItem Text="Andorra (O)" Value="Andorra (O)" />
+<asp:ListItem Text="Angola (O)" Value="Angola (O)" />
+<asp:ListItem Text="Albania (O)" Value="Albania (O)" />
+<asp:ListItem Text="Azerbaijain (O)" Value="Azerbaijain (O)" />
+<asp:ListItem Text="Bahamas (O)" Value="Bahamas (O)" />
+<asp:ListItem Text="Bosnia and Herzegovina (O)" Value="Bosnia and Herzegovina (O)" />
+<asp:ListItem Text="Bulgaria (O)" Value="Bulgaria (O)" />
+<asp:ListItem Text="China (O)" Value="China (O)" />
+<asp:ListItem Text="Czech Republic (O)" Value="Czech Republic (O)" />
+<asp:ListItem Text="France (O)" Value="France (O)" />
+<asp:ListItem Text="Guatemala (O)" Value="Guatemala (O)" />
+<asp:ListItem Text="Liechtenstein (O)" Value="Liechtenstein (O)" />
+<asp:ListItem Text="Madagascar (O)" Value="Madagascar (O)" />
+<asp:ListItem Text="Moldova (O)" Value="Moldova (O)" />
+<asp:ListItem Text="Montenegro (O)" Value="Montenegro (O)" />
+<asp:ListItem Text="Mozambique (O)" Value="Mozambique (O)" />
+<asp:ListItem Text="Nepal (O)" Value="Nepal (O)" />
+<asp:ListItem Text="Pakistan (O)" Value="Pakistan (O)" />
+<asp:ListItem Text="Papua New Guinea (O)" Value="Papua New Guinea (O)" />
+<asp:ListItem Text="Poland (O)" Value="Poland (O)" />
+<asp:ListItem Text="Slovakia (O)" Value="Slovakia (O)" />
+<asp:ListItem Text="Tanzania (O)" Value="Tanzania (O)" />
+<asp:ListItem Text="Tunisia (O)" Value="Tunisia (O)" />
+<asp:ListItem Text="United Kingdom (O)" Value="United Kingdom (O)" />
+
+
+UNHRC
+<asp:ListItem Text="S.No." Value="S.No." />
+<asp:ListItem Text="Portfolio" Value="Portfolio" />
+<asp:ListItem Text="Afghanistan" Value="Afghanistan" />
+<asp:ListItem Text="Armenia" Value="Armenia" />
+<asp:ListItem Text="Austria" Value="Austria" />
+<asp:ListItem Text="Democratic People's Republic of Korea" Value="Democratic People's Republic of Korea" />
+<asp:ListItem Text="France" Value="France" />
+<asp:ListItem Text="Islamic Republic of Iran" Value="Islamic Republic of Iran" />
+<asp:ListItem Text="Macedonia" Value="Macedonia" />
+<asp:ListItem Text="Pakistan" Value="Pakistan" />
+<asp:ListItem Text="People's Republic of China" Value="People's Republic of China" />
+<asp:ListItem Text="Russian Federation" Value="Russian Federation" />
+<asp:ListItem Text="Saudi Arabia" Value="Saudi Arabia" />
+<asp:ListItem Text="Slovakia" Value="Slovakia" />
+<asp:ListItem Text="Solomon Islands" Value="Solomon Islands" />
+<asp:ListItem Text="Somalia" Value="Somalia" />
+<asp:ListItem Text="Syrian Arab Republic" Value="Syrian Arab Republic" />
+<asp:ListItem Text="Turkey" Value="Turkey" />
+<asp:ListItem Text="United Kingdom" Value="United Kingdom" />
+<asp:ListItem Text="United States of America" Value="United States of America" />
+
+
+UNSC
+<asp:ListItem Text="S.No." Value="S.No." />
+<asp:ListItem Text="Portfolio" Value="Portfolio" />
+<asp:ListItem Text="United States of America" Value="United States of America" />
+<asp:ListItem Text="China" Value="China" />
+<asp:ListItem Text="United Kingdom" Value="United Kingdom" />
+<asp:ListItem Text="Russia" Value="Russia" />
+<asp:ListItem Text="Niger " Value="Niger " />
+<asp:ListItem Text="Iraq" Value="Iraq" />
+<asp:ListItem Text="Japan" Value="Japan" />
+<asp:ListItem Text="Myanmar" Value="Myanmar" />
+<asp:ListItem Text="New Zealand" Value="New Zealand" />
+<asp:ListItem Text="Pakistan" Value="Pakistan" />
+<asp:ListItem Text="Spain" Value="Spain" />
+<asp:ListItem Text="Interim government of Afghanistan" Value="Interim government of Afghanistan" />
+
+
+UNFCCC
+<asp:ListItem Text="S.No." Value="S.No." />
+<asp:ListItem Text="Portfolio" Value="Portfolio" />
+<asp:ListItem Text="Afghanistan" Value="Afghanistan" />
+<asp:ListItem Text="Albania" Value="Albania" />
+<asp:ListItem Text="Algeria" Value="Algeria" />
+<asp:ListItem Text="Andorra" Value="Andorra" />
+<asp:ListItem Text="Armenia" Value="Armenia" />
+<asp:ListItem Text="Bangladesh" Value="Bangladesh" />
+<asp:ListItem Text="Belarus" Value="Belarus" />
+<asp:ListItem Text="Botswana" Value="Botswana" />
+<asp:ListItem Text="Bulgaria" Value="Bulgaria" />
+<asp:ListItem Text="Canada" Value="Canada" />
+<asp:ListItem Text="Chile" Value="Chile" />
+<asp:ListItem Text="China" Value="China" />
+<asp:ListItem Text="Cuba" Value="Cuba" />
+<asp:ListItem Text="Estonia" Value="Estonia" />
+<asp:ListItem Text="France" Value="France" />
+<asp:ListItem Text="Germany" Value="Germany" />
+<asp:ListItem Text="Iraq" Value="Iraq" />
+<asp:ListItem Text="Islamic Republic of Iran" Value="Islamic Republic of Iran" />
+<asp:ListItem Text="Israel" Value="Israel" />
+<asp:ListItem Text="Kuwait" Value="Kuwait" />
+<asp:ListItem Text="Latvia" Value="Latvia" />
+<asp:ListItem Text="Libya" Value="Libya" />
+<asp:ListItem Text="Malawi" Value="Malawi" />
+<asp:ListItem Text="Malaysia" Value="Malaysia" />
+<asp:ListItem Text="Mongolia" Value="Mongolia" />
+<asp:ListItem Text="Myanmar" Value="Myanmar" />
+<asp:ListItem Text="Netherlands" Value="Netherlands" />
+<asp:ListItem Text="New Zealand" Value="New Zealand" />
+<asp:ListItem Text="Nigeria" Value="Nigeria" />
+<asp:ListItem Text="Oman" Value="Oman" />
+<asp:ListItem Text="Pakistan" Value="Pakistan" />
+<asp:ListItem Text="Palestine(O)" Value="Palestine(O)" />
+<asp:ListItem Text="Philippines" Value="Philippines" />
+<asp:ListItem Text="Portugal" Value="Portugal" />
+<asp:ListItem Text="Russian Federation" Value="Russian Federation" />
+<asp:ListItem Text="San Marino" Value="San Marino" />
+<asp:ListItem Text="Saudi Arabia" Value="Saudi Arabia" />
+<asp:ListItem Text="Sierra leone" Value="Sierra leone" />
+<asp:ListItem Text="Slovakia" Value="Slovakia" />
+<asp:ListItem Text="Slovenia" Value="Slovenia" />
+<asp:ListItem Text="Sri Lanka" Value="Sri Lanka" />
+<asp:ListItem Text="Sudan" Value="Sudan" />
+<asp:ListItem Text="Syrian arab republic" Value="Syrian arab republic" />
+<asp:ListItem Text="Tajikistan" Value="Tajikistan" />
+<asp:ListItem Text="Ukraine" Value="Ukraine" />
+<asp:ListItem Text="United Kingdom" Value="United Kingdom" />
+<asp:ListItem Text="United States Of America" Value="United States Of America" />
+<asp:ListItem Text="Uzbekistan" Value="Uzbekistan" />
+<asp:ListItem Text="Venezuela" Value="Venezuela" />
+<asp:ListItem Text="Vietnam" Value="Vietnam" />
+<asp:ListItem Text="Yemen" Value="Yemen" />
+
+
+NITI Aayog
+<asp:ListItem Text="S.No." Value="S.No." />
+<asp:ListItem Text="Portfolio" Value="Portfolio" />
+<asp:ListItem Text="Amitabh Kant" Value="Amitabh Kant" />
+<asp:ListItem Text="Km. Mamata Banerjee" Value="Km. Mamata Banerjee" />
+<asp:ListItem Text="Nitin Gadkari" Value="Nitin Gadkari" />
+<asp:ListItem Text="Shri Amit Shah" Value="Shri Amit Shah" />
+<asp:ListItem Text="Shri Arvind Kejriwal" Value="Shri Arvind Kejriwal" />
+<asp:ListItem Text="Shri Nitish Kumar" Value="Shri Nitish Kumar" />
+<asp:ListItem Text="Shri Pu Zoramthanga" Value="Shri Pu Zoramthanga" />
+<asp:ListItem Text="Shri Rajnath Singh" Value="Shri Rajnath Singh" />
+<asp:ListItem Text="Shri Yogi Aditya Nath" Value="Shri Yogi Aditya Nath" />
+<asp:ListItem Text="Shri Uddhav Thackeray" Value="Shri Uddhav Thackeray" />
+<asp:ListItem Text="Thaawar Chand Gehlot" Value="Thaawar Chand Gehlot" />
+<asp:ListItem Text="Dr. Subrahmanyam Jaishankar" Value="Dr. Subrahmanyam Jaishankar" />
+<asp:ListItem Text="Arjun Ram Meghwal" Value="Arjun Ram Meghwal" />
+<asp:ListItem Text="Shri Mukhtar Abbas Naqvi" Value="Shri Mukhtar Abbas Naqvi" />
+<asp:ListItem Text="Shri Giriraj Singh" Value="Shri Giriraj Singh" />
+<asp:ListItem Text="Smt Nirmala Sitharaman" Value="Smt Nirmala Sitharaman" />
+<asp:ListItem Text="Shri Anurag Singh Thakur" Value="Shri Anurag Singh Thakur" />
+<asp:ListItem Text="Smt. Smriti Zubin Irani" Value="Smt. Smriti Zubin Irani" />
+<asp:ListItem Text="Shri Dharmendra Pradhan" Value="Shri Dharmendra Pradhan" />
+<asp:ListItem Text="Shri Raj Kumar Singh" Value="Shri Raj Kumar Singh" />
+
+
+ICJ
+<asp:ListItem Text="Judge Peter Tomka" Value="Judge Peter Tomka" />
+<asp:ListItem Text="Judge Ronny Abraham" Value="Judge Ronny Abraham" />
+<asp:ListItem Text="Judge Hilary Charlesworth" Value="Judge Hilary Charlesworth" />
+<asp:ListItem Text="Judge Cue Hanqin" Value="Judge Cue Hanqin" />
+<asp:ListItem Text="Tayab Ali (Applicant Palestine)" Value="Tayab Ali (Applicant Palestine)" />
+<asp:ListItem Text="Haydee Dijkstal (Applicant Palestine)" Value="Haydee Dijkstal (Applicant Palestine)" />
+<asp:ListItem Text="Mohammad Ayesh (Applicant Palestine)" Value="Mohammad Ayesh (Applicant Palestine)" />
+<asp:ListItem Text="Yuval Joyce Shalev (Applicant Palestine)" Value="Yuval Joyce Shalev (Applicant Palestine)" />
+<asp:ListItem Text="Marik A. String (Respondent USA)" Value="Marik A. String (Respondent USA)" />
+<asp:ListItem Text="Richard C. Visek (Respondent USA)" Value="Richard C. Visek (Respondent USA)" />
+<asp:ListItem Text="Steven F. Fabry (Respondent USA)" Value="Steven F. Fabry (Respondent USA)" />
+<asp:ListItem Text="Paul B. Dean (Respondent USA)" Value="Paul B. Dean (Respondent USA)" />
+
+

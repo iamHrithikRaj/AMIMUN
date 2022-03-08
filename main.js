@@ -19,7 +19,6 @@ if (screen.width > 414) {
     },
   });
 
-  console.log("OK" + " " + screen.width);
   t.to("#videoplayer", { width: "100%", ease: "Expo.easeInOut" });
 
   t1.to(
@@ -125,3 +124,4 @@ var x = setInterval(function () {
     document.getElementById("timer").innerHTML = "EXPIRED";
   }
 }, 1000);
+

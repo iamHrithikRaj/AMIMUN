@@ -15,7 +15,8 @@
     />
     <link rel="stylesheet" href="../style.css" />
     <link rel="stylesheet" href="../about.css" />
-    <title>AMIMUN'22 | Home</title>
+    <link rel="stylesheet" href="./committees.css" />
+    <title>AMIMUN'22 | UNGA</title>
   </head>
   <body>
     <input
@@ -30,7 +31,7 @@
     <nav id="main-navigation" class="nav-main">
       <ul class="menu">
         <li class="menu__item">
-          <a class="menu__link" href="">Apply</a>
+          <a class="menu__link" onclick="return func(0)" href="#">Apply</a>
           <ul class="submenu">
             <li class="menu__item">
               <a
@@ -52,7 +53,7 @@
           <a class="menu__link" href="../about.html">About</a>
         </li>
         <li class="menu__item">
-          <a class="menu__link" href="">Our Team</a>
+          <a class="menu__link" onclick="return func(0)" href="#">Our Team</a>
           <ul class="submenu">
             <li class="menu__item">
               <a class="menu__link" href="../our-team/guiding-light.html"
@@ -84,13 +85,13 @@
         </li>
 
         <li class="menu__item">
-          <a class="menu__link" href="#">Gallery</a>
+          <a class="menu__link" href="../gallery.html">Gallery</a>
         </li>
         <li class="menu__item">
           <a class="menu__link" href="../club.html">AMIMUN Club</a>
         </li>
         <li class="menu__item">
-          <a class="menu__link" href="">Resources</a>
+          <a class="menu__link" onclick="return func(0)" href="#">Resources</a>
           <ul class="submenu">
             <li class="menu__item">
               <a class="menu__link" href="../resources/country-matrix.html"
@@ -100,6 +101,11 @@
             <li class="menu__item">
               <a class="menu__link" href="../resources/background-guides.html"
                 >Background Guides</a
+              >
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="../resources/rop.html"
+                >Rules of Procedures</a
               >
             </li>
             <li class="menu__item">
@@ -174,8 +180,7 @@
                 </ul>
               </div>
             </li>
-            <li>Gallery</li>
-            <li><a href="../club.html">AMIMUN Club</a></li>
+            <li><a href="../gallery.html">Gallery</a></li>
             <li>
               <a href="./resources.html">Resources</a>
               <i class="fas fa-chevron-down"></i>
@@ -192,6 +197,9 @@
                     >
                   </li>
                   <li>
+                    <a href="../resources/rop.html">Rules of Procedures</a>
+                  </li>
+                  <li>
                     <a href="../resources/awards-criteria.html">Newsletters</a>
                   </li>
                   <li>
@@ -206,12 +214,15 @@
                 </ul>
               </div>
             </li>
+            <li><a href="../club.html">AMIMUN Club</a></li>
           </ul>
         </div>
       </nav>
 
       <div class="header-section">
-        <h2 class="header theme">United Nations General Assembly <br /></h2>
+        <h2 class="header theme">
+          United Nations General Assembly - II (UNGA)<br />
+        </h2>
         <div class="content">
           <h3 class="header-text header-sec">
             The United Nations General Assembly (UNGA) is the UN's principal
@@ -239,6 +250,77 @@
             and information and communications technologies for development, as
             well as global partnerships.
           </h3>
+        </div>
+      </div>
+    </div>
+
+    <h2 class="header theme">Agenda<br /></h2>
+    <div class="content">
+      <h3 class="header-text-center header-sec">
+        Deliberation on technical cooperation for Universal Financial Access
+      </h3>
+      <a class="btn-secondary" target="_blank" href="../ebs/unga.pdf"
+        >Background Guide</a
+      >
+    </div>
+    <div class="flip-container">
+      <div class="scene">
+        <div class="items items-2">
+          <div class="item front img-20">
+            <div class="info">
+              <h1 class="info-name">Siddharth Kapoor</h1>
+              <p class="info-pos">Chairperson</p>
+            </div>
+          </div>
+          <div class="item back">
+            Mr. Siddharth Kapoor is an Amity International School, Saket alumnus
+            who served as Secretary-General of AMIMUN'15. He holds an ALSD law
+            degree and has participated in over 180 MUN conferences. In previous
+            AMIMUN events, he chaired three other committees, including UNICEF,
+            NATO, and the World Trade Organization. Mr. Siddharth holds an avid
+            interest in committees that have economic or social agendas due to
+            the wide scope of debate they have.
+          </div>
+        </div>
+      </div>
+
+      <div class="scene">
+        <div class="items items-2">
+          <div class="item front img-21">
+            <div class="info">
+              <h1 class="info-name">Shivang Singh</h1>
+              <p class="info-pos">Research Associate</p>
+            </div>
+          </div>
+          <div class="item back">
+            Mr. Shivang Singh has been a member of the MUN Circuit since 2014,
+            attending over 100 conferences and chairing more than 60 of them. He
+            has also worked as an advisor at Scottish High International School
+            in Delhi/NCR. Mr. Shivang is currently collaborating with Delhi's
+            Deputy Chief Minister on a startup policy, as well as matters of
+            economic advertising, and projects that require an understanding of
+            political strategy
+          </div>
+        </div>
+      </div>
+
+      <div class="scene">
+        <div class="items items-2">
+          <div class="item front img-72">
+            <div class="info">
+              <h1 class="info-name">Naina Ghai</h1>
+              <p class="info-pos">Substantive Director</p>
+            </div>
+          </div>
+          <div class="item back">
+            Ms. Naina Ghai has been an influential part of the Model UN circuit
+            for over 5 years now. She began as a delegate because she was
+            interested in public speaking, but she has now shifted her interest
+            to actual keen enthusiasm thinking about policy and relationship
+            building globally and how things work at the UN. She is a
+            second-year student at Manipal University Jaipur and the Senior
+            Coordinator of the University's Model United Nations Society.
+          </div>
         </div>
       </div>
     </div>
@@ -287,9 +369,7 @@
           <div class="contact">
             <p><b>Chirag Sharma</b>, USG Delegate Affairs</p>
             <a href="tel:+91 98688 77976">+91 98688 77976</a><br />
-            <a href="mailto: chirag02.sharma@gmail.com"
-              >infoamimun22@gmail.com</a
-            >
+            <a href="mailto: infoamimun22@gmail.com">infoamimun22@gmail.com</a>
           </div>
         </div>
       </div>

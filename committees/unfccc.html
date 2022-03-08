@@ -15,103 +15,113 @@
     />
     <link rel="stylesheet" href="../style.css" />
     <link rel="stylesheet" href="../about.css" />
-    <title>AMIMUN'22 | Home</title>
+    <link rel="stylesheet" href="./committees.css" />
+    <title>AMIMUN'22 | UNFCCC</title>
   </head>
   <body>
     <input
-    type="checkbox"
-    id="main-navigation-toggle"
-    class="btn btn--close"
-    title="Toggle main navigation"
-  />
-  <label for="main-navigation-toggle">
-    <span></span>
-  </label>
-  <nav id="main-navigation" class="nav-main">
-    <ul class="menu">
-      <li class="menu__item">
-        <a class="menu__link" href="">Apply</a>
-        <ul class="submenu">
-          <li class="menu__item">
-            <a class="menu__link" href="https://www.amity.edu/SPG/AMIMUN2022/register/DelegateForm.aspx"
-              >Delegate Application</a
-            >
-          </li>
-          <li class="menu__item">
-            <a class="menu__link" href="https://www.amity.edu/SPG/AMIMUN2022/register/IPForm.aspx"
-              >International Press Application</a
-            >
-          </li>
-        </ul>
-      </li>
-      <li class="menu__item">
-        <a class="menu__link" href="../about.html">About</a>
-      </li>
-      <li class="menu__item">
-        <a class="menu__link" href="">Our Team</a>
-        <ul class="submenu">
-          <li class="menu__item">
-            <a class="menu__link" href="../our-team/guiding-light.html"
-              >Our Guiding Light</a
-            >
-          </li>
-          <li class="menu__item">
-            <a class="menu__link" href="../our-team/advisory-board.html"
-              >Advisory Board</a
-            >
-          </li>
-          <li class="menu__item">
-            <a class="menu__link" href="../our-team/secretariate.html"
-              >Secretariat</a
-            >
-          </li>
-          <li class="menu__item">
-            <a class="menu__link" href="../our-team/org-committee.html"
-              >Organising Committee</a
-            >
-          </li>
-        </ul>
-      </li>
-      <li class="menu__item">
-        <a class="menu__link" href="../messages.html">Messages</a>
-      </li>
-      <li class="menu__item">
-        <a class="menu__link" href="../committes.html">Committees</a>
-      </li>
+      type="checkbox"
+      id="main-navigation-toggle"
+      class="btn btn--close"
+      title="Toggle main navigation"
+    />
+    <label for="main-navigation-toggle">
+      <span></span>
+    </label>
+    <nav id="main-navigation" class="nav-main">
+      <ul class="menu">
+        <li class="menu__item">
+          <a class="menu__link" onclick="return func(0)" href="#">Apply</a>
+          <ul class="submenu">
+            <li class="menu__item">
+              <a
+                class="menu__link"
+                href="https://www.amity.edu/SPG/AMIMUN2022/register/DelegateForm.aspx"
+                >Delegate Application</a
+              >
+            </li>
+            <li class="menu__item">
+              <a
+                class="menu__link"
+                href="https://www.amity.edu/SPG/AMIMUN2022/register/IPForm.aspx"
+                >International Press Application</a
+              >
+            </li>
+          </ul>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="../about.html">About</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" onclick="return func(0)" href="#">Our Team</a>
+          <ul class="submenu">
+            <li class="menu__item">
+              <a class="menu__link" href="../our-team/guiding-light.html"
+                >Our Guiding Light</a
+              >
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="../our-team/advisory-board.html"
+                >Advisory Board</a
+              >
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="../our-team/secretariate.html"
+                >Secretariat</a
+              >
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="../our-team/org-committee.html"
+                >Organising Committee</a
+              >
+            </li>
+          </ul>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="../messages.html">Messages</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="../committes.html">Committees</a>
+        </li>
 
-      <li class="menu__item">
-        <a class="menu__link" href="#">Gallery</a>
-      </li>
-      <li class="menu__item">
-        <a class="menu__link" href="../club.html">AMIMUN Club</a>
-      </li>
-      <li class="menu__item">
-        <a class="menu__link" href="">Resources</a>
-        <ul class="submenu">
-          <li class="menu__item">
-            <a class="menu__link" href="../resources/country-matrix.html"
-              >Country Matrix</a
-            >
-          </li>
-          <li class="menu__item">
-            <a class="menu__link" href="../resources/background-guides.html"
-              >Background Guides</a
-            >
-          </li>
-          <li class="menu__item">
-            <a class="menu__link" href="../resources/awards-criteria.html"
-              >Newsletters</a
-            >
-          </li>
-          <li class="menu__item">
-            <a class="menu__link" href="../resources/conference-schedule.html"
-              >Conference Schedule</a
-            >
-          </li>
-        </ul>
-      </li>
-    </ul>
-  </nav>
+        <li class="menu__item">
+          <a class="menu__link" href="../gallery.html">Gallery</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="../club.html">AMIMUN Club</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" onclick="return func(0)" href="#">Resources</a>
+          <ul class="submenu">
+            <li class="menu__item">
+              <a class="menu__link" href="../resources/country-matrix.html"
+                >Country Matrix</a
+              >
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="../resources/background-guides.html"
+                >Background Guides</a
+              >
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="../resources/rop.html"
+                >Rules of Procedures</a
+              >
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="../resources/awards-criteria.html"
+                >Newsletters</a
+              >
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="../resources/conference-schedule.html"
+                >Conference Schedule</a
+              >
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
     <div id="back">
       <nav>
         <div class="menu-bar">
@@ -156,17 +166,21 @@
               <div class="sub-menu-1">
                 <ul>
                   <li>
-                    <a href="https://www.amity.edu/SPG/AMIMUN2022/register/DelegateForm.aspx">Delegate Application</a>
+                    <a
+                      href="https://www.amity.edu/SPG/AMIMUN2022/register/DelegateForm.aspx"
+                      >Delegate Application</a
+                    >
                   </li>
                   <li>
-                    <a href="https://www.amity.edu/SPG/AMIMUN2022/register/IPForm.aspx"
+                    <a
+                      href="https://www.amity.edu/SPG/AMIMUN2022/register/IPForm.aspx"
                       >International Press Application</a
                     >
                   </li>
                 </ul>
               </div>
             </li>
-            <li>Gallery</li>
+            <li><a href="../gallery.html">Gallery</a></li>
             <li><a href="../club.html">AMIMUN Club</a></li>
             <li>
               <a href="./resources.html">Resources</a>
@@ -174,7 +188,9 @@
               <div class="sub-menu-1">
                 <ul>
                   <li>
-                    <a href="../resources/country-matrix.html">Country Matrix</a>
+                    <a href="../resources/country-matrix.html"
+                      >Country Matrix</a
+                    >
                   </li>
                   <li>
                     <a href="../resources/background-guides.html"
@@ -182,9 +198,10 @@
                     >
                   </li>
                   <li>
-                    <a href="../resources/awards-criteria.html"
-                      >Newsletters</a
-                    >
+                    <a href="../resources/rop.html">Rules of Procedures</a>
+                  </li>
+                  <li>
+                    <a href="../resources/awards-criteria.html">Newsletters</a>
                   </li>
                   <li>
                     <a href="../resources/conference-schedule.html">
@@ -203,18 +220,131 @@
       </nav>
 
       <div class="header-section">
-        <h2 class="header theme">The United Nations Framework Convention on Climate Change<br /></h2>
+        <h2 class="header theme">
+          The United Nations Framework Convention on Climate Change (UNFCCC)<br />
+        </h2>
         <div class="content">
           <h3 class="header-text header-sec">
-            The United Nations Framework Convention on Climate Change (UNFCCC)  is the UN organization that is responsible for assisting the global response to the threat of climate change.  The Convention is the parent instrument of the 2015 Paris Agreement and has nearly universal membership (197 Parties). The Paris Agreement's major goal is to prevent world average temperature rise this century as near to 1.5 degrees Celsius above pre-industrial levels as possible. The UNFCCC is also the parent treaty of the Kyoto Protocol, which was signed in 1997. <br>
+            The United Nations Framework Convention on Climate Change (UNFCCC)
+            is the UN organization that is responsible for assisting the global
+            response to the threat of climate change. The Convention is the
+            parent instrument of the 2015 Paris Agreement and has nearly
+            universal membership (197 Parties). The Paris Agreement's major goal
+            is to prevent world average temperature rise this century as near to
+            1.5 degrees Celsius above pre-industrial levels as possible. The
+            UNFCCC is also the parent treaty of the Kyoto Protocol, which was
+            signed in 1997. <br />
 
-            The committee is known to provide technical assistance in the analysis and assessment of climate change data submitted by Parties, as well as in the execution of the Kyoto processes. It also manages the Paris Agreement's registry of Nationally Determined Contributions (NDCs), which is an important part of the agreement's implementation. They also organise and assist two to four negotiation sessions per year, the largest and most important of which is the Conference of the Parties, which takes place every year in different parts of the world. It is the largest annual United Nations meeting, with roughly 25,000 people in attendance on average.
-            
+            The committee is known to provide technical assistance in the
+            analysis and assessment of climate change data submitted by Parties,
+            as well as in the execution of the Kyoto processes. It also manages
+            the Paris Agreement's registry of Nationally Determined
+            Contributions (NDCs), which is an important part of the agreement's
+            implementation. They also organise and assist two to four
+            negotiation sessions per year, the largest and most important of
+            which is the Conference of the Parties, which takes place every year
+            in different parts of the world. It is the largest annual United
+            Nations meeting, with roughly 25,000 people in attendance on
+            average.
           </h3>
         </div>
       </div>
+    </div>
 
-     
+    <h2 class="header theme">Agenda<br /></h2>
+    <div class="content">
+      <h3 class="header-text-center header-sec">
+        Agenda 1 - Reviewing the implementation gaps in the Paris Agreement with
+        special emphasis on financial mechanisms
+      </h3>
+      <h3 class="header-text-center header-sec">
+        Agenda 2 - Developing Sustainable Agricultural systems in the Food
+        Industry to achieve SDG 13
+      </h3>
+      <a class="btn-secondary" target="_blank" href="../ebs/unfccc.pdf"
+        >Background Guide</a
+      >
+    </div>
+    <div class="flip-container">
+      <div class="scene">
+        <div class="items items-2">
+          <div class="item front img-8">
+            <div class="info">
+              <h1 class="info-name">Parinay Gupta</h1>
+              <p class="info-pos">Co-Chairperson</p>
+            </div>
+          </div>
+          <div class="item back">
+            Mr. Parinay Gupta has been a part of the MUN circuit for the past 8
+            years and has attended over 70 conferences. He is known for his
+            expertise in prevalent sociopolitical issues and has always had an
+            innate interest in bringing the most important aspects of climate
+            change-based agendas to the table. Mr. Parinay is currently an
+            associate at MG Law Affiliates.
+          </div>
+        </div>
+      </div>
+
+      <div class="scene">
+        <div class="items items-2">
+          <div class="item front img-9">
+            <div class="info">
+              <h1 class="info-name">Siddhant Treasure</h1>
+              <p class="info-pos">Co-Chairperson</p>
+            </div>
+          </div>
+          <div class="item back">
+            Mr. Siddhant Treasure has been a member of the MUN Circuit for the
+            past six years, and has also served as Secretary-General during
+            AMIMUN’20. He has always enjoyed public speaking, debate, and Model
+            United Nations. With an innate interest in sociopolitical issues,
+            with a preference for humanitarian causes and climate change issues,
+            and he believes in contributing to climate change-related agendas
+            through Model United Nations. Mr. Siddhant is currently employed by
+            Protiviti as a consultant.
+          </div>
+        </div>
+      </div>
+
+      <div class="scene">
+        <div class="items items-2">
+          <div class="item front img-10">
+            <div class="info">
+              <h1 class="info-name">Anna Golikova</h1>
+              <p class="info-pos">Research Associate</p>
+            </div>
+          </div>
+          <div class="item back">
+            Ms. Anna Golikova is a Lomonosov Moscow State University student
+            with a law and sociology specialisation and a Double Degree in Law
+            and Public Administration, as well as a world politics faculty
+            member. She is a well-known figure on the international MUN Circuit,
+            having attended over 60 MUN conferences as well as numerous debates
+            and discussions on political and diplomatic issues.
+          </div>
+        </div>
+      </div>
+
+      <div class="scene">
+        <div class="items items-2">
+          <div class="item front img-73">
+            <div class="info">
+              <h1 class="info-name">Rakshan Sadhu</h1>
+              <p class="info-pos">Substantive Director</p>
+            </div>
+          </div>
+          <div class="item back">
+            Mr. Rakshan Sadhu is a third-year student majoring in BBA Artificial
+            Intelligence. He is fascinated with politics and law, which is why
+            he frequently participates in Model United Nations Conferences. He
+            has been a part of the Delhi MUN circuit for 8 years, which has
+            given him a lot of expertise in delegating and organising such
+            events.
+          </div>
+        </div>
+      </div>
+    </div>
+
     <hr />
     <footer id="bottom">
       <div class="footer-content">
@@ -259,9 +389,7 @@
           <div class="contact">
             <p><b>Chirag Sharma</b>, USG Delegate Affairs</p>
             <a href="tel:+91 98688 77976">+91 98688 77976</a><br />
-            <a href="mailto: chirag02.sharma@gmail.com"
-              >infoamimun22@gmail.com</a
-            >
+            <a href="mailto: infoamimun22@gmail.com">infoamimun22@gmail.com</a>
           </div>
         </div>
       </div>

@@ -15,6 +15,25 @@ html {
   --te: cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
+.btn-secondary {
+  border: 1px solid #000;
+  margin: 30px;
+  display: inline-block;
+  background: #fff;
+  min-width: 100px;
+  text-align: center;
+  border-radius: 5px;
+  padding: 15px 10px;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.btn-secondary:hover {
+  border: 1px solid #000;
+  background: #000;
+  color: #fff;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -26,6 +45,143 @@ html,
 body {
   height: 100%;
   scroll-behavior: smooth;
+}
+
+.colab-container {
+  margin: 70px auto;
+  width: 1120px;
+  height: fit-content;
+  display: grid;
+  grid-template-columns: 250px 250px 250px 250px;
+  grid-row: auto;
+  grid-column-gap: 30px;
+  grid-row-gap: 0px;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.colab-container-two {
+  margin: 10px auto;
+  width: 500px;
+  height: fit-content;
+  display: grid;
+  grid-template-columns: 250px 250px;
+  grid-row: auto;
+  grid-column-gap: 30px;
+  grid-row-gap: 0px;
+}
+
+.sponsor-container {
+  margin: 70px auto;
+  width: 840px;
+  height: fit-content;
+  display: grid;
+  grid-template-columns: 250px 250px 250px;
+  grid-row: auto;
+  grid-column-gap: 30px;
+  grid-row-gap: 0px;
+}
+
+.partner-container {
+  margin: 70px auto;
+  width: 300px;
+  height: fit-content;
+  display: grid;
+  grid-template-columns: 300px;
+  grid-row: auto;
+  grid-column-gap: 30px;
+  grid-row-gap: 0px;
+}
+
+.unfpa {
+  text-align: center;
+}
+
+#more1 {
+  display: none;
+}
+#more2 {
+  display: none;
+}
+#more3 {
+  display: none;
+}
+#more4 {
+  display: none;
+}
+#more5 {
+  display: none;
+}
+
+.box {
+  border-radius: 0px;
+  padding: 20px;
+}
+
+.colab-img {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  object-fit: contain;
+}
+
+.colab-img > img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.colab-desc {
+  width: 60%;
+  height: 100%;
+  line-height: 40px;
+  text-align: justify;
+}
+
+/* Modal */
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  border-radius: 8px;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 /* hamburger menu start */
@@ -335,12 +491,16 @@ nav {
 }
 
 .menu-bar ul {
-  display: inline-flex;
+  display: flex;
   list-style: none;
+  /* border: 1px solid #000; */
+  justify-content: space-around;
+  align-items: center;
 }
 
 .menu-bar ul li {
   width: 120px;
+  font-size: 17px;
   padding: 15px 10px;
 }
 
@@ -379,7 +539,6 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
-
 }
 
 li {
@@ -487,6 +646,10 @@ nav .links li a {
   margin-top: 20px;
 }
 
+.hide {
+  display: none;
+}
+
 #videoplayer {
   width: 300px;
   min-height: 100vh;
@@ -496,8 +659,6 @@ nav .links li a {
   transform: translate(-50%, -50%) scale(1.2);
   overflow: hidden;
 }
-
-
 
 #videoplayer img {
   height: 90%;
@@ -571,12 +732,34 @@ nav .links li a {
   color: #fff;
 }
 
+.unsg-section {
+  padding: 50px;
+  margin-top: 70px;
+  width: 100%;
+  height: 105vh;
+}
+
+#unsg-vid {
+  width: 100%;
+  height: 100%;
+}
+
 .section {
   padding: 50px;
   margin-top: 70px;
   width: 100%;
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
+}
+
+.section-rev {
+  padding: 50px;
+  margin-top: 70px;
+  width: 100%;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
 }
 
 .img-text-container {
@@ -586,7 +769,12 @@ nav .links li a {
 .message {
   display: flex;
   flex-direction: column;
-  width: 70%;
+  width: 68%;
+  height: 100%;
+}
+
+.unsg-message {
+  width: 100%;
   height: 100%;
 }
 
@@ -608,13 +796,14 @@ nav .links li a {
 #sec-gen-msg {
   width: 100%;
   line-height: 40px;
-  margin-left: 40px;
+  text-align: justify;
+  /* margin-left: 40px; */
 }
 
 #sec-gen-regards {
   color: grey;
   width: 70%;
-  margin-left: 40px;
+  /* margin-left: 40px; */
   line-height: 30px;
 }
 
@@ -636,13 +825,14 @@ nav .links li a {
 .cursor {
   position: absolute;
   width: 300px;
-  height: 200px;
+  object-fit: cover;
+  height: 300px;
   top: 50%;
   left: 50%;
   transform: scale(0.1);
   opacity: 0;
   margin: -100px 0 0 -100px;
-  background: url(./image-1.jpg) no-repeat 50% 50%;
+  /* background: url(./image-1.jpg) no-repeat 50% 50%; */
   background-size: cover;
   z-index: 1;
 }
@@ -654,15 +844,17 @@ nav .links li a {
 }
 
 .project {
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
   padding: 12px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-basis: 1;
   position: relative;
-  z-index: 2;
-  color: white;
+  margin: 40px 0;
+  z-index: 4;
+  /* color: white; */
+  will-change: opacity;
   mix-blend-mode: difference;
 }
 
@@ -854,6 +1046,52 @@ iframe {
 }
 
 @media only screen and (max-width: 414px) {
+  .unfpa {
+    text-align: center;
+    font-size: 15px;
+  }
+
+  .unsg-section {
+    padding: 20px;
+    margin-top: 70px;
+    width: 100%;
+    height: 75vh;
+  }
+
+  .colab-container,
+  .colab-container-two {
+    margin: 70px auto;
+    width: 250px;
+    height: fit-content;
+    display: grid;
+    grid-template-columns: 250px;
+    grid-row: auto;
+    grid-column-gap: 30px;
+    grid-row-gap: 0px;
+  }
+
+  .sponsor-container {
+    margin: 70px auto;
+    width: 250px;
+    height: fit-content;
+    display: grid;
+    grid-template-columns: 250px;
+    grid-row: auto;
+    grid-column-gap: 30px;
+    grid-row-gap: 0px;
+  }
+
+  .partner-container {
+    margin: 70px auto;
+    width: 300px;
+    height: fit-content;
+    display: grid;
+    grid-template-columns: 300px;
+    grid-row: auto;
+    grid-column-gap: 30px;
+    grid-row-gap: 0px;
+  }
+
   .footer-bottom {
     width: 100vw;
     padding: 20px 0;
@@ -921,7 +1159,8 @@ iframe {
     width: 100%;
   }
 
-  .section {
+  .section,
+  .section-rev {
     padding: 1px 20px;
     flex-direction: column;
   }
@@ -931,7 +1170,8 @@ iframe {
     height: 350px;
   }
 
-  .heading {
+  .heading,
+  .project-title-h1 {
     font-size: 25px;
     line-height: normal;
   }
@@ -1020,11 +1260,83 @@ iframe {
   }
 
   .header-sec {
-    font-size: 12px;
+    font-size: 18px;
   }
 }
 
 @media only screen and (max-width: 639px) and (min-width: 415px) {
+  .unfpa {
+    text-align: center;
+    font-size: 15px;
+  }
+  .unsg-section {
+    padding: 20px;
+    margin-top: 70px;
+    width: 100%;
+    height: 75vh;
+  }
+
+  .colab-container,
+  .colab-container-two {
+    margin: 70px auto;
+    width: 250px;
+    height: fit-content;
+    display: grid;
+    grid-template-columns: 250px;
+    grid-row: auto;
+    grid-column-gap: 30px;
+    grid-row-gap: 0px;
+  }
+
+  .sponsor-container {
+    margin: 70px auto;
+    width: 250px;
+    height: fit-content;
+    display: grid;
+    grid-template-columns: 250px;
+    grid-row: auto;
+    grid-column-gap: 30px;
+    grid-row-gap: 0px;
+  }
+
+  .partner-container {
+    margin: 70px auto;
+    width: 300px;
+    height: fit-content;
+    display: grid;
+    grid-template-columns: 300px;
+    grid-row: auto;
+    grid-column-gap: 30px;
+    grid-row-gap: 0px;
+  }
+
+  .colab-info-container {
+    width: 100%;
+    margin: 50px 0;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .colab-img {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin-bottom: 40px;
+  }
+
+  .colab-desc {
+    width: 90%;
+    height: 100%;
+    line-height: 40px;
+    text-align: justify;
+  }
+
   .footer-bottom {
     width: 100vw;
     padding: 20px 0;
@@ -1092,7 +1404,8 @@ iframe {
     width: 100%;
   }
 
-  .section {
+  .section,
+  .section-rev {
     padding: 1px 20px;
     flex-direction: column;
   }
@@ -1102,7 +1415,8 @@ iframe {
     height: 350px;
   }
 
-  .heading {
+  .heading,
+  .project-title-h1 {
     font-size: 25px;
     line-height: normal;
   }
@@ -1197,6 +1511,78 @@ iframe {
 }
 
 @media only screen and (max-width: 834px) and (min-width: 639px) {
+  .unfpa {
+    text-align: center;
+    font-size: 18px;
+  }
+  .unsg-section {
+    padding: 20px;
+    margin-top: 70px;
+    width: 100%;
+    height: 75vh;
+  }
+
+  .colab-container,
+  .colab-container-two {
+    margin: 70px auto;
+    width: 530px;
+    height: fit-content;
+    display: grid;
+    grid-template-columns: 250px 250px;
+    grid-row: auto;
+    grid-column-gap: 30px;
+    grid-row-gap: 0px;
+  }
+
+  .sponsor-container {
+    margin: 70px auto;
+    width: 500px;
+    height: fit-content;
+    display: grid;
+    grid-template-columns: 250px 250px;
+    grid-row: auto;
+    grid-column-gap: 30px;
+    grid-row-gap: 0px;
+  }
+
+  .partner-container {
+    margin: 70px auto;
+    width: 300px;
+    height: fit-content;
+    display: grid;
+    grid-template-columns: 300px;
+    grid-row: auto;
+    grid-column-gap: 30px;
+    grid-row-gap: 0px;
+  }
+
+  .colab-info-container {
+    width: 100%;
+    margin: 50px 0;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .colab-img {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin-bottom: 40px;
+  }
+
+  .colab-desc {
+    width: 90%;
+    height: 100%;
+    line-height: 40px;
+    text-align: justify;
+  }
+
   .footer-bottom {
     width: 100vw;
     padding: 20px 0;
@@ -1264,7 +1650,8 @@ iframe {
     width: 100%;
   }
 
-  .section {
+  .section,
+  .section-rev {
     padding: 1px 20px;
     flex-direction: column;
   }
@@ -1274,7 +1661,8 @@ iframe {
     height: 450px;
   }
 
-  .heading {
+  .heading,
+  .project-title-h1 {
     font-size: 25px;
     line-height: normal;
   }
@@ -1370,6 +1758,78 @@ iframe {
 }
 
 @media only screen and (max-width: 1220px) and (min-width: 835px) {
+  .unfpa {
+    text-align: center;
+    font-size: 19px;
+  }
+  .unsg-section {
+    padding: 20px;
+    margin-top: 70px;
+    width: 100%;
+    height: 100vh;
+  }
+
+  .colab-container,
+  .colab-container-two {
+    margin: 70px auto;
+    width: 530px;
+    height: fit-content;
+    display: grid;
+    grid-template-columns: 250px 250px;
+    grid-row: auto;
+    grid-column-gap: 30px;
+    grid-row-gap: 0px;
+  }
+
+  .sponsor-container {
+    margin: 70px auto;
+    width: 500px;
+    height: fit-content;
+    display: grid;
+    grid-template-columns: 250px 250px;
+    grid-row: auto;
+    grid-column-gap: 30px;
+    grid-row-gap: 0px;
+  }
+
+  .partner-container {
+    margin: 70px auto;
+    width: 300px;
+    height: fit-content;
+    display: grid;
+    grid-template-columns: 300px;
+    grid-row: auto;
+    grid-column-gap: 30px;
+    grid-row-gap: 0px;
+  }
+
+  .colab-info-container {
+    width: 100%;
+    margin: 50px 0;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .colab-img {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin-bottom: 40px;
+  }
+
+  .colab-desc {
+    width: 90%;
+    height: 100%;
+    line-height: 40px;
+    text-align: justify;
+  }
+
   .footer-bottom {
     width: 100vw;
     padding: 20px 0;
@@ -1437,7 +1897,8 @@ iframe {
     width: 100%;
   }
 
-  .section {
+  .section,
+  .section-rev {
     padding: 1px 20px;
     flex-direction: column;
   }
@@ -1447,7 +1908,8 @@ iframe {
     height: 650px;
   }
 
-  .heading {
+  .heading,
+  .project-title-h1 {
     font-size: 25px;
     line-height: normal;
   }
@@ -1569,7 +2031,6 @@ iframe {
 }
 
 @media only screen and (max-width: 1221px) {
-
   nav {
     display: flex;
     justify-content: space-evenly;

@@ -15,7 +15,8 @@
     />
     <link rel="stylesheet" href="../style.css" />
     <link rel="stylesheet" href="../about.css" />
-    <title>AMIMUN'22 | Home</title>
+    <link rel="stylesheet" href="./committees.css" />
+    <title>AMIMUN'22 | UNSC</title>
   </head>
   <body>
     <input
@@ -30,7 +31,7 @@
     <nav id="main-navigation" class="nav-main">
       <ul class="menu">
         <li class="menu__item">
-          <a class="menu__link" href="">Apply</a>
+          <a class="menu__link" onclick="return func(0)" href="#">Apply</a>
           <ul class="submenu">
             <li class="menu__item">
               <a
@@ -52,7 +53,7 @@
           <a class="menu__link" href="../about.html">About</a>
         </li>
         <li class="menu__item">
-          <a class="menu__link" href="">Our Team</a>
+          <a class="menu__link" onclick="return func(0)" href="#">Our Team</a>
           <ul class="submenu">
             <li class="menu__item">
               <a class="menu__link" href="../our-team/guiding-light.html"
@@ -84,13 +85,13 @@
         </li>
 
         <li class="menu__item">
-          <a class="menu__link" href="#">Gallery</a>
+          <a class="menu__link" href="../gallery.html">Gallery</a>
         </li>
         <li class="menu__item">
           <a class="menu__link" href="../club.html">AMIMUN Club</a>
         </li>
         <li class="menu__item">
-          <a class="menu__link" href="">Resources</a>
+          <a class="menu__link" onclick="return func(0)" href="#">Resources</a>
           <ul class="submenu">
             <li class="menu__item">
               <a class="menu__link" href="../resources/country-matrix.html"
@@ -100,6 +101,11 @@
             <li class="menu__item">
               <a class="menu__link" href="../resources/background-guides.html"
                 >Background Guides</a
+              >
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="../resources/rop.html"
+                >Rules of Procedures</a
               >
             </li>
             <li class="menu__item">
@@ -174,8 +180,7 @@
                 </ul>
               </div>
             </li>
-            <li>Gallery</li>
-            <li><a href="../club.html">AMIMUN Club</a></li>
+            <li><a href="../gallery.html">Gallery</a></li>
             <li>
               <a href="./resources.html">Resources</a>
               <i class="fas fa-chevron-down"></i>
@@ -192,6 +197,9 @@
                     >
                   </li>
                   <li>
+                    <a href="../resources/rop.html">Rules of Procedures</a>
+                  </li>
+                  <li>
                     <a href="../resources/awards-criteria.html">Newsletters</a>
                   </li>
                   <li>
@@ -206,12 +214,15 @@
                 </ul>
               </div>
             </li>
+            <li><a href="../club.html">AMIMUN Club</a></li>
           </ul>
         </div>
       </nav>
 
       <div class="header-section">
-        <h2 class="header theme">United Nations Security Council <br /></h2>
+        <h2 class="header theme">
+          United Nations Security Council (UNSC)<br />
+        </h2>
         <div class="content">
           <h3 class="header-text header-sec">
             The United Nations Security Council (UNSC) is one of the United
@@ -236,6 +247,78 @@
             elaborate on effective techniques for carrying out the United
             Nations' trusteeship functions in "strategic areas."
           </h3>
+        </div>
+      </div>
+    </div>
+
+    <h2 class="header theme">Agenda<br /></h2>
+    <div class="content">
+      <h3 class="header-text-center header-sec">
+        Situation in Afghanistan (Crisis Committee)
+      </h3>
+      <a class="btn-secondary" target="_blank" href="../ebs/unsc.pdf"
+        >Background Guide</a
+      >
+    </div>
+    <div class="flip-container">
+      <div class="scene">
+        <div class="items items-2">
+          <div class="item front img-14">
+            <div class="info">
+              <h1 class="info-name">Agastya Sen</h1>
+              <p class="info-pos">Chairperson</p>
+            </div>
+          </div>
+          <div class="item back">
+            Mr. Agastya has done over a 100 MUNs and has won best delegates in
+            almost every conference he has participated in. He has also
+            represented NUJS at the Philip C. Jessup International Law Moot
+            Court Competition. His sphere of influence has ensured multiple
+            co-workers and juniors not only enter into the MUN circuit, but grow
+            in it as well.
+          </div>
+        </div>
+      </div>
+
+      <div class="scene">
+        <div class="items items-2">
+          <div class="item front img-15">
+            <div class="info">
+              <h1 class="info-name">Aman Kotecha</h1>
+              <p class="info-pos">Vice-Chairperson</p>
+            </div>
+          </div>
+          <div class="item back">
+            Mr. Aman Kotecha is currently a third-year law student at
+            Vivekananda Institute of Professional Studies. He has attended 70
+            Model United Nations Conferences. He is an outstanding orator and
+            leader with strong analytical and logical abilities. He learned
+            about debating, world affairs, and diplomacy at a young age. During
+            this brief epoch, he has amassed a number of honours in his name.
+            Mr. Aman has also participated in the Harvard Project for Asian and
+            International Relations 2020.
+          </div>
+        </div>
+      </div>
+
+      <div class="scene">
+        <div class="items items-2">
+          <div class="item front img-74">
+            <div class="info">
+              <h1 class="info-name">Baawa Sayan Bajaj</h1>
+              <p class="info-pos">Substantive Director</p>
+            </div>
+          </div>
+          <div class="item back">
+            Mr.Baawa Sayan Bajaj is a first-year philosophy student at Hansraj
+            College, University of Delhi. He is deeply committed to translating
+            today's most difficult issues into clear, articulate arguments, an
+            endeavour supported by, among other things, Model UN conferences and
+            parliamentary debates. Aside from being an incorrigible bibliophile
+            and aspiring writer, he has a keen interest in politics,
+            constitutional and international law, history, and, in general, all
+            things humanities.
+          </div>
         </div>
       </div>
     </div>
@@ -284,9 +367,7 @@
           <div class="contact">
             <p><b>Chirag Sharma</b>, USG Delegate Affairs</p>
             <a href="tel:+91 98688 77976">+91 98688 77976</a><br />
-            <a href="mailto: chirag02.sharma@gmail.com"
-              >infoamimun22@gmail.com</a
-            >
+            <a href="mailto: infoamimun22@gmail.com">infoamimun22@gmail.com</a>
           </div>
         </div>
       </div>

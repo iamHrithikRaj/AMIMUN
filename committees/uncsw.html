@@ -15,103 +15,113 @@
     />
     <link rel="stylesheet" href="../style.css" />
     <link rel="stylesheet" href="../about.css" />
-    <title>AMIMUN'22 | Home</title>
+    <link rel="stylesheet" href="./committees.css" />
+    <title>AMIMUN'22 | UNCSW</title>
   </head>
   <body>
     <input
-    type="checkbox"
-    id="main-navigation-toggle"
-    class="btn btn--close"
-    title="Toggle main navigation"
-  />
-  <label for="main-navigation-toggle">
-    <span></span>
-  </label>
-  <nav id="main-navigation" class="nav-main">
-    <ul class="menu">
-      <li class="menu__item">
-        <a class="menu__link" href="">Apply</a>
-        <ul class="submenu">
-          <li class="menu__item">
-            <a class="menu__link" href="https://www.amity.edu/SPG/AMIMUN2022/register/DelegateForm.aspx"
-              >Delegate Application</a
-            >
-          </li>
-          <li class="menu__item">
-            <a class="menu__link" href="https://www.amity.edu/SPG/AMIMUN2022/register/IPForm.aspx"
-              >International Press Application</a
-            >
-          </li>
-        </ul>
-      </li>
-      <li class="menu__item">
-        <a class="menu__link" href="../about.html">About</a>
-      </li>
-      <li class="menu__item">
-        <a class="menu__link" href="">Our Team</a>
-        <ul class="submenu">
-          <li class="menu__item">
-            <a class="menu__link" href="../our-team/guiding-light.html"
-              >Our Guiding Light</a
-            >
-          </li>
-          <li class="menu__item">
-            <a class="menu__link" href="../our-team/advisory-board.html"
-              >Advisory Board</a
-            >
-          </li>
-          <li class="menu__item">
-            <a class="menu__link" href="../our-team/secretariate.html"
-              >Secretariat</a
-            >
-          </li>
-          <li class="menu__item">
-            <a class="menu__link" href="../our-team/org-committee.html"
-              >Organising Committee</a
-            >
-          </li>
-        </ul>
-      </li>
-      <li class="menu__item">
-        <a class="menu__link" href="../messages.html">Messages</a>
-      </li>
-      <li class="menu__item">
-        <a class="menu__link" href="../committes.html">Committees</a>
-      </li>
+      type="checkbox"
+      id="main-navigation-toggle"
+      class="btn btn--close"
+      title="Toggle main navigation"
+    />
+    <label for="main-navigation-toggle">
+      <span></span>
+    </label>
+    <nav id="main-navigation" class="nav-main">
+      <ul class="menu">
+        <li class="menu__item">
+          <a class="menu__link" onclick="return func(0)" href="#">Apply</a>
+          <ul class="submenu">
+            <li class="menu__item">
+              <a
+                class="menu__link"
+                href="https://www.amity.edu/SPG/AMIMUN2022/register/DelegateForm.aspx"
+                >Delegate Application</a
+              >
+            </li>
+            <li class="menu__item">
+              <a
+                class="menu__link"
+                href="https://www.amity.edu/SPG/AMIMUN2022/register/IPForm.aspx"
+                >International Press Application</a
+              >
+            </li>
+          </ul>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="../about.html">About</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" onclick="return func(0)" href="#">Our Team</a>
+          <ul class="submenu">
+            <li class="menu__item">
+              <a class="menu__link" href="../our-team/guiding-light.html"
+                >Our Guiding Light</a
+              >
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="../our-team/advisory-board.html"
+                >Advisory Board</a
+              >
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="../our-team/secretariate.html"
+                >Secretariat</a
+              >
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="../our-team/org-committee.html"
+                >Organising Committee</a
+              >
+            </li>
+          </ul>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="../messages.html">Messages</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="../committes.html">Committees</a>
+        </li>
 
-      <li class="menu__item">
-        <a class="menu__link" href="#">Gallery</a>
-      </li>
-      <li class="menu__item">
-        <a class="menu__link" href="../club.html">AMIMUN Club</a>
-      </li>
-      <li class="menu__item">
-        <a class="menu__link" href="">Resources</a>
-        <ul class="submenu">
-          <li class="menu__item">
-            <a class="menu__link" href="../resources/country-matrix.html"
-              >Country Matrix</a
-            >
-          </li>
-          <li class="menu__item">
-            <a class="menu__link" href="../resources/background-guides.html"
-              >Background Guides</a
-            >
-          </li>
-          <li class="menu__item">
-            <a class="menu__link" href="../resources/awards-criteria.html"
-              >Newsletters</a
-            >
-          </li>
-          <li class="menu__item">
-            <a class="menu__link" href="../resources/conference-schedule.html"
-              >Conference Schedule</a
-            >
-          </li>
-        </ul>
-      </li>
-    </ul>
-  </nav>
+        <li class="menu__item">
+          <a class="menu__link" href="../gallery.html">Gallery</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="../club.html">AMIMUN Club</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" onclick="return func(0)" href="#">Resources</a>
+          <ul class="submenu">
+            <li class="menu__item">
+              <a class="menu__link" href="../resources/country-matrix.html"
+                >Country Matrix</a
+              >
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="../resources/background-guides.html"
+                >Background Guides</a
+              >
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="../resources/rop.html"
+                >Rules of Procedures</a
+              >
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="../resources/awards-criteria.html"
+                >Newsletters</a
+              >
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="../resources/conference-schedule.html"
+                >Conference Schedule</a
+              >
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
     <div id="back">
       <nav>
         <div class="menu-bar">
@@ -156,17 +166,21 @@
               <div class="sub-menu-1">
                 <ul>
                   <li>
-                    <a href="https://www.amity.edu/SPG/AMIMUN2022/register/DelegateForm.aspx">Delegate Application</a>
+                    <a
+                      href="https://www.amity.edu/SPG/AMIMUN2022/register/DelegateForm.aspx"
+                      >Delegate Application</a
+                    >
                   </li>
                   <li>
-                    <a href="https://www.amity.edu/SPG/AMIMUN2022/register/IPForm.aspx"
+                    <a
+                      href="https://www.amity.edu/SPG/AMIMUN2022/register/IPForm.aspx"
                       >International Press Application</a
                     >
                   </li>
                 </ul>
               </div>
             </li>
-            <li>Gallery</li>
+            <li><a href="../gallery.html">Gallery</a></li>
             <li><a href="../club.html">AMIMUN Club</a></li>
             <li>
               <a href="./resources.html">Resources</a>
@@ -174,7 +188,9 @@
               <div class="sub-menu-1">
                 <ul>
                   <li>
-                    <a href="../resources/country-matrix.html">Country Matrix</a>
+                    <a href="../resources/country-matrix.html"
+                      >Country Matrix</a
+                    >
                   </li>
                   <li>
                     <a href="../resources/background-guides.html"
@@ -182,9 +198,10 @@
                     >
                   </li>
                   <li>
-                    <a href="../resources/awards-criteria.html"
-                      >Newsletters</a
-                    >
+                    <a href="../resources/rop.html">Rules of Procedures</a>
+                  </li>
+                  <li>
+                    <a href="../resources/awards-criteria.html">Newsletters</a>
                   </li>
                   <li>
                     <a href="../resources/conference-schedule.html">
@@ -203,18 +220,106 @@
       </nav>
 
       <div class="header-section">
-        <h2 class="header theme">United Nations Commission on the Status of Women (UNCSW)<br /></h2>
+        <h2 class="header theme">
+          United Nations Commission on the Status of Women (UNCSW)<br />
+        </h2>
         <div class="content">
           <h3 class="header-text header-sec">
-            The Commission on the Status of Women (CSW) is the world's first international body dedicated solely to advancing women's equality, sexual orientation equality, and empowerment. In February 1947, the Commission met for the first time in Lake Success, New York. The Commission's initial focus was on legal measures to preserve women's human rights and raising awareness of women's condition around the world. Deliberations in the Commission introduced new topics into the international political arena. The work of the Commission drew the interest, participation, and support of the burgeoning international women's movement from the start.<br>
+            The Commission on the Status of Women (CSW) is the world's first
+            international body dedicated solely to advancing women's equality,
+            sexual orientation equality, and empowerment. In February 1947, the
+            Commission met for the first time in Lake Success, New York. The
+            Commission's initial focus was on legal measures to preserve women's
+            human rights and raising awareness of women's condition around the
+            world. Deliberations in the Commission introduced new topics into
+            the international political arena. The work of the Commission drew
+            the interest, participation, and support of the burgeoning
+            international women's movement from the start.<br />
 
-In keeping with the Committee's unwavering commitment to securing a stage and strongly advocating for gender equality and women's empowerment around the world, Delegates will be expected to create a unique space for the exchange of national experience and good practical application, as well as for bringing the voice of the women's movement to the United Nations through debate and discourse.
-
+            In keeping with the Committee's unwavering commitment to securing a
+            stage and strongly advocating for gender equality and women's
+            empowerment around the world, Delegates will be expected to create a
+            unique space for the exchange of national experience and good
+            practical application, as well as for bringing the voice of the
+            women's movement to the United Nations through debate and discourse.
           </h3>
         </div>
       </div>
+    </div>
 
-     
+    <h2 class="header theme">Agenda<br /></h2>
+    <div class="content">
+      <h3 class="header-text-center header-sec">
+        Addressing human rights of women in conflict and post conflict
+        situations
+      </h3>
+      <a class="btn-secondary" target="_blank" href="../ebs/uncsw.pdf"
+        >Background Guide</a
+      >
+    </div>
+    <div class="flip-container">
+      <div class="scene">
+        <div class="items items-2">
+          <div class="item front img-6">
+            <div class="info">
+              <h1 class="info-name">Kaveri Rawal</h1>
+              <p class="info-pos">Chairperson</p>
+            </div>
+          </div>
+          <div class="item back">
+            For the past 11 years, Ms. Kaveri Rawal has been a part of the Model
+            United Nations circuit. She has chaired conferences throughout India
+            and is one of the Indian circuit's original members. She has
+            presided over more than 100 conferences and overseen numerous
+            debates and discussions, ensuring that her committees are focused on
+            important agendas addressing global issues. Ms. Kaveri graduated
+            from the Faculty of Law and is currently employed with Ms. Chand
+            Chopra, Advocate.
+          </div>
+        </div>
+      </div>
+
+      <div class="scene">
+        <div class="items items-2">
+          <div class="item front img-7">
+            <div class="info">
+              <h1 class="info-name">Ranjeet Hudda</h1>
+              <p class="info-pos">Research Associate</p>
+            </div>
+          </div>
+          <div class="item back">
+            Mr.Ranjeet is in his final year of college, currently pursuing
+            Political Science at Kirori Mal College, University of Delhi. He has
+            attended over 30 Model UN conferences, both at the regional and
+            national levels, as a Delegate and as a member of the Executive
+            Board. He believes that MUNs not only shape one's personality but
+            also broaden one's perspective, which can be used to help solve
+            global issues.
+          </div>
+        </div>
+      </div>
+
+      <div class="scene">
+        <div class="items items-2">
+          <div class="item front img-71">
+            <div class="info">
+              <h1 class="info-name">Aanchal Khera</h1>
+              <p class="info-pos">Substantive Director</p>
+            </div>
+          </div>
+          <div class="item back">
+            Ms. Aanchal Khera is a final-year student at Miranda House College
+            for Women, University of Delhi, seeking a BA degree. She is the
+            Founder and Advisor of her college's MUN Club, as well as an active
+            MUNner from the Delhi Circuit with over 40 MUNs under her belt. She
+            is a strong supporter of women's rights and has collaborated with a
+            number of NGOs and organisations to educate and improve the position
+            of women.
+          </div>
+        </div>
+      </div>
+    </div>
+
     <hr />
     <footer id="bottom">
       <div class="footer-content">
@@ -259,9 +364,7 @@ In keeping with the Committee's unwavering commitment to securing a stage and st
           <div class="contact">
             <p><b>Chirag Sharma</b>, USG Delegate Affairs</p>
             <a href="tel:+91 98688 77976">+91 98688 77976</a><br />
-            <a href="mailto: chirag02.sharma@gmail.com"
-              >infoamimun22@gmail.com</a
-            >
+            <a href="mailto: infoamimun22@gmail.com">infoamimun22@gmail.com</a>
           </div>
         </div>
       </div>

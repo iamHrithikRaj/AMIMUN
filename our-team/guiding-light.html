@@ -13,9 +13,11 @@
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/TweenMax.min.js"></script>
+    <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
     <link rel="stylesheet" href="../style.css" />
-    <link rel="stylesheet" href="../about.css" />
-    <title>AMIMUN'22 | Home</title>
+    <link rel="stylesheet" href="./guiding-light.css" />
+    <title>AMIMUN'22 | Guiding Light</title>
   </head>
   <body>
     <input
@@ -30,7 +32,7 @@
     <nav id="main-navigation" class="nav-main">
       <ul class="menu">
         <li class="menu__item">
-          <a class="menu__link" href="">Apply</a>
+          <a class="menu__link" onclick="return func(0)" href="#">Apply</a>
           <ul class="submenu">
             <li class="menu__item">
               <a
@@ -52,7 +54,7 @@
           <a class="menu__link" href="../about.html">About</a>
         </li>
         <li class="menu__item">
-          <a class="menu__link" href="">Our Team</a>
+          <a class="menu__link" onclick="return func(0)" href="#">Our Team</a>
           <ul class="submenu">
             <li class="menu__item">
               <a class="menu__link" href="../our-team/guiding-light.html"
@@ -83,13 +85,13 @@
           <a class="menu__link" href="../committes.html">Committees</a>
         </li>
         <li class="menu__item">
-          <a class="menu__link" href="#">Gallery</a>
+          <a class="menu__link" href="../gallery.html">Gallery</a>
         </li>
         <li class="menu__item">
           <a class="menu__link" href="../club.html">AMIMUN Club</a>
         </li>
         <li class="menu__item">
-          <a class="menu__link" href="">Resources</a>
+          <a class="menu__link" onclick="return func(0)" href="#">Resources</a>
           <ul class="submenu">
             <li class="menu__item">
               <a class="menu__link" href="../resources/country-matrix.html"
@@ -99,6 +101,11 @@
             <li class="menu__item">
               <a class="menu__link" href="../resources/background-guides.html"
                 >Background Guides</a
+              >
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="../resources/rop.html"
+                >Rules of Procedures</a
               >
             </li>
             <li class="menu__item">
@@ -169,35 +176,158 @@
                 </ul>
               </div>
             </li>
-            <li>Gallery</li>
+            <li><a href="../gallery.html">Gallery</a></li>
+            <li>
+              <a href="./resources.html">Resources</a>
+              <i class="fas fa-chevron-down"></i>
+              <div class="sub-menu-1">
+                <ul>
+                  <li>
+                    <a href="../resources/country-matrix.html"
+                      >Country Matrix</a
+                    >
+                  </li>
+                  <li>
+                    <a href="../resources/background-guides.html"
+                      >Background Guides</a
+                    >
+                  </li>
+                  <li>
+                    <a href="../resources/rop.html">Rules of Procedures</a>
+                  </li>
+                  <li>
+                    <a href="../resources/awards-criteria.html">Newsletters</a>
+                  </li>
+                  <li>
+                    <a href="../resources/conference-schedule.html">
+                      Conference Schedule</a
+                    >
+                  </li>
+
+                  <li>
+                    <a href="#bottom"> Contact Us</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
             <li><a href="../club.html">AMIMUN Club</a></li>
-            <li>Resources</li>
           </ul>
         </div>
       </nav>
 
       <div class="header-section">
         <h2 class="header theme">Our Guiding Light<br /></h2>
-        <div class="content">
-          <h3 class="comming-soon">Coming Soon</h3>
-          <!-- <h3 class="header-text header-sec">
-            The second e-edition of Amity International Model United Nations
-            shall be a simulation of the United Nations, spanning two days. At
-            AMIMUN, delegates gain a better understanding of the inner workings
-            of the UN, engage in diplomatic discussion, and enhance their
-            knowledge of global relations. The past ten editions of AMIUMUN have
-            each continued to set the bar higher in terms of innovative themes
-            and constructive debate; with this conference continuing the
-            tradition. The second e-edition of AMIMUN shall endeavour to
-            construct a space within which delegates will develop a more
-            holistic consciousness of the world around them, and enhance
-            critical thinking, public speaking, and leadership skills. Thus,
-            AMIMUN abides by the Preamble to the Charter of the United Nations:
-            “To practice tolerance and live together in peace with one another
-            as good neighbours”.
-          </h3> -->
+      </div>
+    </div>
+
+    <div class="acc-holder">
+      <div class="acc-toggle" data-collapse="">
+        <div class="acc-block">
+          <div class="acc-title">Patrons in Chief</div>
+          <div class="acc-toggle-icon">
+            <ion-icon name="add-outline"></ion-icon>
+          </div>
         </div>
       </div>
+      <ul class="list-holder">
+        <table role="table">
+          <thead role="rowgroup">
+            <tr role="row" class="list">
+              <th role="columnheader">Name</th>
+              <th role="columnheader">Position</th>
+            </tr>
+          </thead>
+          <tbody role="rowgroup">
+            <tr role="row" class="list">
+              <td role="cell">Dr. Ashok K. Chauhan</td>
+              <td role="cell">
+                Founder President, Ritnand Balved Education Foundation (RBEF),
+                Chairman, AKC Group of Companies
+              </td>
+            </tr>
+
+            <tr role="row" class="list">
+              <td role="cell">Dr. Atul Chauhan</td>
+              <td role="cell">Chancellor, Amity University, President, RBEF</td>
+            </tr>
+          </tbody>
+        </table>
+      </ul>
+
+      <div class="acc-toggle" data-collapse="">
+        <div class="acc-block">
+          <div class="acc-title">Patron</div>
+          <div class="acc-toggle-icon">
+            <ion-icon name="add-outline"></ion-icon>
+          </div>
+        </div>
+      </div>
+      <ul class="list-holder">
+        <table role="table">
+          <thead role="rowgroup">
+            <tr role="row" class="list">
+              <th role="columnheader">Name</th>
+              <th role="columnheader">Position</th>
+            </tr>
+          </thead>
+          <tbody role="rowgroup">
+            <tr role="row" class="list">
+              <td role="cell">Prof. (Dr.) Balvinder Shukla</td>
+              <td role="cell">Vice Chancellor AUUP</td>
+            </tr>
+          </tbody>
+        </table>
+      </ul>
+
+      <div class="acc-toggle" data-collapse="">
+        <div class="acc-block">
+          <div class="acc-title">Advisory Committee</div>
+          <div class="acc-toggle-icon">
+            <ion-icon name="add-outline"></ion-icon>
+          </div>
+        </div>
+      </div>
+      <ul class="list-holder">
+        <table role="table">
+          <thead role="rowgroup">
+            <tr role="row" class="list">
+              <th role="columnheader">Name</th>
+              <th role="columnheader">Position</th>
+            </tr>
+          </thead>
+          <tbody role="rowgroup">
+            <tr role="row" class="list">
+              <td role="cell">Dr. Nutan Kaushik</td>
+              <td role="cell">DG, AFAF</td>
+            </tr>
+
+            <tr role="row" class="list">
+              <td role="cell">Sh. R.M. Aggarwal</td>
+              <td role="cell">Addl. DG, ACICA</td>
+            </tr>
+
+            <tr role="row" class="list">
+              <td role="cell">Lt. Gen. Anil Kapoor</td>
+              <td role="cell">DG AUUP</td>
+            </tr>
+
+            <tr role="row" class="list">
+              <td role="cell">Dr. K.M. Soni</td>
+              <td role="cell">Dy. Dean E&T</td>
+            </tr>
+
+            <tr role="row" class="list">
+              <td role="cell">Dr. Nirupma Prakash</td>
+              <td role="cell">Director, AISS</td>
+            </tr>
+
+            <tr role="row" class="list">
+              <td role="cell">Dr. Sukhwant S. Bindra</td>
+              <td role="cell">Director Research, AIIS & AIPP</td>
+            </tr>
+          </tbody>
+        </table>
+      </ul>
     </div>
 
     <hr />
@@ -244,9 +374,7 @@
           <div class="contact">
             <p><b>Chirag Sharma</b>, USG Delegate Affairs</p>
             <a href="tel:+91 98688 77976">+91 98688 77976</a><br />
-            <a href="mailto: chirag02.sharma@gmail.com"
-              >chirag02.sharma@gmail.com</a
-            >
+            <a href="mailto: infoamimun22@gmail.com">infoamimun22@gmail.com</a>
           </div>
         </div>
       </div>
@@ -307,44 +435,42 @@
 
       $($overlay).mouseout(function () {
         flag = false;
-        TweenLite.to($cursor, 0.3, { scale: 0.1, autoAlpha: 0 });
+        TweenLite.to($cursor, 0.1, { scale: 0.1, autoAlpha: 0 });
       });
 
-      const body = document.body,
-        scrollWrap = document.getElementsByClassName(
-          "smooth-scroll-wrapper"
-        )[0],
-        height = scrollWrap.getBoundingClientRect().height - 1,
-        speed = 0.04;
-
-      var offset = 0;
-
-      body.style.height = Math.floor(height) + "px";
-
-      function smoothScroll() {
-        offset += (window.pageYOffset - offset) * speed;
-
-        var scroll = "translateY(-" + offset + "px) translateZ(0)";
-        scrollWrap.style.transform = scroll;
-
-        callScroll = requestAnimationFrame(smoothScroll);
-      }
-
-      // smoothScroll();
-
-      $(function () {
-        var elements = $(".text, .img").toArray();
-        $(window).scroll(function () {
-          elements.forEach(function (item) {
-            if ($(this).scrollTop() >= $(item).offset().top - 600) {
-              $(item).addClass("reveal");
-            }
-          });
+      let parent = document.querySelectorAll("[data-collapse");
+      parent.forEach((element) => {
+        let clickTarget = element.querySelector("*");
+        let collapseElement = element.nextElementSibling;
+        let collapseElementChildren = collapseElement.children;
+        let tl = new TimelineMax({
+          reversed: true,
+          paused: true,
         });
-        elements.forEach(function (item) {
-          if ($(this).scrollTop() >= $(item).offset().top - 600) {
-            $(item).addClass("reveal");
-          }
+
+        tl.from(
+          collapseElement,
+          1.6,
+          {
+            className: "+=heightZero",
+            ease: Expo.easeInOut,
+          },
+          "open"
+        );
+        tl.staggerFrom(
+          collapseElementChildren,
+          1,
+          {
+            autoAlpha: 0,
+            y: "100%",
+            ease: Expo.easeInOut,
+          },
+          0.08,
+          "open+=.5"
+        );
+
+        clickTarget.addEventListener("click", () => {
+          tl.reversed() ? tl.play() : tl.reverse();
         });
       });
     </script>

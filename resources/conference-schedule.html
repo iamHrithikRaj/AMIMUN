@@ -15,7 +15,8 @@
     />
     <link rel="stylesheet" href="../style.css" />
     <link rel="stylesheet" href="../about.css" />
-    <title>AMIMUN'22 | Home</title>
+    <link rel="stylesheet" href="./conference-schedule.css" />
+    <title>AMIMUN'22 | Schedule</title>
   </head>
   <body>
     <input
@@ -30,7 +31,7 @@
     <nav id="main-navigation" class="nav-main">
       <ul class="menu">
         <li class="menu__item">
-          <a class="menu__link" href="">Apply</a>
+          <a class="menu__link" onclick="return func(0)" href="#">Apply</a>
           <ul class="submenu">
             <li class="menu__item">
               <a
@@ -52,7 +53,7 @@
           <a class="menu__link" href="../about.html">About</a>
         </li>
         <li class="menu__item">
-          <a class="menu__link" href="">Our Team</a>
+          <a class="menu__link" onclick="return func(0)" href="#">Our Team</a>
           <ul class="submenu">
             <li class="menu__item">
               <a class="menu__link" href="../our-team/guiding-light.html"
@@ -83,13 +84,13 @@
           <a class="menu__link" href="../committes.html">Committees</a>
         </li>
         <li class="menu__item">
-          <a class="menu__link" href="#">Gallery</a>
+          <a class="menu__link" href="../gallery.html">Gallery</a>
         </li>
         <li class="menu__item">
           <a class="menu__link" href="../club.html">AMIMUN Club</a>
         </li>
         <li class="menu__item">
-          <a class="menu__link" href="">Resources</a>
+          <a class="menu__link" onclick="return func(0)" href="#">Resources</a>
           <ul class="submenu">
             <li class="menu__item">
               <a class="menu__link" href="../resources/country-matrix.html"
@@ -99,6 +100,11 @@
             <li class="menu__item">
               <a class="menu__link" href="../resources/background-guides.html"
                 >Background Guides</a
+              >
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="../resources/rop.html"
+                >Rules of Procedures</a
               >
             </li>
             <li class="menu__item">
@@ -173,8 +179,7 @@
                 </ul>
               </div>
             </li>
-            <li>Gallery</li>
-            <li><a href="../club.html">AMIMUN Club</a></li>
+            <li><a href="../gallery.html">Gallery</a></li>
             <li>
               <a href="./resources.html">Resources</a>
               <i class="fas fa-chevron-down"></i>
@@ -189,6 +194,10 @@
                     <a href="../resources/background-guides.html"
                       >Background Guides</a
                     >
+                  </li>
+
+                  <li>
+                    <a href="../resources/rop.html">Rules of Procedures</a>
                   </li>
                   <li>
                     <a href="../resources/awards-criteria.html">Newsletters</a>
@@ -205,6 +214,7 @@
                 </ul>
               </div>
             </li>
+            <li><a href="../club.html">AMIMUN Club</a></li>
           </ul>
         </div>
       </nav>
@@ -212,23 +222,117 @@
       <div class="header-section">
         <h2 class="header theme">Conference Schedule</h2>
         <div class="content">
-          <h3 class="comming-soon">Coming Soon</h3>
-          <!-- <h3 class="header-text header-sec">
-            The second e-edition of Amity International Model United Nations
-            shall be a simulation of the United Nations, spanning two days. At
-            AMIMUN, delegates gain a better understanding of the inner workings
-            of the UN, engage in diplomatic discussion, and enhance their
-            knowledge of global relations. The past ten editions of AMIUMUN have
-            each continued to set the bar higher in terms of innovative themes
-            and constructive debate; with this conference continuing the
-            tradition. The second e-edition of AMIMUN shall endeavour to
-            construct a space within which delegates will develop a more
-            holistic consciousness of the world around them, and enhance
-            critical thinking, public speaking, and leadership skills. Thus,
-            AMIMUN abides by the Preamble to the Charter of the United Nations:
-            “To practice tolerance and live together in peace with one another
-            as good neighbours”.
-          </h3> -->
+          <section id="timeline">
+            <h1 id="timeline-h1">22<sup>nd</sup>January 2022 (Day 1)</h1>
+            <ul>
+              <li>
+                <div>
+                  <h3>
+                    <i class="fas fa-chevron-right"></i> 10:00 AM &mdash; 11:30
+                    AM
+                  </h3>
+                  <p>Inauguration Ceremony</p>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <h3>
+                    <i class="fas fa-chevron-right"></i> 11:30 AM &mdash; 12:00
+                    PM
+                  </h3>
+                  <p>Registration & waiting room for session 1</p>
+                </div>
+              </li>
+
+              <li>
+                <div>
+                  <h3>
+                    <i class="fas fa-chevron-right"></i> 12:00 PM &mdash; 2:30
+                    PM
+                  </h3>
+                  <p>Session 1</p>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <h3>
+                    <i class="fas fa-chevron-right"></i>
+                    2:30 PM &mdash; 3:30 PM
+                  </h3>
+                  <p>Break</p>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <h3>
+                    <i class="fas fa-chevron-right"></i>
+                    3:30 PM &mdash; 6:30 PM
+                  </h3>
+                  <p>Session 2</p>
+                </div>
+              </li>
+            </ul>
+          </section>
+          <section id="timeline">
+            <h1 id="timeline-h1">23<sup>rd</sup>January 2022 (Day 2)</h1>
+            <ul>
+              <li>
+                <div>
+                  <h3>
+                    <i class="fas fa-chevron-right"></i> 9:30 AM &mdash; 10:00
+                    AM
+                  </h3>
+                  <p>Registration & waiting room for session 3</p>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <h3>
+                    <i class="fas fa-chevron-right"></i> 10:00 AM &mdash; 12:30
+                    PM
+                  </h3>
+                  <p>Session 3</p>
+                </div>
+              </li>
+
+              <li>
+                <div>
+                  <h3>
+                    <i class="fas fa-chevron-right"></i> 12:30 PM &mdash; 1:00
+                    PM
+                  </h3>
+                  <p>Break</p>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <h3>
+                    <i class="fas fa-chevron-right"></i>
+                    1:00 PM &mdash; 3:30 PM
+                  </h3>
+                  <p>Session 4</p>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <h3>
+                    <i class="fas fa-chevron-right"></i>
+                    3:30 PM &mdash; 4:00 PM
+                  </h3>
+                  <p>Break</p>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <h3>
+                    <i class="fas fa-chevron-right"></i>
+                    4:00 PM &mdash; 6:00 PM
+                  </h3>
+                  <p>Valedictory Ceremony</p>
+                </div>
+              </li>
+            </ul>
+          </section>
         </div>
       </div>
     </div>
@@ -277,9 +381,7 @@
           <div class="contact">
             <p><b>Chirag Sharma</b>, USG Delegate Affairs</p>
             <a href="tel:+91 98688 77976">+91 98688 77976</a><br />
-            <a href="mailto: chirag02.sharma@gmail.com"
-              >infoamimun22@gmail.com</a
-            >
+            <a href="mailto: infoamimun22@gmail.com">infoamimun22@gmail.com</a>
           </div>
         </div>
       </div>
@@ -314,6 +416,32 @@
       </div>
     </footer>
     <script>
+      const items = document.querySelectorAll("#timeline li");
+
+      const isInViewport = (el) => {
+        const rect = el.getBoundingClientRect();
+        return (
+          rect.top >= 0 &&
+          rect.left >= 0 &&
+          rect.bottom <=
+            (window.innerHeight || document.documentElement.clientHeight) &&
+          rect.right <=
+            (window.innerWidth || document.documentElement.clientWidth)
+        );
+      };
+
+      const run = () =>
+        items.forEach((item) => {
+          if (isInViewport(item)) {
+            item.classList.add("show");
+          }
+        });
+
+      // Events
+      window.addEventListener("load", run);
+      window.addEventListener("resize", run);
+      window.addEventListener("scroll", run);
+
       var $cursor = $(".cursor"),
         $overlay = $(".project-overlay");
 

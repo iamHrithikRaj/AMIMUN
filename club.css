@@ -7,7 +7,8 @@
   margin: 80px 0;
 }
 
-#sec-img-5, #sec-img-4{
+#sec-img-5,
+#sec-img-4 {
   margin: 10px;
 }
 
@@ -25,7 +26,12 @@
 #sec-img-2,
 #sec-img-3,
 #sec-img-4,
-#sec-img-5 {
+#sec-img-5,
+#sec-img-6,
+#sec-img-7,
+#sec-img-8,
+#sec-img-9,
+#sec-img-10 {
   background-size: cover;
   background-position: center;
   width: 100%;
@@ -33,25 +39,49 @@
   margin-right: 40px;
 }
 
-#sec-img-1{
-    background-image: url(./assets/IMG_0059.JPG);
+#sec-img-1 {
+  background-image: url(./sec-photos/Zeeshan\ Ahmad\ Fareed_.jpg);
 }
 
-#sec-img-2{
-    background-image: url(./assets/sec-gen.JPG);
+#sec-img-2 {
+  background-image: url(./assets/sec-gen.JPG);
 }
 
-#sec-img-3{
-    background-image: url(./assets/IMG_6182.JPG);
+#sec-img-3 {
+  background-image: url(./sec-photos/Rohan\ Nagpal_.jpg);
 }
 
-#sec-img-4{
-    background-image: url(./assets/IMG_6185.JPG);
+#sec-img-4 {
+  background-image: url(./assets/IMG_6185.JPG);
 }
 
-#sec-img-5{
-    background-image: url(./assets/IMG_6181.JPG);
+#sec-img-10 {
+  background-image: url(./assets/IMG_6181.JPG);
 }
+
+#sec-img-5 {
+  background-image: url(./message-pics/ashok_chauhan.jpeg);
+
+}
+
+#sec-img-6 {
+  background-image: url(./message-pics/DrAtulChauhan.jpeg);
+}
+
+#sec-img-7 {
+  background-image: url(./message-pics/21.jpeg);
+}
+
+#sec-img-8 {
+  background-image: url(./message-pics/bs.jpg);
+}
+
+#sec-img-9 {
+  background-image: url(./message-pics/Image.jpeg);
+}
+
+
+
 
 .section-col {
   padding: 1px 20px;
@@ -233,8 +263,6 @@ h1 {
   }
 }
 
-
-
 @media only screen and (max-width: 834px) {
   .form-btn h2 {
     text-align: center;
@@ -286,7 +314,6 @@ h1 {
 }
 
 @media only screen and (max-width: 834px) and (min-width: 639px) {
-
 }
 
 @media only screen and (max-width: 1220px) and (min-width: 835px) {

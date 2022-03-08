@@ -26,7 +26,7 @@
     />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="./gallery.css" />
-    <title>AMIMUN'22 | Home</title>
+    <title>AMIMUN'22 | Gallery</title>
   </head>
   <body>
     <input
@@ -42,7 +42,7 @@
     <nav id="main-navigation" class="nav-main">
       <ul class="menu">
         <li class="menu__item">
-          <a class="menu__link" href="">Apply</a>
+          <a class="menu__link" onclick="return func(0)" href="#">Apply</a>
           <ul class="submenu">
             <li class="menu__item">
               <a
@@ -64,7 +64,7 @@
           <a class="menu__link" href="./about.html">About</a>
         </li>
         <li class="menu__item">
-          <a class="menu__link" href="">Our Team</a>
+          <a class="menu__link" onclick="return func(0)" href="#">Our Team</a>
           <ul class="submenu">
             <li class="menu__item">
               <a class="menu__link" href="./our-team/guiding-light.html"
@@ -95,13 +95,13 @@
           <a class="menu__link" href="./committes.html">Committees</a>
         </li>
         <li class="menu__item">
-          <a class="menu__link" href="#">Gallery</a>
+          <a class="menu__link" href="./gallery.html">Gallery</a>
         </li>
         <li class="menu__item">
           <a class="menu__link" href="./club.html">AMIMUN Club</a>
         </li>
         <li class="menu__item">
-          <a class="menu__link" href="">Resources</a>
+          <a class="menu__link" onclick="return func(0)" href="#">Resources</a>
           <ul class="submenu">
             <li class="menu__item">
               <a class="menu__link" href="./resources/country-matrix.html"
@@ -111,6 +111,11 @@
             <li class="menu__item">
               <a class="menu__link" href="./resources/background-guides.html"
                 >Background Guides</a
+              >
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="./resources/rop.html"
+                >Rules of Procedures</a
               >
             </li>
             <li class="menu__item">
@@ -185,8 +190,8 @@
                 </ul>
               </div>
             </li>
-            <li>Gallery</li>
-            <li><a href="./club.html">AMIMUN Club</a></li>
+            <li><a href="./gallery.html">Gallery</a></li>
+
             <li>
               <a href="./resources.html">Resources</a>
               <i class="fas fa-chevron-down"></i>
@@ -199,6 +204,9 @@
                     <a href="./resources/background-guides.html"
                       >Background Guides</a
                     >
+                  </li>
+                  <li>
+                    <a href="./resources/rop.html">Rules of Procedures</a>
                   </li>
                   <li>
                     <a href="./resources/awards-criteria.html">Newsletters</a>
@@ -215,6 +223,7 @@
                 </ul>
               </div>
             </li>
+            <li><a href="./club.html">AMIMUN Club</a></li>
           </ul>
         </div>
       </nav>
@@ -226,11 +235,43 @@
       <div class="container">
         <div class="gallery">
           <a
-            href="./gallery-imgs/DSC_4294.JPG"
+            href="./gallery-imgs/IMG-20210319-WA0051.jpg"
             data-lightbox="models"
             data-title="Caption1"
           >
-            <img src="./gallery-imgs/DSC_4294.JPG" />
+            <img src="./gallery-imgs/IMG-20210319-WA0051.jpg" />
+          </a>
+          <a
+            href="./gallery-imgs/WhatsApp Image 2021-10-26 at 8.46.13 AM.jpeg"
+            data-lightbox="models"
+            data-title="Caption1"
+          >
+            <img
+              src="./gallery-imgs/WhatsApp Image 2021-10-26 at 8.46.13 AM.jpeg"
+            />
+          </a>
+          <a
+            href="./gallery-imgs/IMG-20211113-WA0015.jpg"
+            data-lightbox="models"
+            data-title="Caption1"
+          >
+            <img src="./gallery-imgs/IMG-20211113-WA0015.jpg" />
+          </a>
+          <a
+            href="./gallery-imgs/IMG-20210319-WA0343.jpg"
+            data-lightbox="models"
+            data-title="Caption1"
+          >
+            <img src="./gallery-imgs/IMG-20210319-WA0343.jpg" />
+          </a>
+          <a
+            href="./gallery-imgs/WhatsApp Image 2021-11-16 at 10.57.38 PM.jpeg"
+            data-lightbox="models"
+            data-title="Caption1"
+          >
+            <img
+              src="./gallery-imgs/WhatsApp Image 2021-11-16 at 10.57.38 PM.jpeg"
+            />
           </a>
           <a
             href="./gallery-imgs/IMG_7008.jpg"
@@ -515,9 +556,7 @@
           <div class="contact">
             <p><b>Chirag Sharma</b>, USG Delegate Affairs</p>
             <a href="tel:+91 98688 77976">+91 98688 77976</a><br />
-            <a href="mailto: chirag02.sharma@gmail.com"
-              >infoamimun22@gmail.com</a
-            >
+            <a href="mailto: infoamimun22@gmail.com">infoamimun22@gmail.com</a>
           </div>
         </div>
       </div>

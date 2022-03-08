@@ -13,9 +13,11 @@
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/TweenMax.min.js"></script>
+    <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
     <link rel="stylesheet" href="../style.css" />
-    <link rel="stylesheet" href="../about.css" />
-    <title>AMIMUN'22 | Home</title>
+    <link rel="stylesheet" href="./org-committee.css" />
+    <title>AMIMUN'22 | OC</title>
   </head>
   <body>
     <input
@@ -30,7 +32,7 @@
     <nav id="main-navigation" class="nav-main">
       <ul class="menu">
         <li class="menu__item">
-          <a class="menu__link" href="">Apply</a>
+          <a class="menu__link" onclick="return func(0)" href="#">Apply</a>
           <ul class="submenu">
             <li class="menu__item">
               <a
@@ -52,7 +54,7 @@
           <a class="menu__link" href="../about.html">About</a>
         </li>
         <li class="menu__item">
-          <a class="menu__link" href="">Our Team</a>
+          <a class="menu__link" onclick="return func(0)" href="#">Our Team</a>
           <ul class="submenu">
             <li class="menu__item">
               <a class="menu__link" href="../our-team/guiding-light.html"
@@ -84,13 +86,13 @@
         </li>
 
         <li class="menu__item">
-          <a class="menu__link" href="#">Gallery</a>
+          <a class="menu__link" href="../gallery.html">Gallery</a>
         </li>
         <li class="menu__item">
           <a class="menu__link" href="../club.html">AMIMUN Club</a>
         </li>
         <li class="menu__item">
-          <a class="menu__link" href="">Resources</a>
+          <a class="menu__link" onclick="return func(0)" href="#">Resources</a>
           <ul class="submenu">
             <li class="menu__item">
               <a class="menu__link" href="../resources/country-matrix.html"
@@ -100,6 +102,11 @@
             <li class="menu__item">
               <a class="menu__link" href="../resources/background-guides.html"
                 >Background Guides</a
+              >
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="../resources/rop.html"
+                >Rules of Procedures</a
               >
             </li>
             <li class="menu__item">
@@ -170,35 +177,527 @@
                 </ul>
               </div>
             </li>
-            <li>Gallery</li>
+            <li><a href="../gallery.html">Gallery</a></li>
+            <li>
+              <a href="./resources.html">Resources</a>
+              <i class="fas fa-chevron-down"></i>
+              <div class="sub-menu-1">
+                <ul>
+                  <li>
+                    <a href="../resources/country-matrix.html"
+                      >Country Matrix</a
+                    >
+                  </li>
+                  <li>
+                    <a href="../resources/background-guides.html"
+                      >Background Guides</a
+                    >
+                  </li>
+                  <li>
+                    <a href="../resources/rop.html">Rules of Procedures</a>
+                  </li>
+                  <li>
+                    <a href="../resources/awards-criteria.html">Newsletters</a>
+                  </li>
+                  <li>
+                    <a href="../resources/conference-schedule.html">
+                      Conference Schedule</a
+                    >
+                  </li>
+
+                  <li>
+                    <a href="#bottom"> Contact Us</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
             <li><a href="../club.html">AMIMUN Club</a></li>
-            <li>Resources</li>
           </ul>
         </div>
       </nav>
 
       <div class="header-section">
         <h2 class="header theme">Organising Committee<br /></h2>
-        <div class="content">
-          <h3 class="comming-soon">Coming Soon</h3>
-          <!-- <h3 class="header-text header-sec">
-            The second e-edition of Amity International Model United Nations
-            shall be a simulation of the United Nations, spanning two days. At
-            AMIMUN, delegates gain a better understanding of the inner workings
-            of the UN, engage in diplomatic discussion, and enhance their
-            knowledge of global relations. The past ten editions of AMIUMUN have
-            each continued to set the bar higher in terms of innovative themes
-            and constructive debate; with this conference continuing the
-            tradition. The second e-edition of AMIMUN shall endeavour to
-            construct a space within which delegates will develop a more
-            holistic consciousness of the world around them, and enhance
-            critical thinking, public speaking, and leadership skills. Thus,
-            AMIMUN abides by the Preamble to the Charter of the United Nations:
-            “To practice tolerance and live together in peace with one another
-            as good neighbours”.
-          </h3> -->
+      </div>
+    </div>
+
+    <div class="acc-holder">
+      <div class="acc-toggle" data-collapse="">
+        <div class="acc-block">
+          <div class="acc-title">Faculty Organising Committee</div>
+          <div class="acc-toggle-icon">
+            <ion-icon name="add-outline"></ion-icon>
+          </div>
         </div>
       </div>
+      <ul class="list-holder">
+        <table role="table">
+          <thead role="rowgroup">
+            <tr role="row" class="list">
+              <th role="columnheader">Name</th>
+              <th role="columnheader">Position</th>
+            </tr>
+          </thead>
+          <tbody role="rowgroup">
+            <tr role="row" class="list">
+              <td role="cell">Dr. Nitasha Hasteer</td>
+              <td role="cell">
+                Dy. Director (Academics), HoD-IT, ASET - Chairperson AMIMUN’22
+              </td>
+            </tr>
+
+            <tr role="row" class="list">
+              <td role="cell">Dr. Anil Sehrawat</td>
+              <td role="cell">
+                Head and Deputy Director, AICC - Co-Chairperson AMIMUN’22
+              </td>
+            </tr>
+
+            <tr role="row" class="list">
+              <td role="cell">Dr. Rekha Agarwal</td>
+              <td role="cell">Director, AIIT</td>
+            </tr>
+
+            <tr role="row" class="list">
+              <td role="cell">Dr. Anna Nath Ganguly</td>
+              <td role="cell">Assistant Professor, AISS</td>
+            </tr>
+
+            <tr role="row" class="list">
+              <td role="cell">Dr. Shilpi Sharma</td>
+              <td role="cell">Associate Professor, ASET</td>
+            </tr>
+
+            <tr role="row" class="list">
+              <td role="cell">Dr. Saurabh Mishra</td>
+              <td role="cell">Asst. Professor, AIDSS</td>
+            </tr>
+
+            <tr role="row" class="list">
+              <td role="cell">Dr. Garima Mahendru</td>
+              <td role="cell">Asst. Professor, ASET</td>
+            </tr>
+
+            <tr role="row" class="list">
+              <td role="cell">Mr. Gaurav Chabra</td>
+              <td role="cell">Asst. Professor, ASCO</td>
+            </tr>
+
+            <tr role="row" class="list">
+              <td role="cell">Ms. Vandana Sharma</td>
+              <td role="cell">VC Office</td>
+            </tr>
+          </tbody>
+        </table>
+      </ul>
+
+      <div class="acc-toggle" data-collapse="">
+        <div class="acc-block">
+          <div class="acc-title">Delegate Affairs</div>
+          <div class="acc-toggle-icon">
+            <ion-icon name="add-outline"></ion-icon>
+          </div>
+        </div>
+      </div>
+      <ul class="list-holder">
+        <table role="table">
+          <thead role="rowgroup">
+            <tr role="row" class="list">
+              <th role="columnheader">Name</th>
+              <th role="columnheader">Department/ Institute</th>
+              <th role="columnheader">Course</th>
+              <th role="columnheader">Batch</th>
+            </tr>
+          </thead>
+          <tbody role="rowgroup">
+            <tr role="row" class="list">
+              <td role="cell">Gauri Sareen</td>
+              <td role="cell">Amity Institute of International Studies</td>
+              <td role="cell">BA(Hons.) International Relations</td>
+              <td role="cell">2021-2024</td>
+            </tr>
+            <tr role="row" class="list">
+              <td role="cell">Sanskriti</td>
+              <td role="cell">Amity School of Engineering and Technology</td>
+              <td role="cell">B.Tech Information Technology</td>
+              <td role="cell">2020-2024</td>
+            </tr>
+            <tr role="row" class="list">
+              <td role="cell">Shivani Kumari</td>
+              <td role="cell">Amity Law School</td>
+              <td role="cell">Ba LLB Hons</td>
+              <td role="cell">2021-2026</td>
+            </tr>
+            <tr role="row" class="list">
+              <td role="cell">Khushi Gupta</td>
+              <td role="cell">
+                Amity Institute of Psychology and Allied Sciences
+              </td>
+              <td role="cell">BA+MA Clinical Psychology Integrated</td>
+              <td role="cell">2020-2024</td>
+            </tr>
+            <tr role="row" class="list">
+              <td role="cell">Anjali Singh</td>
+              <td role="cell">Amity Institute of Information Technology</td>
+              <td role="cell">MSC IT</td>
+              <td role="cell">2021-2023</td>
+            </tr>
+            <tr role="row" class="list">
+              <td role="cell">Aadi Singh</td>
+              <td role="cell">Amity Institute of Applied Sciences</td>
+              <td role="cell">B.Sc (H) Physics</td>
+              <td role="cell">2020-2023</td>
+            </tr>
+            <tr role="row" class="list">
+              <td role="cell">Divya Khilnani</td>
+              <td role="cell">
+                Amity Institute of Psychology and allied Sciences
+              </td>
+              <td role="cell">B.A (H) Applied Psychology</td>
+              <td role="cell">2020-2023</td>
+            </tr>
+            <tr role="row" class="list">
+              <td role="cell">Sabika Owais</td>
+              <td role="cell">Amity Institute of International Studies</td>
+              <td role="cell">BA(H) International relations</td>
+              <td role="cell">2021-2024</td>
+            </tr>
+            <tr role="row" class="list">
+              <td role="cell">Shivangi Gulati</td>
+              <td role="cell">Amity Law School</td>
+              <td role="cell">BA.LLB(H)</td>
+              <td role="cell">2020-2025</td>
+            </tr>
+            <tr role="row" class="list">
+              <td role="cell">Simran Naresh</td>
+              <td role="cell">Amity Law School , Noida</td>
+              <td role="cell">B.A. L.L.B(Hons)</td>
+              <td role="cell">2020-2025</td>
+            </tr>
+          </tbody>
+        </table>
+      </ul>
+
+      <div class="acc-toggle" data-collapse="">
+        <div class="acc-block">
+          <div class="acc-title">Creative Content Management</div>
+          <div class="acc-toggle-icon">
+            <ion-icon name="add-outline"></ion-icon>
+          </div>
+        </div>
+      </div>
+      <ul class="list-holder">
+        <table role="table">
+          <thead role="rowgroup">
+            <tr role="row" class="list">
+              <th role="columnheader">Name</th>
+              <th role="columnheader">Department/ Institute</th>
+              <th role="columnheader">Course</th>
+              <th role="columnheader">Batch</th>
+            </tr>
+          </thead>
+          <tbody role="rowgroup">
+            <tr role="row" class="list">
+              <td role="cell">Khyati Saxena</td>
+              <td role="cell">
+                Amity Institute of Psychology and Allied Sciences
+              </td>
+              <td role="cell">BA+MA (Clinical Psychology) - Integrated</td>
+              <td role="cell">2020-2024</td>
+            </tr>
+            <tr role="row" class="list">
+              <td role="cell">Tripti Karmakar</td>
+              <td role="cell">
+                Amity School of Insurance, Banking and Actuarial Science
+              </td>
+              <td role="cell">B.Sc (Actuarial Science)</td>
+              <td role="cell">2019-2022</td>
+            </tr>
+            <tr role="row" class="list">
+              <td role="cell">Isha Kaushik</td>
+              <td role="cell">
+                Amity Institute Of Neuropsychology and Neurosciences
+              </td>
+              <td role="cell">Bsc Neurosciences</td>
+              <td role="cell">2021-2024</td>
+            </tr>
+          </tbody>
+        </table>
+      </ul>
+
+      <div class="acc-toggle" data-collapse="">
+        <div class="acc-block">
+          <div class="acc-title">Design</div>
+          <div class="acc-toggle-icon">
+            <ion-icon name="add-outline"></ion-icon>
+          </div>
+        </div>
+      </div>
+      <ul class="list-holder">
+        <table role="table">
+          <thead role="rowgroup">
+            <tr role="row" class="list">
+              <th role="columnheader">Name</th>
+              <th role="columnheader">Department/ Institute</th>
+              <th role="columnheader">Course</th>
+              <th role="columnheader">Batch</th>
+            </tr>
+          </thead>
+          <tbody role="rowgroup">
+            <tr role="row" class="list">
+              <td role="cell">Punya Jain</td>
+              <td role="cell">Amity School of Business</td>
+              <td role="cell">BBA General</td>
+              <td role="cell">2020-2023</td>
+            </tr>
+            <tr role="row" class="list">
+              <td role="cell">Sahil Peswani</td>
+              <td role="cell">Amity School of Social Sciences</td>
+              <td role="cell">B. A. Political Science</td>
+              <td role="cell">2020-2023</td>
+            </tr>
+          </tbody>
+        </table>
+      </ul>
+
+      <div class="acc-toggle" data-collapse="">
+        <div class="acc-block">
+          <div class="acc-title">Web Operations</div>
+          <div class="acc-toggle-icon">
+            <ion-icon name="add-outline"></ion-icon>
+          </div>
+        </div>
+      </div>
+      <ul class="list-holder">
+        <table role="table">
+          <thead role="rowgroup">
+            <tr role="row" class="list">
+              <th role="columnheader">Name</th>
+              <th role="columnheader">Department/ Institute</th>
+              <th role="columnheader">Course</th>
+              <th role="columnheader">Batch</th>
+            </tr>
+          </thead>
+          <tbody role="rowgroup">
+            <tr role="row" class="list">
+              <td role="cell">Shaurya Pratap Singh</td>
+              <td role="cell">Amity School of Engineering and Technology</td>
+              <td role="cell">B.Tech CSE</td>
+              <td role="cell">2019-2023</td>
+            </tr>
+            <tr role="row" class="list">
+              <td role="cell">Aryan Wadhawan</td>
+              <td role="cell">Amity School of Engineering and Technology</td>
+              <td role="cell">B.Tech CSE</td>
+              <td role="cell">2019-2023</td>
+            </tr>
+          </tbody>
+        </table>
+      </ul>
+
+      <div class="acc-toggle" data-collapse="">
+        <div class="acc-block">
+          <div class="acc-title">Finance</div>
+          <div class="acc-toggle-icon">
+            <ion-icon name="add-outline"></ion-icon>
+          </div>
+        </div>
+      </div>
+      <ul class="list-holder">
+        <table role="table">
+          <thead role="rowgroup">
+            <tr role="row" class="list">
+              <th role="columnheader">Name</th>
+              <th role="columnheader">Department/ Institute</th>
+              <th role="columnheader">Course</th>
+              <th role="columnheader">Batch</th>
+            </tr>
+          </thead>
+          <tbody role="rowgroup">
+            <tr role="row" class="list">
+              <td role="cell">Sushant Choudhary</td>
+              <td role="cell">Amity College of Commerce and Finance</td>
+              <td role="cell">B.com (H)</td>
+              <td role="cell">2020-2023</td>
+            </tr>
+          </tbody>
+        </table>
+      </ul>
+
+      <div class="acc-toggle" data-collapse="">
+        <div class="acc-block">
+          <div class="acc-title">Marketing & Promotions</div>
+          <div class="acc-toggle-icon">
+            <ion-icon name="add-outline"></ion-icon>
+          </div>
+        </div>
+      </div>
+      <ul class="list-holder">
+        <table role="table">
+          <thead role="rowgroup">
+            <tr role="row" class="list">
+              <th role="columnheader">Name</th>
+              <th role="columnheader">Department/ Institute</th>
+              <th role="columnheader">Course</th>
+              <th role="columnheader">Batch</th>
+            </tr>
+          </thead>
+          <tbody role="rowgroup">
+            <tr role="row" class="list">
+              <td role="cell">Nandini Kapoor</td>
+              <td role="cell">Amity School of Business</td>
+              <td role="cell">BBA (M&S)</td>
+              <td role="cell">2021-2024</td>
+            </tr>
+            <tr role="row" class="list">
+              <td role="cell">Kashish Kaushal</td>
+              <td role="cell">Amity Institute of Biotechnology</td>
+              <td role="cell">Btech Biotechnology</td>
+              <td role="cell">2021-2025</td>
+            </tr>
+            <tr role="row" class="list">
+              <td role="cell">Vrinda Vohra</td>
+              <td role="cell">Amity law school</td>
+              <td role="cell">Ba LLB</td>
+              <td role="cell">2021-2026</td>
+            </tr>
+            <tr role="row" class="list">
+              <td role="cell">Abeerah Fazil</td>
+              <td role="cell">Amity School of Engineering and Technology</td>
+              <td role="cell">Btech CSE</td>
+              <td role="cell">2021-2025</td>
+            </tr>
+            <tr role="row" class="list">
+              <td role="cell">Anooraag Basu</td>
+              <td role="cell">Amity Institute of Biotechnology</td>
+              <td role="cell">B.Tech Bioinformatics</td>
+              <td role="cell">2020-2024</td>
+            </tr>
+            <tr role="row" class="list">
+              <td role="cell">Qazi Amanur Rahman Hashmi</td>
+              <td role="cell">Amity Institute of Biotechnology</td>
+              <td role="cell">B.Tech Bioinformatics</td>
+              <td role="cell">2020-2024</td>
+            </tr>
+            <tr role="row" class="list">
+              <td role="cell">Shreehan Pokhriyal</td>
+              <td role="cell">Amity law school</td>
+              <td role="cell">BA LLB (H)</td>
+              <td role="cell">2021 - 2026</td>
+            </tr>
+            <tr role="row" class="list">
+              <td role="cell">Gaurika Nigam</td>
+              <td role="cell">Amity Law School</td>
+              <td role="cell">BBA LLB(H)</td>
+              <td role="cell">2020-2025</td>
+            </tr>
+            <tr role="row" class="list">
+              <td role="cell">Manvi Chauhan</td>
+              <td role="cell">Amity Institute Of Organic Agriculture</td>
+              <td role="cell">MBA ( A&FB)</td>
+              <td role="cell">2021-2023</td>
+            </tr>
+            <tr role="row" class="list">
+              <td role="cell">Dhriti Kar</td>
+              <td role="cell">Amity Law School</td>
+              <td role="cell">BBA LLB(H)</td>
+              <td role="cell">2020-2025</td>
+            </tr>
+          </tbody>
+        </table>
+      </ul>
+
+      <div class="acc-toggle" data-collapse="">
+        <div class="acc-block">
+          <div class="acc-title">International Outreach</div>
+          <div class="acc-toggle-icon">
+            <ion-icon name="add-outline"></ion-icon>
+          </div>
+        </div>
+      </div>
+      <ul class="list-holder">
+        <table role="table">
+          <thead role="rowgroup">
+            <tr role="row" class="list">
+              <th role="columnheader">Name</th>
+              <th role="columnheader">Department/ Institute</th>
+              <th role="columnheader">Course</th>
+              <th role="columnheader">Batch</th>
+            </tr>
+          </thead>
+          <tbody role="rowgroup">
+            <tr role="row" class="list">
+              <td role="cell">Khushi Chaudhary</td>
+              <td role="cell">
+                Amity Institute of Psychology and Allied Sciences
+              </td>
+              <td role="cell">B.A. Hons Applied Psychology</td>
+              <td role="cell">2020-2023</td>
+            </tr>
+            <tr role="row" class="list">
+              <td role="cell">Faiyaz Mehdi</td>
+              <td role="cell">Amity Institute of International Studies</td>
+              <td role="cell">MA-IR</td>
+              <td role="cell">2021-2023</td>
+            </tr>
+            <tr role="row" class="list">
+              <td role="cell">Sanchit Puniani</td>
+              <td role="cell">Amity Institute of Pharmacy</td>
+              <td role="cell">B. Pharm</td>
+              <td role="cell">2020-2024</td>
+            </tr>
+            <tr role="row" class="list">
+              <td role="cell">Sahima Kapoor</td>
+              <td role="cell">Amity Institute of Social Sciences</td>
+              <td role="cell">B.A Political Science + B.Ed</td>
+              <td role="cell">2020-2025</td>
+            </tr>
+            <tr role="row" class="list">
+              <td role="cell">Jahanvi Jain</td>
+              <td role="cell">
+                Amity Institute of Psychology and Allied Sciences
+              </td>
+              <td role="cell">B.A. Hons Applied Psychology</td>
+              <td role="cell">2021-2023</td>
+            </tr>
+          </tbody>
+        </table>
+      </ul>
+
+      <div class="acc-toggle" data-collapse="">
+        <div class="acc-block">
+          <div class="acc-title">Sponsorship</div>
+          <div class="acc-toggle-icon">
+            <ion-icon name="add-outline"></ion-icon>
+          </div>
+        </div>
+      </div>
+      <ul class="list-holder">
+        <table role="table">
+          <thead role="rowgroup">
+            <tr role="row" class="list">
+              <th role="columnheader">Name</th>
+              <th role="columnheader">Department/ Institute</th>
+              <th role="columnheader">Course</th>
+              <th role="columnheader">Batch</th>
+            </tr>
+          </thead>
+          <tbody role="rowgroup">
+            <tr role="row" class="list">
+              <td role="cell">Jhanvi Verma</td>
+              <td role="cell">Amity Law School</td>
+              <td role="cell">BBA LLB Hons</td>
+              <td role="cell">2021-2026</td>
+            </tr>
+            <tr role="row" class="list">
+              <td role="cell">Ramit Sinver</td>
+              <td role="cell">Amity University</td>
+              <td role="cell">BA (HONS) Political Science</td>
+              <td role="cell">2020 - 2023</td>
+            </tr>
+          </tbody>
+        </table>
+      </ul>
     </div>
 
     <hr />
@@ -245,9 +744,7 @@
           <div class="contact">
             <p><b>Chirag Sharma</b>, USG Delegate Affairs</p>
             <a href="tel:+91 98688 77976">+91 98688 77976</a><br />
-            <a href="mailto: chirag02.sharma@gmail.com"
-              >chirag02.sharma@gmail.com</a
-            >
+            <a href="mailto: infoamimun22@gmail.com">infoamimun22@gmail.com</a>
           </div>
         </div>
       </div>
@@ -308,44 +805,42 @@
 
       $($overlay).mouseout(function () {
         flag = false;
-        TweenLite.to($cursor, 0.3, { scale: 0.1, autoAlpha: 0 });
+        TweenLite.to($cursor, 0.1, { scale: 0.1, autoAlpha: 0 });
       });
 
-      const body = document.body,
-        scrollWrap = document.getElementsByClassName(
-          "smooth-scroll-wrapper"
-        )[0],
-        height = scrollWrap.getBoundingClientRect().height - 1,
-        speed = 0.04;
-
-      var offset = 0;
-
-      body.style.height = Math.floor(height) + "px";
-
-      function smoothScroll() {
-        offset += (window.pageYOffset - offset) * speed;
-
-        var scroll = "translateY(-" + offset + "px) translateZ(0)";
-        scrollWrap.style.transform = scroll;
-
-        callScroll = requestAnimationFrame(smoothScroll);
-      }
-
-      // smoothScroll();
-
-      $(function () {
-        var elements = $(".text, .img").toArray();
-        $(window).scroll(function () {
-          elements.forEach(function (item) {
-            if ($(this).scrollTop() >= $(item).offset().top - 600) {
-              $(item).addClass("reveal");
-            }
-          });
+      let parent = document.querySelectorAll("[data-collapse");
+      parent.forEach((element) => {
+        let clickTarget = element.querySelector("*");
+        let collapseElement = element.nextElementSibling;
+        let collapseElementChildren = collapseElement.children;
+        let tl = new TimelineMax({
+          reversed: true,
+          paused: true,
         });
-        elements.forEach(function (item) {
-          if ($(this).scrollTop() >= $(item).offset().top - 600) {
-            $(item).addClass("reveal");
-          }
+
+        tl.from(
+          collapseElement,
+          1.6,
+          {
+            className: "+=heightZero",
+            ease: Expo.easeInOut,
+          },
+          "open"
+        );
+        tl.staggerFrom(
+          collapseElementChildren,
+          1,
+          {
+            autoAlpha: 0,
+            y: "100%",
+            ease: Expo.easeInOut,
+          },
+          0.08,
+          "open+=.5"
+        );
+
+        clickTarget.addEventListener("click", () => {
+          tl.reversed() ? tl.play() : tl.reverse();
         });
       });
     </script>

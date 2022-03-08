@@ -15,7 +15,8 @@
     />
     <link rel="stylesheet" href="../style.css" />
     <link rel="stylesheet" href="../about.css" />
-    <title>AMIMUN'22 | Home</title>
+    <link rel="stylesheet" href="./committees.css" />
+    <title>AMIMUN'22 | ICJ</title>
   </head>
   <body>
     <input
@@ -30,7 +31,7 @@
     <nav id="main-navigation" class="nav-main">
       <ul class="menu">
         <li class="menu__item">
-          <a class="menu__link" href="">Apply</a>
+          <a class="menu__link" onclick="return func(0)" href="#">Apply</a>
           <ul class="submenu">
             <li class="menu__item">
               <a
@@ -52,7 +53,7 @@
           <a class="menu__link" href="../about.html">About</a>
         </li>
         <li class="menu__item">
-          <a class="menu__link" href="">Our Team</a>
+          <a class="menu__link" onclick="return func(0)" href="#">Our Team</a>
           <ul class="submenu">
             <li class="menu__item">
               <a class="menu__link" href="../our-team/guiding-light.html"
@@ -83,13 +84,13 @@
           <a class="menu__link" href="../committes.html">Committees</a>
         </li>
         <li class="menu__item">
-          <a class="menu__link" href="#">Gallery</a>
+          <a class="menu__link" href="../gallery.html">Gallery</a>
         </li>
         <li class="menu__item">
           <a class="menu__link" href="../club.html">AMIMUN Club</a>
         </li>
         <li class="menu__item">
-          <a class="menu__link" href="">Resources</a>
+          <a class="menu__link" onclick="return func(0)" href="#">Resources</a>
           <ul class="submenu">
             <li class="menu__item">
               <a class="menu__link" href="../resources/country-matrix.html"
@@ -99,6 +100,11 @@
             <li class="menu__item">
               <a class="menu__link" href="../resources/background-guides.html"
                 >Background Guides</a
+              >
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="../resources/rop.html"
+                >Rules of Procedures</a
               >
             </li>
             <li class="menu__item">
@@ -173,8 +179,7 @@
                 </ul>
               </div>
             </li>
-            <li>Gallery</li>
-            <li><a href="../club.html">AMIMUN Club</a></li>
+            <li><a href="../gallery.html">Gallery</a></li>
             <li>
               <a href="./resources.html">Resources</a>
               <i class="fas fa-chevron-down"></i>
@@ -191,6 +196,9 @@
                     >
                   </li>
                   <li>
+                    <a href="../resources/rop.html">Rules of Procedures</a>
+                  </li>
+                  <li>
                     <a href="../resources/awards-criteria.html">Newsletters</a>
                   </li>
                   <li>
@@ -205,12 +213,13 @@
                 </ul>
               </div>
             </li>
+            <li><a href="../club.html">AMIMUN Club</a></li>
           </ul>
         </div>
       </nav>
 
       <div class="header-section">
-        <h2 class="header theme">International Court of Justice<br /></h2>
+        <h2 class="header theme">International Court of Justice (ICJ)<br /></h2>
         <div class="content">
           <h3 class="header-text header-sec">
             The International Court of Justice (ICJ) is the United Nations' main
@@ -232,6 +241,62 @@
             dispute resolution between nations, the ICJ debate is perhaps the
             most important
           </h3>
+        </div>
+      </div>
+    </div>
+
+    <h2 class="header theme">Agenda<br /></h2>
+    <div class="content">
+      <h3 class="header-text-center header-sec">
+        Relocation of the United States Embassy to Jerusalem (Palestine v.
+        United States of America)
+      </h3>
+      <a class="btn-secondary" target="_blank" href="../ebs/icj.pdf"
+        >Background Guide</a
+      >
+    </div>
+    <div class="flip-container">
+      <div class="scene">
+        <div class="items items-2">
+          <div class="item front img-1">
+            <div class="info">
+              <h1 class="info-name">Shikhar Tripathi</h1>
+              <p class="info-pos">Chairperson</p>
+            </div>
+          </div>
+          <div class="item back">
+            Mr. Shikhar Tripathi is a medical researcher and author who has had
+            work published in several regions of the world. He graduated from
+            the University of Technology in Mauritius with an MBBS. His
+            burgeoning MUN experience is yet another feather in his wide-ranging
+            hat. His legal knowledge stands out in an otherwise law-distant
+            professional field. When it comes to chairing a committee, he has
+            established that his participation in a MUN ensures that delegates
+            have the best possible learning experience.
+          </div>
+        </div>
+      </div>
+
+      <div class="scene">
+        <div class="items items-2">
+          <div class="item front img-19">
+            <div class="info">
+              <h1 class="info-name">Isabella Cabrera</h1>
+              <p class="info-pos">Research Associate</p>
+            </div>
+          </div>
+          <div class="item back">
+            Ms. Isabella Cabrera has been participating in Dominican Republic
+            MUNs since 2016. She has attended international conferences in
+            Washington, D.C. and New York City, as well as a four-week intensive
+            training programme at the UN. She earned a degree in Industrial
+            Engineering from the Instituto Tecnológico de Santo Domingo in the
+            Dominican Republic. After having served on a number of committees,
+            including the Security Council and the Crisis Committee, Ms.
+            Isabella believes in evolving with the delegates throughout the
+            conference, presenting them with new and exciting situations to test
+            them and allow them to grow as debaters.
+          </div>
         </div>
       </div>
     </div>
@@ -280,9 +345,7 @@
           <div class="contact">
             <p><b>Chirag Sharma</b>, USG Delegate Affairs</p>
             <a href="tel:+91 98688 77976">+91 98688 77976</a><br />
-            <a href="mailto: chirag02.sharma@gmail.com"
-              >infoamimun22@gmail.com</a
-            >
+            <a href="mailto: infoamimun22@gmail.com">infoamimun22@gmail.com</a>
           </div>
         </div>
       </div>

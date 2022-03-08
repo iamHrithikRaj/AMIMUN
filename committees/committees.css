@@ -1,0 +1,241 @@
+/*<< important styles*/
+.scene {
+  /* !3D space! */
+  perspective: 600px;
+}
+.items {
+  position: relative;
+  transition: transform 1s;
+  transform-style: preserve-3d;
+}
+
+.items2 {
+  position: relative;
+  transition: transform 1s;
+  transform-style: preserve-3d;
+}
+
+.item {
+  position: absolute;
+
+  -webkit-perspective: 0;
+  -webkit-backface-visibility: hidden;
+  -webkit-transform: translate3d(0, 0, 0);
+  visibility: visible;
+  backface-visibility: hidden;
+}
+.back {
+  transform: rotateY(180deg);
+  border: 1px solid #000;
+}
+
+.items:hover {
+  transform: rotateY(180deg);
+}
+/*important styles >>*/
+/*<< variations*/
+.items-2 {
+  transform-origin: center right;
+}
+.items-2:hover {
+  transform: translateX(-100%) rotateY(-180deg);
+}
+
+/*variations >>*/
+.scene {
+  width: 350px;
+  min-width: 50px;
+  height: 500px;
+  margin: 22px;
+}
+
+.flip-container {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.items,
+.items2 {
+  width: 100%;
+  height: 100%;
+}
+
+.item {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.info {
+  line-height: 20px;
+}
+
+.info-name {
+  padding: 0 !important;
+  margin: 0 !important;
+  font-size: 20px;
+}
+
+.info-pos {
+  padding: 0 !important;
+  margin: 0 !important;
+  font-size: 16px;
+}
+
+.front {
+  display: flex;
+  align-items: flex-end;
+  padding: 25px;
+  font-size: 25px;
+  color: #fff;
+  text-shadow: 2px 2px 2px #000;
+  justify-content: center;
+}
+
+.back {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+  line-height: 23px;
+  padding: 30px;
+  color: #000;
+  text-align: justify;
+  justify-content: center;
+}
+
+.img-11 {
+  background-image: url("../eb-pics/narayan\ sharma.png");
+}
+
+.img-23 {
+  background-image: url("../sec-photos/Amartya\ Sumukh\ Varma_.jpg");
+}
+
+.img-6 {
+  background-image: url("../eb-pics/kaveri.png");
+}
+
+.img-24 {
+  background-image: url("../sec-photos/Spriha\ Jha.jpg");
+}
+
+.img-7 {
+  background-image: url("../eb-pics/IMG_20200722_232936_174.jpeg");
+}
+
+.img-3 {
+  background-image: url("../eb-pics/tayyabba.png");
+}
+
+.img-5 {
+  background-image: url("../eb-pics/aakarsh.png");
+}
+
+.img-8 {
+  background-image: url("../eb-pics/parinay.png");
+}
+
+.img-9 {
+  background-image: url("../eb-pics/Siddhant\ Treasure.png");
+}
+
+.img-10 {
+  background-image: url("../eb-pics/anna.png");
+}
+
+.img-1 {
+  background-image: url("../eb-pics/shikhar.png");
+}
+
+.img-12 {
+  background-image: url("../eb-pics/tanmay.png");
+}
+
+.img-13 {
+  background-image: url("../eb-pics/abdulkarim.png");
+}
+
+.img-14 {
+  background-image: url("../eb-pics/agastya.png");
+}
+
+.img-15 {
+  background-image: url("../eb-pics/aman.png");
+}
+
+.img-16 {
+  background-image: url("../eb-pics/Pratham\ Sharma.jpeg");
+}
+
+.img-17 {
+  background-image: url("../eb-pics/nikhil.png");
+}
+
+.img-18 {
+  background-image: url("../eb-pics/maaheen.png");
+}
+
+.img-19 {
+  background-image: url("../eb-pics/isabella.png");
+}
+
+.img-20 {
+  background-image: url("../eb-pics/siddharth.png");
+}
+
+.img-21 {
+  background-image: url("../eb-pics/shivang.png");
+}
+
+.img-22 {
+  background-image: url("../sec-photos/Rishika\ Chaturvedi_.jpg");
+}
+
+.img-2 {
+  background-image: url("../eb-pics/shivang.png");
+}
+
+.img-4 {
+  background-image: url("../eb-pics/mayank.png");
+}
+
+.img-44 {
+  background-image: url("../eb-pics/Anuj-Gandhi.jpeg");
+}
+
+.img-34 {
+  background-image: url("../eb-pics/AMLAN-PANDA.jpeg");
+}
+
+.img-71 {
+  background-image: url("../eb-pics/Aanchal.jpeg");
+}
+
+.img-72 {
+  background-image: url("../eb-pics/naina.jpeg");
+}
+
+.img-73 {
+  background-image: url("../eb-pics/rakshan.jpeg");
+}
+
+.img-74 {
+  background-image: url("../eb-pics/bawa.jpeg");
+}
+
+.img-75 {
+  background-image: url("../eb-pics/VIRAJ_IMG.jpeg");
+}
+
+.img-76 {
+  background-image: url("../eb-pics/SHOURYA-SALUJA.jpeg");
+}
+
+.img-80 {
+  background-image: url("../eb-pics/ADITYA-BAGGA.jpeg");
+}

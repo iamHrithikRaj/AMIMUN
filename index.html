@@ -9,7 +9,6 @@
       src="https://kit.fontawesome.com/9cfd8f728d.js"
       crossorigin="anonymous"
     ></script>
-    <script src="https://unpkg.com/ionicons@4.5.5/dist/ionicons.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.11.4/TweenMax.min.js"></script>
@@ -17,7 +16,9 @@
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+    <script src="https://unpkg.com/ionicons@4.5.5/dist/ionicons.js"></script>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./our-team/guiding-light.css" />
     <title>AMIMUN'22 | Home</title>
   </head>
   <body>
@@ -34,7 +35,7 @@
     <nav id="main-navigation" class="nav-main">
       <ul class="menu">
         <li class="menu__item">
-          <a class="menu__link" href="">Apply</a>
+          <a class="menu__link" onclick="return func(0)" href="#">Apply</a>
           <ul class="submenu">
             <li class="menu__item">
               <a
@@ -56,7 +57,7 @@
           <a class="menu__link" href="./about.html">About</a>
         </li>
         <li class="menu__item">
-          <a class="menu__link" href="">Our Team</a>
+          <a class="menu__link" onclick="return func(0)" href="#">Our Team</a>
           <ul class="submenu">
             <li class="menu__item">
               <a class="menu__link" href="./our-team/guiding-light.html"
@@ -87,13 +88,13 @@
           <a class="menu__link" href="./committes.html">Committees</a>
         </li>
         <li class="menu__item">
-          <a class="menu__link" href="#">Gallery</a>
+          <a class="menu__link" href="./gallery.html">Gallery</a>
         </li>
         <li class="menu__item">
           <a class="menu__link" href="./club.html">AMIMUN Club</a>
         </li>
         <li class="menu__item">
-          <a class="menu__link" href="">Resources</a>
+          <a class="menu__link" onclick="return func(0)" href="#">Resources</a>
           <ul class="submenu">
             <li class="menu__item">
               <a class="menu__link" href="./resources/country-matrix.html"
@@ -103,6 +104,11 @@
             <li class="menu__item">
               <a class="menu__link" href="./resources/background-guides.html"
                 >Background Guides</a
+              >
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="./resources/rop.html"
+                >Rules of Procedures</a
               >
             </li>
             <li class="menu__item">
@@ -186,8 +192,7 @@
                 </ul>
               </div>
             </li>
-            <li>Gallery</li>
-            <li><a href="./club.html">AMIMUN Club</a></li>
+            <li><a href="./gallery.html">Gallery</a></li>
             <li>
               <a href="./resources.html">Resources</a>
               <i class="fas fa-chevron-down"></i>
@@ -200,6 +205,9 @@
                     <a href="./resources/background-guides.html"
                       >Background Guides</a
                     >
+                  </li>
+                  <li>
+                    <a href="./resources/rop.html">Rules of Procedures</a>
                   </li>
                   <li>
                     <a href="./resources/awards-criteria.html">Newsletters</a>
@@ -216,6 +224,7 @@
                 </ul>
               </div>
             </li>
+            <li><a href="./club.html">AMIMUN Club</a></li>
           </ul>
         </div>
       </nav>
@@ -284,6 +293,52 @@
         </div>
         <div id="six" class="imgcontainer"></div>
       </div>
+      <h2 class="heading theme">
+        Message from the Secretary General of The United Nations
+      </h2>
+      <div class="unsg-section">
+        <div class="unsg-message">
+          <iframe
+            id="unsg-vid"
+            src="https://www.youtube.com/embed/0ZlXMXMzpsU"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+          <!-- <p id="sec-gen-msg">
+            The world continues to face the all-encompassing COVID-19 pandemic –
+            a health crisis, economic disaster and human rights emergency rolled
+            into one unprecedented challenge. We also confront a planetary
+            emergency – including accelerating climate change, growing pollution
+            and collapsing biodiversity – threatening the environment on which
+            everyone’s future depends. <br />
+            And we are witnessing an alarming spread of hatred and
+            discrimination. <br />
+            In these trying times, I welcome your engagement in the Model United
+            Nations. Young people today are spearheading movements for climate
+            action, racial justice, gender equality and so much more. <br />
+            You are connecting on-line and in the streets, showing the power of
+            collective action. The pandemic has created a moment for change.
+            <br />
+            Recovery is our chance to shape a better future. <br />
+            And the Sustainable Development Goals are our roadmap. <br />
+            The United Nations is committed to being your ally as we push to
+            build a more sustainable and equitable world for people today and
+            for generations to come. <br />
+            Thank you for your belief in the power of dialogue and cooperation
+            to meet the tests of our time. <br />
+            I wish you a successful Model United Nations. <br />
+            <br />
+          </p>
+          <p id="sec-gen-regards">
+            António Guterres<br />
+            Secretary General<br />
+            United Nations<br />
+          </p> -->
+        </div>
+      </div>
+
       <h2 class="heading theme">Message from Secretary General</h2>
       <div class="section">
         <div class="img-text-container">
@@ -310,7 +365,7 @@
             secretariat of AMIMUN’22, are confident in our ability to stay true
             to tradition and bring to you an exceptional debating experience.
             Despite all that has transpired, we shall not be deterred-
-            <b>“Preserverantia Omnia Vincit”.</b><br />
+            <b>“Perserverantia Omnia Vincit”.</b><br />
             AMIMUN’22 is the optimal platform for students across the world to
             display their fervor for debate through constructive discussion,
             while simultaneously enabling them to delve further into continuous
@@ -326,7 +381,7 @@
             conference possible. On behalf of the secretariat, I extend a warm
             invitation to all delegates and hope this conference will be as
             productive for you as an individual, and as a delegate. Remember,
-            <b>“Preserverantia Omnia Vincit”- perseverance conquers all</b>. I
+            <b>“Perserverantia Omnia Vincit”- perseverance conquers all</b>. I
             wish you all the very best.
             <br />
           </p>
@@ -341,63 +396,444 @@
 
       <div class="section-sponsors">
         <h2 class="heading theme">Our Sponsors</h2>
-        <h3 class="comming-soon">Coming Soon</h3>
-        <!-- <div class="cursor"></div> -->
-        <!-- <div class="wrapper">
-          <div class="project-list">
-            <div class="project p-1">
-              <div class="project-title"><h1>Motionland</h1></div>
-              <div class="project-categ">Branding</div>
-              <div class="project-overlay"></div>
-            </div>
-            <div class="project p-2">
-              <div class="project-title"><h1>Focus Reactive</h1></div>
-              <div class="project-categ">Photography</div>
-              <div class="project-overlay"></div>
-            </div>
-            <div class="project p-3">
-              <div class="project-title"><h1>Aspect</h1></div>
-              <div class="project-categ">Web Design</div>
-              <div class="project-overlay"></div>
-            </div>
-            <div class="project p-4">
-              <div class="project-title"><h1>Logomark</h1></div>
-              <div class="project-categ">Branding</div>
-              <div class="project-overlay"></div>
+
+        <div class="sponsor-container">
+          <div id="sh" class="box">
+            <img
+              class="colab-img"
+              src="./sponsors-logos/sh.jpeg"
+              alt=""
+              srcset=""
+            />
+          </div>
+
+          <!-- The Modal -->
+          <div id="shModal" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <h2 style="margin: 10px 0">Shahnaz Husain</h2>
+              <p id="sec-gen-msg">
+                The Shahnaz Husain brand is an internationally recognized brand
+                that has played an essential role in the industry for the past
+                50 years. It is a well-known brand emphasizing organic beauty
+                care, combining ancient ayurvedic traditions and procedures with
+                cutting-edge modern technology. The Shahnaz Husain organic
+                formulations are based on the "Natural Care and Cure" philosophy
+                and include herb, flower, fruit extracts, essential oils, and
+                even rare minerals and gemstones. Over the last four decades,
+                the Shahnaz brand has established unquestioned brand loyalty.
+                Today, it is ideally positioned in the domestic and
+                international market for Ayurvedic beauty care. <br />
+
+                The franchise offers an established business model with a proven
+                success rate apart from solid branding. The Shahnaz Husain Group
+                has developed over 380 Ayurvedic products for beauty and health
+                care. Indeed, after emerging as the premium sector's brand
+                leader, the brand now commands a dominant presence in the medium
+                segment thanks to the power of its brand identity. Moreover,
+                modern manufacturing and R&D facilities and extensive experience
+                have given the Group a competitive advantage in the complex
+                formulation of products. <br />
+              </p>
             </div>
           </div>
-        </div> -->
+
+          <div id="pcb" class="box">
+            <img
+              class="colab-img"
+              src="./sponsors-logos/phil.jpeg"
+              alt=""
+              srcset=""
+            />
+          </div>
+
+          <!-- The Modal -->
+          <div id="pcbModal" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <h2 style="margin: 10px 0">
+                Phil Coal Beneficiation & Energy Pvt. Ltd.
+              </h2>
+              <p id="sec-gen-msg">
+                Phil Coal Beneficiation & Energy Pvt Ltd is a flagship company
+                of the Phil Group, which has a wide range of interests in coal
+                washing, trading, handling, logistics, and transportation in
+                Chhattisgarh, India. The PHIL group has developed a fully
+                integrated total fuel solution model for power, metal, and
+                cement plants. It offers all coal services under one roof, from
+                coal allocation to coal delivery, including coal allotment,
+                long- term fuel supply agreements, purchase of coal directly
+                from SECL mines, quality and control, transportation, washing,
+                logistics, and delivery at the consumer's plant via road and
+                personal railway siding (PMBG). <br />
+                PHIL Group has provided transportation by road and rail in all
+                over India through his Coal Washeries with a capacity of 2.5
+                MTPA at Ghutku, Bilaspur & capacity of 0.96 MTPA in Raigarh
+                (C.G.). <br />
+                Mr Praveen Jha, a Science Graduate with broad experience in top
+                management level various national companies, good technical
+                command on coal & Steel and about 20 years of commercial
+                experience, is one of the company's promoters. Phil Coal is now
+                one of the leading coal companies in the mineral-rich state of
+                Chhattisgarh. With a combined sales of Rs 221 crore for 2020,
+                the company expects to reach a revenue of Rs 300 crore in the
+                fiscal year 2021. <br />
+              </p>
+            </div>
+          </div>
+
+          <div id="sagar" class="box">
+            <img
+              class="colab-img"
+              src="./sponsors-logos/sagar.png"
+              alt=""
+              srcset=""
+            />
+          </div>
+
+          <!-- The Modal -->
+          <div id="sagarModal" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <h2 style="margin: 10px 0">Sagar Pictures</h2>
+              <p id="sec-gen-msg">
+                Sagar Pictures is a well-known film and television production
+                business. Sagar Pictures is a significant content producer for
+                Indian television, feature films, and documentaries. Dr.
+                Ramanand Sagar's world-famous Indian TV series based on the
+                Ramayan introduced television to Indian households in 1987, and
+                the company remains inspired by its legendary heritage but is
+                propelled by a fresh contemporary vision, trendsetting Indian
+                audio-visual content and production. <br />
+
+                With Ramayana, the longest-running television epic, Sagar
+                Pictures managed to create one of the biggest television
+                sensations of the era. The broadcast, which was re-aired after
+                33 years during the initial wave of the pandemic's lockdown,
+                smashed all global records by becoming the most-watched
+                entertainment programme on the planet. For the past 71 years,
+                the production firm has been a cornerstone of Indian film,
+                becoming a pioneer in the art of script and motion pictures.
+                Other well-known Sagar picture series include Luv Kush, Shri
+                Krishna, Aladdin, Meera, and many more. The company, which is
+                widely recognised for bringing television into Indian
+                households, is still propelled by its ancient origins and a
+                modern vision and has managed to become a trendsetter in Indian
+                audio-visual entertainment. <br />
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
 
       <div class="section-sponsors">
-        <h2 class="heading theme">Our Collaborators</h2>
-        <h3 class="comming-soon">Coming Soon</h3>
-        <!-- <div class="cursor"></div>
-        <div class="wrapper">
-          <div class="project-list">
-            <div class="project p-1">
-              <div class="project-title"><h1>Motionland</h1></div>
-              <div class="project-categ">Branding</div>
-              <div class="project-overlay"></div>
-            </div>
-            <div class="project p-2">
-              <div class="project-title"><h1>Focus Reactive</h1></div>
-              <div class="project-categ">Photography</div>
-              <div class="project-overlay"></div>
-            </div>
-            <div class="project p-3">
-              <div class="project-title"><h1>Aspect</h1></div>
-              <div class="project-categ">Web Design</div>
-              <div class="project-overlay"></div>
-            </div>
-            <div class="project p-4">
-              <div class="project-title"><h1>Logomark</h1></div>
-              <div class="project-categ">Branding</div>
-              <div class="project-overlay"></div>
+        <h2 class="heading theme">Our Collaborations</h2>
+        <div class="colab-container">
+          <div id="unesco" class="box">
+            <img
+              class="colab-img"
+              src="./collab-logos/UNESCO LOGO.png"
+              alt=""
+              srcset=""
+            />
+          </div>
+
+          <!-- The Modal -->
+          <div id="unescoModal" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <h2 style="margin: 10px 0">
+                United Nations Educational, Scientific and Cultural Organization
+                (UNESCO)
+              </h2>
+              <p id="sec-gen-msg">
+                The United Nations Educational, Scientific, and Cultural
+                Organization strives to promote progress and foster
+                collaboration by fostering international cooperation in
+                Education, Science, and Culture. UNESCO's programmes help to
+                accomplish the Sustainable Development Goals outlined in Agenda
+                2030, which was adopted by the United Nations General Assembly
+                in 2015. Governments' political and economic frameworks are
+                insufficient to assure the peoples' long-term and sincere
+                support. Dialogue and mutual understanding must be the
+                foundations of peace. In this spirit, UNESCO creates educational
+                resources to assist people in living as global citizens who are
+                free of hatred and intolerance. UNESCO strives to ensure that
+                every child and citizen has access to a high-quality education.
+                UNESCO strengthens national relationships by fostering cultural
+                heritage and the equal dignity of all cultures. UNESCO promotes
+                scientific programmes and policies as development and
+                cooperation platforms. UNESCO advocates for free expression as a
+                fundamental right and a prerequisite for democracy and
+                development. The founding idea of UNESCO arose in response to a
+                world war marred by racist and anti-Semitic violence. Seventy
+                years and several liberation fights later, UNESCO's mandate is
+                more relevant than ever. The purpose of UNESCO remains to
+                reinforce the humanist purposes of education, research, and
+                culture.
+              </p>
             </div>
           </div>
-        </div> -->
+
+          <div id="ff" class="box">
+            <img
+              class="colab-img"
+              src="./collab-logos/FF.jpg"
+              alt=""
+              srcset=""
+            />
+          </div>
+
+          <!-- The Modal -->
+          <div id="ffModal" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <h2 style="margin: 10px 0">Fridays for future Delhi</h2>
+              <p id="sec-gen-msg">
+                Fridays For Future is a global people's climate justice
+                campaign. Fridays for Future believes in peaceful, non-violent
+                ways to let our national and state governments know of our
+                demand to address the ongoing climate crisis and ecological
+                breakdown in a world burdened by climate changes caused by
+                unsustainable practises adopted by individuals and industries
+                affecting all citizens. FF prioritises ecological contributions
+                and resolutions in decision-making and advocates the same at the
+                national level. It argues that, in the grand scheme of things,
+                systemic reform will cause greater individual changes. They
+                mostly use strategies such as climate strikes or marches, and
+                Fridays for Future (FFF) India has carried out a number of
+                activities in the last year across its 61 local chapters around
+                the country. Notable recent calls to action include the "Save
+                Aarey" campaign and the statewide movement calling for the
+                withdrawal of the EIA Draft 2020. Through research, information,
+                education, webinars, speeches, and events, FFF India raises
+                awareness of the climate issue and the need for climate justice.
+                Campaigns are intended to raise awareness of significant changes
+                that pose a threat to the environment, with the goal of
+                educating people sufficiently to demand climate action.
+              </p>
+            </div>
+          </div>
+
+          <div id="yfpi" class="box">
+            <img
+              class="colab-img"
+              src="./collab-logos/YFPI.png"
+              alt=""
+              srcset=""
+            />
+          </div>
+
+          <!-- The Modal -->
+          <div id="yfpiModal" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <h2 style="margin: 10px 0">Youth for Peace International</h2>
+              <p id="sec-gen-msg">
+                Youth for Peace International is a youth-led peacebuilding
+                organization where it envisions a peaceful world of empowered
+                individuals and sustainable societies. Since its foundation in
+                2015, it has been working at community, national and
+                international levels with children and teachers through: Peace
+                Education consisting of training and workshops, Rohingya
+                Refugees Rehabilitation support, activism via creative online
+                campaigns and Policy Advocacy for Youth Peacebuilding in India.
+                It aims at developing personal-professional competencies of
+                Youth through experiential learning methodology thereby
+                incubating a project created and executed by them through a
+                designing-thinking approach of problem-solving. <br />
+                Values such as nonviolence and empathy are lacking in the
+                educational diaspora. Conflicts, both personal and
+                interpersonal, stay unsolved as a result, leading to their
+                escalation and, at times, violence. As an individual grows up in
+                such an environment, he or she loses the ability to perceive and
+                appreciate diversity. Such an environment makes harmonious
+                coexistence difficult. YPI is committed to offering innovative
+                and long-term solutions to such 'Glo-cal' issues, as well as
+                safe spaces for the spread of a culture of openness and
+                discussion. <br />
+              </p>
+            </div>
+          </div>
+
+          <div id="ungcn" class="box">
+            <img
+              class="colab-img"
+              src="./collab-logos/UNGCN.png"
+              alt=""
+              srcset=""
+            />
+          </div>
+
+          <!-- The Modal -->
+          <div id="ungcnModal" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <h2 style="margin: 10px 0">UN Global Compact Network India</h2>
+              <p id="sec-gen-msg">
+                As the UN Global Compact Network's local arm, UNGCN India has
+                been acting at a national level in providing a robust platform
+                for Indian businesses, academic institutions, and civil
+                organizations to better collaborate, to better enforce
+                responsible business practices. UNGCNI encourages businesses and
+                firms to adopt sustainable and socially responsible policies,
+                while simultaneously encouraging reporting on their
+                implementation, to implement actual ground level change. It
+                provides a space that allows issues regarding human rights,
+                labour, and corruption to be brought to light, so designing
+                resolutions becomes a little more straightforward. UNGCN India
+                works on 10 principles, which call upon businesses to: support
+                and respect the protection of internationally proclaimed human
+                rights, ensuring they are not complicit in human rights abuses.
+                <br />
+                Other such principles include upholding the freedom of
+                association and the effective recognition of the right to
+                collective bargaining and to pursue the elimination of
+                discrimination in respect of employment and occupation; support
+                a precautionary approach to environmental challenges and to
+                undertake initiatives to promote greater environmental
+                responsibility; and work against corruption in all its forms,
+                including extortion and bribery. <br />
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="colab-container-two">
+          <div id="peta_india" class="box">
+            <img
+              class="colab-img"
+              src="./collab-logos/peta_india.jpeg"
+              alt=""
+              srcset=""
+            />
+          </div>
+
+          <!-- The Modal -->
+          <div id="peta_indiaModal" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <h2 style="margin: 10px 0">PETA India</h2>
+              <p id="sec-gen-msg">
+                PETA youth is PETA India's outreach programme for teenagers and
+                young adults. It was created to empower, inspire, and assist the
+                youth, who have the potential to make a significant difference
+                for animals. PETA Youth places young people at the forefront of
+                today's animal rights movement, from assisting them in enacting
+                animal-friendly reforms in their schools, colleges, and
+                communities to assisting them in leading the fight against cruel
+                industries that harm animals. <br />
+
+                PETA Youth approaches the fight against animal cruelty in a
+                unique way, having a convivial and mirthful time while spreading
+                the word about animal rights through rallies, flash mobs, and
+                graffiti. They also make cruelty-free living simple by providing
+                information on everything from vegan foods to 'how to avoid
+                buying products that harm animals.' To top it all off, they
+                collaborate with some of the most well-known college festivals
+                in the country, including Sunburn, the Escape Festival of Art
+                and Music, NH7 Weekender, and Strawberry Fields Forever Music
+                Festival. <br />
+              </p>
+            </div>
+          </div>
+
+          <div id="peta_youth" class="box">
+            <img
+              class="colab-img"
+              src="./collab-logos/peta_youth.jpeg"
+              alt=""
+              srcset=""
+            />
+          </div>
+
+          <!-- The Modal -->
+          <div id="peta_youthModal" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <h2 style="margin: 10px 0">PETA Youth</h2>
+              <p id="sec-gen-msg">
+                PETA youth is PETA India's outreach programme for teenagers and
+                young adults. It was created to empower, inspire, and assist the
+                youth, who have the potential to make a significant difference
+                for animals. PETA Youth places young people at the forefront of
+                today's animal rights movement, from assisting them in enacting
+                animal-friendly reforms in their schools, colleges, and
+                communities to assisting them in leading the fight against cruel
+                industries that harm animals. <br />
+
+                PETA Youth approaches the fight against animal cruelty in a
+                unique way, having a convivial and mirthful time while spreading
+                the word about animal rights through rallies, flash mobs, and
+                graffiti. They also make cruelty-free living simple by providing
+                information on everything from vegan foods to 'how to avoid
+                buying products that harm animals.' To top it all off, they
+                collaborate with some of the most well-known college festivals
+                in the country, including Sunburn, the Escape Festival of Art
+                and Music, NH7 Weekender, and Strawberry Fields Forever Music
+                Festival. <br />
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
+
+      <div class="section-sponsors">
+        <h2 class="heading theme">Our Partners</h2>
+        <div class="partner-container">
+          <div id="amar" class="box">
+            <img
+              class="colab-img"
+              src="./partners-logos/Amar Ujala Logo_v12.png"
+              alt=""
+              srcset=""
+            />
+          </div>
+
+          <!-- The Modal -->
+          <div id="amarModal" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <h2 style="margin: 10px 0">
+                Amar Ujala (National Media Partner)
+              </h2>
+              <p id="sec-gen-msg">
+                Founded in 1948, Amar Ujala is one of India’s leading Hindi
+                Newspaper with 21 editions in 180 districts in 6 states and 2
+                union territories. They have a total readership of over 4 crore
+                readers and over 20 lakh copies circulated daily across North
+                India, covering Uttarakhand, Himachal Pradesh, Jammu and
+                Kashmir, Haryana, Chandigarh, Punjab, Delhi NCR and Uttar
+                Pradesh,making it one of the most widely read broadsheet
+                newspapers in India. Amar Ujala offers various specialist
+                supplements concentrating on issues such as jobs and careers,
+                entertainment, and many more in addition to the mainline
+                newspaper and city-centric pull outs. <br />
+
+                Amarujala.com is also leading in the Hindi Digital space,
+                received WAN-IFRA award for its design, innovation & audience
+                fitment, gets over 50M unique visitors every month. It is the
+                fastest growing Hindi news website in India, and focuses on
+                National and International News, Business, Sports, Technology,
+                Entertainment and Lifestyle.  <br />
+                They have a prominent presence on social media with over 927K
+                followers on Instagram, 8.1M followers on Facebook, 1.8M
+                followers on Twitter and over 1.68M subscribers on YouTube.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+        <i><h3 class="unfpa">AMIMUN’22 with participation from UNFPA</h3></i>
     </div>
     <hr />
     <footer id="bottom">
@@ -441,9 +877,7 @@
           <div class="contact">
             <p><b>Chirag Sharma</b>, USG Delegate Affairs</p>
             <a href="tel:+91 98688 77976">+91 98688 77976</a><br />
-            <a href="mailto: chirag02.sharma@gmail.com"
-              >infoamimun22@gmail.com</a
-            >
+            <a href="mailto: infoamimun22@gmail.com">infoamimun22@gmail.com</a>
           </div>
         </div>
       </div>
@@ -492,16 +926,18 @@
       }
 
       $(".p-1").hover(function () {
-        $(".cursor").css({ "background-image": "url(image-1.jpg)" });
+        $(".cursor").css({
+          "background-image": "url(collab-logos/unesco.png)",
+        });
       });
       $(".p-2").hover(function () {
-        $(".cursor").css({ "background-image": "url(image-2.jpg)" });
+        $(".cursor").css({ "background-image": "url(collab-logos/UNGCN.png)" });
       });
       $(".p-3").hover(function () {
-        $(".cursor").css({ "background-image": "url(image-3.jpg)" });
+        $(".cursor").css({ "background-image": "url(collab-logos/FF.jpg)" });
       });
       $(".p-4").hover(function () {
-        $(".cursor").css({ "background-image": "url(image-4.jpg)" });
+        $(".cursor").css({ "background-image": "url(collab-logos/YFPI.png)" });
       });
 
       var flag = false;
@@ -515,6 +951,199 @@
         flag = false;
         TweenLite.to($cursor, 0.3, { scale: 0.1, autoAlpha: 0 });
       });
+
+      let parent = document.querySelectorAll("[data-collapse");
+      parent.forEach((element) => {
+        let clickTarget = element.querySelector("*");
+        let collapseElement = element.nextElementSibling;
+        let collapseElementChildren = collapseElement.children;
+        let tl = new TimelineMax({
+          reversed: true,
+          paused: true,
+        });
+
+        tl.from(
+          collapseElement,
+          1.6,
+          {
+            className: "+=heightZero",
+            ease: Expo.easeInOut,
+          },
+          "open"
+        );
+        tl.staggerFrom(
+          collapseElementChildren,
+          1,
+          {
+            autoAlpha: 0,
+            y: "100%",
+            ease: Expo.easeInOut,
+          },
+          0.08,
+          "open+=.5"
+        );
+
+        clickTarget.addEventListener("click", () => {
+          tl.reversed() ? tl.play() : tl.reverse();
+        });
+      });
+
+      // Get the modal
+      var modal1 = document.getElementById("ffModal");
+      var modal2 = document.getElementById("yfpiModal");
+      var modal3 = document.getElementById("unescoModal");
+      var modal4 = document.getElementById("ungcnModal");
+      var modal5 = document.getElementById("sagarModal");
+      var modal6 = document.getElementById("pcbModal");
+      var modal7 = document.getElementById("shModal");
+      var modal8 = document.getElementById("amarModal");
+      var modal9 = document.getElementById("peta_indiaModal");
+      var modal10 = document.getElementById("peta_youthModal");
+
+      // Get the button that opens the modal
+      var btn1 = document.getElementById("ff");
+      var btn2 = document.getElementById("yfpi");
+      var btn3 = document.getElementById("unesco");
+      var btn4 = document.getElementById("ungcn");
+      var btn5 = document.getElementById("sagar");
+      var btn6 = document.getElementById("pcb");
+      var btn7 = document.getElementById("sh");
+      var btn8 = document.getElementById("amar");
+      var btn9 = document.getElementById("peta_india");
+      var btn10 = document.getElementById("peta_youth");
+
+      // Get the <span> element that closes the modal
+      var closes = document.getElementsByClassName("close");
+      for (let i = 0; i < closes.length; i++) {
+        closes[i].addEventListener(
+          "click",
+          function (e) {
+            let m = document.getElementById(e.target.parentNode.parentNode.id);
+            m.style.display = "none";
+          },
+          false
+        );
+      }
+
+      // When the user clicks anywhere outside of the modal, close it
+      window.onclick = function (event) {
+        if (event.target == modal1) {
+          modal1.style.display = "none";
+        }
+      };
+
+      // When the user clicks the button, open the modal
+      btn1.onclick = function () {
+        modal1.style.display = "block";
+      };
+
+      // When the user clicks anywhere outside of the modal, close it
+      window.onclick = function (event) {
+        if (event.target == modal2) {
+          modal2.style.display = "none";
+        }
+      };
+
+      // When the user clicks the button, open the modal
+      btn2.onclick = function () {
+        modal2.style.display = "block";
+      };
+
+      // When the user clicks anywhere outside of the modal, close it
+      window.onclick = function (event) {
+        if (event.target == modal3) {
+          modal3.style.display = "none";
+        }
+      };
+
+      // When the user clicks the button, open the modal
+      btn3.onclick = function () {
+        modal3.style.display = "block";
+      };
+
+      // When the user clicks anywhere outside of the modal, close it
+      window.onclick = function (event) {
+        if (event.target == modal4) {
+          modal4.style.display = "none";
+        }
+      };
+
+      // When the user clicks the button, open the modal
+      btn4.onclick = function () {
+        modal4.style.display = "block";
+      };
+
+      // When the user clicks anywhere outside of the modal, close it
+      window.onclick = function (event) {
+        if (event.target == modal5) {
+          modal5.style.display = "none";
+        }
+      };
+
+      // When the user clicks the button, open the modal
+      btn5.onclick = function () {
+        modal5.style.display = "block";
+      };
+
+      // When the user clicks anywhere outside of the modal, close it
+      window.onclick = function (event) {
+        if (event.target == modal6) {
+          modal6.style.display = "none";
+        }
+      };
+
+      // When the user clicks the button, open the modal
+      btn6.onclick = function () {
+        modal6.style.display = "block";
+      };
+
+      // When the user clicks anywhere outside of the modal, close it
+      window.onclick = function (event) {
+        if (event.target == modal7) {
+          modal7.style.display = "none";
+        }
+      };
+
+      // When the user clicks the button, open the modal
+      btn7.onclick = function () {
+        modal7.style.display = "block";
+      };
+
+      // When the user clicks anywhere outside of the modal, close it
+      window.onclick = function (event) {
+        if (event.target == modal8) {
+          modal8.style.display = "none";
+        }
+      };
+
+      // When the user clicks the button, open the modal
+      btn8.onclick = function () {
+        modal8.style.display = "block";
+      };
+
+      // When the user clicks anywhere outside of the modal, close it
+      window.onclick = function (event) {
+        if (event.target == modal9) {
+          modal9.style.display = "none";
+        }
+      };
+
+      // When the user clicks the button, open the modal
+      btn9.onclick = function () {
+        modal9.style.display = "block";
+      };
+
+      // When the user clicks anywhere outside of the modal, close it
+      window.onclick = function (event) {
+        if (event.target == modal10) {
+          modal10.style.display = "none";
+        }
+      };
+
+      // When the user clicks the button, open the modal
+      btn10.onclick = function () {
+        modal10.style.display = "block";
+      };
     </script>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"
@@ -531,5 +1160,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
     <script src="./main.js"></script>
+    <script src="./sub.js"></script>
   </body>
 </html>
